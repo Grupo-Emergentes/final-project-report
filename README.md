@@ -362,25 +362,25 @@ https://learning.oreilly.com/library/view/learning-domain-driven-design/97810981
 https://learning.oreilly.com/library/view/patterns-principles-and/9781118714706/part03.xhtml
 https://domainstorytelling.org/#dst-requirements
 https://openpracticelibrary.com/practice/event-storming/ 
-#### 4.2.2 Candidate Context Discovery
+### 4.2.2 Candidate Context Discovery
 
-#### 4.2.3 Domain Message Flows Modeling
+### 4.2.3 Domain Message Flows Modeling
 
-#### 4.2.4 Bounded Context Canvases
+### 4.2.4 Bounded Context Canvases
 
-### 4.1.5 Context Mapping
+### 4.2.5 Context Mapping
 
-### 4.3 Software Architecture
+## 4.3 Software Architecture
 
-#### 4.3.1. Software Architecture System Landscape Diagram
+### 4.3.1. Software Architecture System Landscape Diagram
 Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4 
 Model,
-#### 4.3.2. Software Architecture Context Level Diagrams
+### 4.3.2. Software Architecture Context Level Diagrams
 Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4 
 Model,
-#### 4.3.3. Software Architecture Container Level Diagrams
+### 4.3.3. Software Architecture Container Level Diagrams
 Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4 
 Model,
-#### 4.3.4. Software Architecture Deployment Diagrams
+### 4.3.4. Software Architecture Deployment Diagrams
 Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4 
 Model,
