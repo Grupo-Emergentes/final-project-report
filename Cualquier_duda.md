@@ -1,137 +1,107 @@
 # Links
-- Prototipo hecho por la IA de figma: https://www.figma.com/make/JkXGNcx9THDL9M0mjAqYer/Recrear-app-Diia-web?node-id=0-1&t=LSr3e4zArI9tBnOH-1
-- Trabajo de IoT mio si les sirve: https://github.com/Los-Angelitos/final-project-report/tree/main
-- Link del trello: https://trello.com/invite/b/68b9c5c222441556071afd6e/ATTIe087d42e2a95ee2ea2154950f84bf30512E977FD/arquitectura-de-software-emergentes
+- **Prototipo hecho por la IA de Figma**: [Figma](https://www.figma.com/make/JkXGNcx9THDL9M0mjAqYer/Recrear-app-Diia-web?node-id=0-1&t=LSr3e4zArI9tBnOH-1)
+- **Trabajo de IoT (propio)**: [GitHub](https://github.com/Los-Angelitos/final-project-report/tree/main)
+- **Link del Trello**: [Trello](https://trello.com/invite/b/68b9c5c222441556071afd6e/ATTIe087d42e2a95ee2ea2154950f84bf30512E977FD/arquitectura-de-software-emergentes)
 
 # Información Relevante
 
-## 1) Resumen 
+## 1) Resumen
 
-Qué es: Plataforma web única para que la ciudadanía gestione documentos personales digitales (billetera) y trámites con entidades públicas.
-Problema que resuelve: Fragmentación de portales, procesos engorrosos, validación de documentos poco confiable y poca trazabilidad.
-Cómo lo resuelve:
-	•	Billetera ciudadana con DNI digital, licencia de conducir, certificado COVID, RUC, etc., respaldados criptográficamente (blockchain para integridad y verificación).
-	•	Catálogo unificado de trámites por entidad (RENIEC, SUNAT, MTC, MINEDU, MINSA, Municipalidades, MTPE, Poder Judicial).
-	•	Funcionalidades extra: chatbot IA, notificaciones, gestión de perfil, registro/login.
+- **Qué es**: Plataforma web única para que la ciudadanía gestione documentos personales digitales (billetera) y trámites con entidades públicas.
+- **Problema que resuelve**: Fragmentación de portales, procesos engorrosos, validación de documentos poco confiable y poca trazabilidad.
+- **Cómo lo resuelve**:
+  - Billetera ciudadana con DNI digital, licencia de conducir, certificado COVID, RUC, etc., respaldados criptográficamente (blockchain para integridad y verificación).
+  - Catálogo unificado de trámites por entidad (RENIEC, SUNAT, MTC, MINEDU, MINSA, Municipalidades, MTPE, Poder Judicial).
+  - Funcionalidades extra: chatbot IA, notificaciones, gestión de perfil, registro/login.
 
-## 2) Antecedentes / Contexto  
-	•	Contexto local (Perú):
-	•	Entidades con portales y experiencias heterogéneas (RENIEC, SUNAT, MTC, etc.).
-	•	Ciudadanía enfrenta fricción (múltiples cuentas, requisitos, colas, desconocimiento de estado de trámite).
-	•	Oportunidad: Unificar acceso, estandarizar UX, y proveer documentos verificables (códigos QR firmados + hash en blockchain) que faciliten control, fiscalización y servicio.
-	•	Hipótesis de valor:
-	1.	Reducir tiempo y errores en trámites.
-	2.	Aumentar confianza al usar documentos digitales validados.
-	3.	Disminuir costos operativos para el Estado con procesos más trazables y medibles.
+## 2) Antecedentes
 
-## 3) Concepto del Producto / Servicio
+- **Contexto local (Perú)**:
+  - Entidades con portales y experiencias heterogéneas (RENIEC, SUNAT, MTC, etc.).
+  - Ciudadanía enfrenta fricción (múltiples cuentas, requisitos, colas, desconocimiento de estado de trámite).
+  - **Oportunidad**: Unificar acceso, estandarizar UX, y proveer documentos verificables (códigos QR firmados + hash en blockchain) que faciliten control, fiscalización y servicio.
 
-Propuesta: “Tu Estado en un solo lugar”.
-	•	Billetera documentaria: Visualiza documentos digitales con estado, vigencia y metadatos (emisor, fecha emisión, vencimiento). 
- Cada documento tiene QR verificable; el QR lleva a una página de verificación con hash y sello de tiempo (on-chain / notarización).
-	•	Servicios por entidad: El usuario explora trámites disponibles por organismo (RENIEC, SUNAT, etc.). Cada trámite tiene ficha: requisitos, costos, 
- tiempo estimado, pasos, estado en tiempo real.
-	•	Pre-verificación de identidad de ambos contrayentes.
-	•	Agendamiento de videollamada con verificación de presencia, lectura de acta, y registro.
-	•	Generación de constancia digital y envío a la billetera (con QR).
-	•	Soporte IA (chatbot): Explica requisitos, guía pasos, sugiere correcciones.
-	•	Notificaciones: Estados de trámites, vencimientos (ej. licencia), alertas de actividad.
-	•	Gestión de perfil: Datos personales básicos, medios de contacto, factores de autenticación.
+- **Hipótesis de valor**:
+  1. Reducir tiempo y errores en trámites.
+  2. Aumentar confianza al usar documentos digitales validados.
+  3. Disminuir costos operativos para el Estado con procesos más trazables y medibles.
 
-Para funcionarios (visión inicial):
-	•	Admin central (Ministerio de Transformación Digital): crea/gestiona roles por entidad, define permisos, ve tableros macro (volumen de trámites por entidad, SLA, colas).
-	•	Coordinador de entidad (ej. RENIEC / SUNAT): administra catálogos de trámites de su entidad, reasigna casos, ve colas, KPIs locales.
-	•	Accesos siempre mínimos necesarios (principio de least privilege).
-	•	Bitácora/Auditoría: toda acción queda registrada para trazabilidad.
+## 3) Funcionalidades
 
-⸻
+**Propuesta: “Tu Estado en un solo lugar”.**
+
+- **Billetera documentaria**: Visualiza documentos digitales con estado, vigencia y metadatos (emisor, fecha de emisión, vencimiento). Cada documento tiene QR verificable con página de verificación (hash + sello de tiempo).
+- **Servicios por entidad**: Catálogo de trámites (RENIEC, SUNAT, etc.) con fichas detalladas: requisitos, costos, duración, pasos, estado en tiempo real.
+- **Trámite de matrimonio por videollamada**:
+  - Pre-verificación de identidad.
+  - Agendamiento, verificación de presencia, lectura de acta, registro.
+  - Generación de constancia digital y envío a billetera (con QR).
+- **Soporte IA (chatbot)**: Guía de pasos, explicación de requisitos, sugerencias de corrección.
+- **Notificaciones**: Cambios de estado, vencimientos, alertas.
+- **Gestión de perfil**: Datos personales, contacto, autenticación.
+
+**Para funcionarios públicos**:
+
+- **Admin central (Ministerio de Transformación Digital)**: Gestión de roles, permisos, tableros de trámites, SLA, colas.
+- **Coordinador de entidad**: Catálogo de trámites, gestión de casos y KPIs locales.
+- **Principio de mínimo privilegio**: Accesos según función.
+- **Bitácora/Auditoría**: Registro de todas las acciones para trazabilidad.
 
 ## 4) Usuarios / Público Objetivo
 
-Segmento 1 – Ciudadanía (primario):
-	•	Necesidades: centralizar documentos, completar trámites rápido, saber qué falta y en qué estado está todo.
-	•	Dolencias: portales dispersos, contraseñas múltiples, requisitos poco claros, validación poco confiable.
-	•	Momentos clave: renovar DNI, cambio de domicilio, registrar nacimiento, consultar estado tributario, emitir comprobante, mostrar un documento válido (QR).
+### Segmento 1 – Ciudadanía (primario):
 
-Segmento 2 – Funcionarios públicos (secundario):
-	•	Necesidades: verificar documentos, gestionar colas/casos, estandarizar criterios, medir tiempos, reducir fraudes.
-	•	Dolencias: herramientas dispares, poca trazabilidad, duplicidad de captura de datos, dificultad para seguir SLA.
+- **Necesidades**: Centralizar documentos, trámites rápidos, visibilidad del estado de todo.
+- **Dolencias**: Portales dispersos, múltiples contraseñas, poca claridad, validación poco confiable.
+- **Momentos clave**: Renovación de DNI, cambio de domicilio, nacimiento, estado tributario, comprobantes, verificación de documentos.
 
+### Segmento 2 – Funcionarios públicos (secundario):
 
-## 5) Flujo General / Arquitectura Funcional
+- **Necesidades**: Verificación de documentos, gestión de trámites y colas, estandarización, trazabilidad.
+- **Dolencias**: Herramientas dispares, duplicidad de datos, dificultad para cumplir SLA.
 
-Flujo alto nivel (ciudadano):
+## 5) Diseño de Interfaces / Vistas
 
-[Registro/Login con MFA]
-   ↓
-[Home Usuario]
-   ├─ Billetera (Documentos)
-   │    ├─ DNI digital (ver + QR)
-   │    ├─ Licencia conducir
-   │    ├─ Certificado COVID
-   │    └─ RUC (estado)
-   ├─ Trámites por Entidad
-   │    ├─ RENIEC (acta, registro nacimiento, renovar DNI, cambio domicilio)
-   │    └─ SUNAT (estado tributario, emitir comprobante)
-   ├─ Chatbot IA (ayuda)
-   ├─ Notificaciones
-   └─ Perfil (datos + seguridad)
+### 7.1. Home (Ciudadano)
 
-Flujo alto nivel (funcionario):
+- **Header**: Acceso a Billetera, Trámites, Notificaciones, Perfil.
+- **Hero**: “Tus documentos y trámites en un solo lugar”.
+- **Tarjetas rápidas**: DNI, SUNAT, RENIEC, Matrimonio.
+- **Continuar donde lo dejaste**: Trámites en curso.
+- **Entidades**: Grilla con RENIEC, SUNAT, MTC, etc.
 
-[Login Funcionario con MFA]
-   ↓
-[Dashboard según rol]
-   ├─ Bandeja de trámites (asignados / cola)
-   ├─ Verificación de documentos (escaneo/ingreso QR)
-   ├─ Gestión de catálogo de trámites (según permisos)
-   ├─ Métricas/KPIs (volumen, tiempos, SLA)
-   └─ Auditoría (según rol)
+### 7.2. Billetera
 
-Lógica funcional clave:
-	•	QR verificable: QR → endpoint de verificación → muestra “válido / expirado / revocado” + metadatos; referencia a hash on-chain.
-	•	Estados de trámite: borrador → presentado → en revisión → observado → aprobado/rechazado → cerrado, con notificaciones en cada transición.
-	•	Chatbot IA: FAQ + guía paso a paso; si detecta atasco, sugiere abrir trámite o subir requisito faltante.
-	•	Roles y permisos: Admin central define scopes por entidad; funcionarios ven solo lo que necesitan.
-	•	Auditoría end-to-end: cada acción (ciudadano/funcionario) registra quién, qué, cuándo y dónde.
+- Lista de documentos: estado (vigente/por vencer/vencido), última actualización, botón “Mostrar QR”.
+- Filtros: por tipo, vigencia.
+- Vista detallada: metadatos, QR, botón “Compartir verificación”.
 
-⸻
+### 7.3. Catálogo de trámites (por entidad)
 
-## 6) Diseño de Interfaces / Vistas (descrito, sin mockups)
+- Buscador y filtros (entidad, tipo, requisitos, duración).
+- Tarjetas con descripción, requisitos, tiempo, costo, botón Iniciar.
 
-7.1. Home (ciudadano):
-	•	Header: logo, acceso a Billetera, Trámites, Notificaciones, Perfil.
-	•	Hero/Resumen: “Tus documentos y trámites en un solo lugar”.
-	•	Tarjetas rápidas: DNI digital, SUNAT – Estado, RENIEC – Renovar DNI, Matrimonio por videollamada.
-	•	Bloque “Continuar donde lo dejaste”: últimos trámites en progreso.
-	•	Sección “Entidades”: grilla con RENIEC, SUNAT, MTC, etc.
+### 7.4. Flujo de trámite (ej. Renovar DNI)
 
-7.2. Billetera:
-	•	Lista de documentos con estado (vigente/por vencer/vencido), última actualización, botón “Mostrar QR”.
-	•	Filtro por tipo y vigencia.
-	•	Al abrir un documento: vista detallada con metadatos, QR, y botón “Compartir verificación”.
+- Paso 1: Requisitos (checklist interactivo).
+- Paso 2: Datos pre-cargados (editable).
+- Paso 3: Validación / adjuntos.
+- Paso 4: Resumen + envío.
+- Post-envío: Seguimiento con línea de tiempo y notificaciones.
 
-7.3. Catálogo de trámites (por entidad):
-	•	Buscador + filtros (entidad, tipo de trámite, requisitos, tiempo estimado).
-	•	Tarjetas de trámites con descripción breve, requisitos, tiempo, costo y botón Iniciar.
+### 7.5. Matrimonio
 
-7.4. Flujo de trámite (ej. Renovar DNI):
-	•	Paso 1: requisitos (checklist interactivo).
-	•	Paso 2: datos pre-cargados (editable si procede).
-	•	Paso 3: validación/adjuntos.
-	•	Paso 4: Resumen + Enviar.
-	•	Post-envío: tracking con línea de tiempo y notificaciones.
+- Flujo guiado: validación de identidad, selección de fecha, requisitos, videollamada segura, firma digital.
+- Resultado: Constancia enviada a billetera.
 
-7.5. Matrimonio por videollamada:
-	•	Wizard con: validación identidad de ambos, selección de fecha, verificación de requisitos, sala de videollamada segura, firma/constancia digital.
-	•	Resultado: constancia se envía a Billetera.
+### 7.6. Perfil y seguridad
 
-7.6. Perfil y seguridad:
-	•	Datos personales, MFA, dispositivos confiables, gestión de consentimiento de datos.
+- Gestión de datos personales, MFA, dispositivos, consentimiento de datos.
 
-7.7. Funcionario (por rol):
-	•	Dashboard: métricas clave (hoy/semana), cola por prioridad.
-	•	Bandeja de casos: filtros (estado, entidad, SLA), vista de detalle del expediente.
-	•	Verificador QR: input/cámara → resultado de validez + metadatos.
-	•	Gestor de trámites (coordinador): alta/baja/edición de fichas, SLAs, textos guía.
-	•	Auditoría: consultas por usuario, trámite, fecha; exportaciones controladas.
+### 7.7. Funcionario (por rol)
+
+- **Dashboard**: KPIs diarios/semanales, colas por prioridad.
+- **Bandeja de casos**: Filtros por estado, entidad, SLA.
+- **Verificador QR**: Entrada manual o cámara → Validación + metadatos.
+- **Gestión de trámites**: Alta/baja/edición, SLAs, textos guía.
+- **Auditoría**: Búsqueda por usuario, trámite, fecha; exportaciones controladas.
