@@ -117,10 +117,13 @@ TB1
 
 ### 1.1.1. Descripción de la Startup
 
+La startup consiste en el desarrollo de una plataforma web integral que permite a los ciudadanos peruanos mayores de 18 años acceder, gestionar y almacenar sus documentos personales digitales, así como realizar trámites con entidades públicas desde un único espacio digital. Inspirada en el modelo ucraniano Diia, esta solución busca centralizar y simplificar la interacción del ciudadano con el Estado, promoviendo la digitalización, la transparencia y la eficiencia en los servicios públicos del Perú.
 
-VISION: 
+La plataforma está pensada también para ser utilizada por funcionarios publicos de las distintas entidades del Estado, para que accedan a información, KPIs, dashboards y auditorias. Con estas funcionalidaes en conjunto, nuestra propuesta es un ecosistema seguro, accesible y fácil de usar, que funcione como puente entre los ciudadanos y diferentes organismos gubernamentales, facilitando desde la descarga de documentos oficiales hasta la solicitud de servicios en línea. A mediano y largo plazo, se proyecta como una herramienta clave para la transformación digital del Estado peruano.
 
-MISION: 
+VISION: Ser la plataforma digital líder en Perú que revolucione la forma en ciudadanos y Estado interactuan, promoviendo una gestión pública eficiente, transparente y centrada en las personas a través de la tecnología.
+
+MISION: Facilitar el acceso de los ciudadanos peruanos a servicios y documentos públicos mediante una plataforma digital unificada, segura y accesible, que simplifique los trámites, reduzca la burocracia y contribuya a la transformación digital del país.
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
@@ -136,32 +139,37 @@ MISION:
 Siguiendo la estructura propuesta
 
 -   **What?**
+El problema es la fragmentación, lentitud y complejidad en los procesos de gestión de documentos y trámites con entidades públicas. Los ciudadanos deben interactuar con múltiples plataformas o acudir presencialmente, mientras que los funcionarios públicos enfrentan sistemas aislados, tareas repetitivas y poca trazabilidad.
 
 -   **When?**
-    ¿Cuando estamos viendo el problema?
-
-    ¿En que momento del día y/o del proceso en cuestión?
+    ¿Cuando estamos viendo el problema?¿En que momento del día y/o del proceso en cuestión?
+El problema se presenta cada vez que un ciudadano necesita realizar un trámite o acceder a un documento oficial.
+Para los funcionarios, ocurre durante la atención al público, revisión de expedientes o emisión de documentos, a lo largo de toda su jornada laboral.
 
 -   **Where?**
     ¿Donde estamos viendo los problemas?¿En que parte/lugar del producto/proceso estamos viendo el problema?
-
+En múltiples plataformas estatales independientes, oficinas físicas, o procesos que aún se realizan en papel. También en los sistemas de gestión interna del Estado, donde los funcionarios deben duplicar esfuerzos por falta de integración.
 -   **Who?**
     ¿A quien le sucede? ¿El problema está relacionado con las habilitades de las personas?
-
+Afecta a dos segmentos principales:
+Ciudadanos peruanos, especialmente quienes no tienen acceso o conocimientos digitales, o viven lejos de centros urbanos.
+Funcionarios públicos, quienes enfrentan sobrecarga de trabajo, sistemas desactualizados y procesos ineficientes, dificultando la atención al ciudadano.
 
 -  **Why?**
   ¿Por qué sucede el problema? ¿Cual es la causa?
-
+Esto sucede por la burocracia en los procesos estatales, la falta de una infraestructura digital unificada entre entidades del Estado y la escasa inversión en transformación digital.
 -   **How?**
     ¿Como se diferencia el problema del estado normal(optimo)? ¿La tendencia en la que aparece el problema es aleatoria o sigue un patrón?
-
+A diferencia de un sistema ideal, el actual proceso es disperso, lento y poco transparente.
+Tanto ciudadanos como funcionarios siguen un patrón de frustración: repiten trámites, no tienen seguimiento claro, y deben hacer trabajo manual innecesario.
+La plataforma propuesta permitirá a ambos segmentos gestionar y verificar trámites desde un solo lugar, con autenticación segura y trazabilidad.
     ¿Como se utilizará el producto?
-
+El producto se utilizará por el ciudadano, cuando quiera recurrir a identificaciones digitales o necesite de realizar tramites. En ese caso, accederá a la plataforma, donde tendra acceso rapido a toda esta información. 
 -   **How much?**
     ¿Cuantos problemas se dan en un dia? ¿En una semana? ¿En un mes?
-
+Diariamente, miles de trámites se realizan de forma ineficiente. A nivel semanal o mensual, esto se traduce en millones de horas perdidas. 
     ¿Cuanto dinero están implicando?
-
+Los procesos actuales son elevados en logística, personal y materiales. Para el Estado, la duplicación de procesos y errores administrativos también implican pérdidas económicas y de confianza ciudadana.
 ### 1.2.2. Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statements
@@ -204,7 +212,7 @@ Extraído de el libro Lean UX, 3rd Edition (Gothelf, 2021)
 
 Podremos solucionar nuestr problema, mediante:
 
-El ratio de exito y productividad de las granjas tras el uso de nuestra aplicación:
+El ratio de exito y productividad de los hoteles tras el uso de nuestra aplicación:
 
 
 El numero de reseñas positivas:
