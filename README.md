@@ -174,98 +174,149 @@ Los procesos actuales son elevados en logística, personal y materiales. Para el
 
 #### 1.2.2.1. Lean UX Problem Statements
 
+**Problem Statement:**
 Siguiendo la estructura propuesta por Jeff Gothelf y Josh Seiden, en su libro "Lean Ux":
 
-- El estado actual de 
+El estado actual de la relación entre ciudadania y entidades de Estado peruano está caracterizado por portales fragmentados, procesos manuales, duplicidad de datos y baja trazabilidad en los tramites digitales. 
 
-Estos pain points incluyen 
+Los productos y servicios actuales no abordan el garantizar un servicio rapido y efectivo a los ciudadanos, ni de entregarles a los funcionarios publicos un sistema facil de gestionar y utilizar, que esté actualizado y sea eficiente. 
 
-Lo que los productos existentes no logran abordar es l
+Nuestro producto/servicio buscar cerrar esta brecha mediante una solución tecnologica que integrar portales y tramites de diferentes entidades, herramientas y documentos en un mismo lugar. 
 
-Nuestro producto/servicio abordará esta brecha al proporcionar 
+Nuestro enfoque inicial se centrará en digitalizar los trámites más críticos (DNI, partidas de nacimiento, matrimonio, RUC) y empoderar a los funcionarios públicos con bandejas inteligentes, trazabilidad de documentos, verificación con QR y dashboards operativos.
 
-Nuestro enfoque inicial 
-
-Sabremos que hemos tenido éxito cuando veamos 
-
-
-
-**Problem Statement:**
+Sabremos que hemos tenido éxito cuando veamos una reducción significativa en los tiempos de atención, un aumento en el uso de documentos digitales verificados, mejora en el cumplimiento de SLA de trámites y alta satisfacción de los funcionarios y ciudadanos.
 
 **Dominio:**
+El dominio es la transformación digital de servicios públicos, trámites ciudadanos y gestión documental verificada dentro del Estado peruano.
 
 **Segmentos de Clientes:**
+- Ciudadanos que interactúan con el Estado (trámites de identidad, salud,     educación, impuestos, justicia, etc.)
+- Funcionarios públicos responsables de validar, aprobar, emitir o             monitorear trámites/documentos.
+- Entidades del Estado que buscan eficiencia operativa, trazabilidad y     cumplimiento de SLA.
 
 **Puntos de Dolor:**
+- Trámites lentos, repetitivos y difíciles de seguir.
+- Verificación manual de documentos, propensa a errores o fraudes.
+- Falta de una vista única del ciudadano y sus documentos/trámites.
+- Herramientas de funcionario desactualizadas, poco eficientes y sin trazabilidad.
+- Imposibilidad de medir o mejorar con datos en tiempo real.
 
 **Visión/Estrategia:**
-
+Unificar la relación entre ciudadanía y Estado en una sola plataforma digital, donde cada trámite, documento y validación sea seguro, verificable, rápido y trazable. Empoderar a los funcionarios públicos con herramientas modernas para tomar mejores decisiones, reducir carga operativa y mejorar el servicio público desde dentro.
 
 **Segmento Inicial:**
+Ciudadanos que gestionan documentos de identidad y registro civil (DNI, nacimiento, matrimonio).
+Funcionarios de RENIEC y municipalidades que validan, procesan o emiten estos documentos.
 
 #### 1.2.2.2. Lean UX Assumptions
 **Features:**
+**Ciudadano:** 
+Renovación de DNI: formulario precargado, validación de identidad, carga de foto, firma digital, pago en línea, seguimiento del trámite, entrega digital en la billetera.
+Cambio de domicilio: carga de comprobante, validación automática, actualización en DNI digital, notificación a entidades vinculadas.
+Inscripción de nacimiento: registro con acta médica digital, validación de padres, generación automática de partida y DNI del menor, documentos enviados a la billetera.
+Estado tributario: visualización del estado actual (activo/inactivo, deudas, omisiones), documento exportable con QR de verificación.
+Solicitud de RUC: alta del RUC para persona natural con formulario guiado, emisión del documento con QR y firma digital, integración con billetera.
+Matrimonio: agendamiento, validación de identidad por videollamada, lectura del acta, firma digital, emisión de constancia digital enviada a la billetera.
+DNI digital: acceso al documento desde la billetera con estado, metadatos y QR verificable.
+Notificaciones: alertas de vencimientos, cambios de estado, recordatorios de trámites pendientes, confirmaciones de emisión.
+
+**Funcionario:**
+Ver panel de indicadores clave: cantidad de DNIs digitales emitidos, partidas registradas, verificaciones realizadas y solicitudes pendientes, con comparación frente al día anterior.
+Consultar actividad en tiempo real: listado cronológico de las últimas acciones realizadas en el sistema, como emisión de DNI digital, verificación de identidad o registro de partida de nacimiento.
+Buscar documentos digitales: búsqueda por DNI, nombre o ID de documento para acceder rápidamente a registros individuales.
+Buscar ciudadanos, reportes y auditorias. 
+Exportar datos: descarga controlada de registros/documentos en diferentes formatos para reportes o auditorías.
+
 **Business Outcomes:**
 Extraído de el libro Lean UX, 3rd Edition (Gothelf, 2021)
 
 **¿Como podremos solucionar nuestro problema de negocio? ¿Que vamos a medir?**
+Unificación y adopción del sistema:
+Lograr que al menos el 60% de ciudadanos registrados usen activamente la plataforma dentro de los primeros tres meses, lo que evidenciará que prefieren este canal unificado frente a los portales fragmentados actuales.
 
-Podremos solucionar nuestr problema, mediante:
+Reducción del tiempo promedio de trámite:
+Reducir en un 30% el tiempo promedio de procesamiento de trámites clave (ej. renovación de DNI, RUC, matrimonio) dentro de los primeros seis meses de uso de la plataforma.
 
-El ratio de exito y productividad de los hoteles tras el uso de nuestra aplicación:
+Eficiencia operativa del funcionario:
+Incrementar en un 40% la productividad de los funcionarios públicos en cuanto a trámites gestionados por día, gracias a herramientas de trazabilidad, filtros y paneles de control.
+
+Reducción de errores y duplicidades:
+Disminuir en al menos 50% los trámites rechazados o duplicados, mediante formularios validados, precargados y verificaciones automáticas.
+
+**Business Assumptions:**
+
+1. **Creemos que nuestros usuarios necesitan**: Una forma segura, rápida y centralizada de gestionar documentos digitales y trámites con el Estado.
+
+2. **Estas necesidades se pueden satisfacer**: Mediante una plataforma que integre todos los trámites en un solo lugar, con automatización, validación digital, soporte en tiempo real y paneles operativos para funcionarios.
+
+3. **Nuestros clientes iniciales serán**:Ciudadanos mayores de 18 años que tramitan de identidad o estado civil y funcionarios publicos de entidades publicas.
+
+4. **El valor #1 que un cliente quiere de nuestro servicio es:** Reducir el tiempo y complejidad de los trámites públicos.
+   **Los clientes tambien pueden obtener:**Mayor seguridad documental, trazabilidad del estado de sus trámites y soporte personalizado.
 
 
-El numero de reseñas positivas:
+6. **Vamos a obtener la mayoria de los clientes mediante** Integración oficial con entidades del Estado
 
-El indice de uso de nuestra aplicación asi como su retención:
+7. **Vamos a hacer dinero mediante** Financiamiento por presupuesto público y ahorro operativo
 
+8. **Nuestra competencia en el mercado serán** Portales separados de entidades públicas, soluciones locales mal integradas
+   **Vamos a tener ventaja frente a nuestra competencia debido a** La centralización, facilidad de uso, trazabilidad, soporte con IA, y enfoque en el funcionario tanto como en el ciudadano.
 
-1. **Creemos que nuestros usuarios necesitan**: 
+9. **El mayor riesgo de producción es** Falta de interoperabilidad con sistemas actuales del Estado o baja adopción por parte de funcionarios.
+   **Lo resolvemos realizando** Integraciones progresivas con APIs existentes y formación/inducción directa al personal público.
 
-2. **Estas necesidades se pueden satisfacer**:
-
-3. **Nuestros clientes iniciales serán**: 
-
-4. **El valor #1 que un cliente quiere de nuestro servicio es:** 
-   **Los clientes tambien pueden obtener:** 
-
-5. **Vamos a obtener la mayoria de los clientes mediante** 
-
-6. **Vamos a hacer dinero mediante** 
-
-7. **Nuestra competencia en el mercado serán**
-   **Vamos a tener ventaja frente a nuestra competencia debido a**
-
-8. **El mayor riesgo de producción es** 
-   **Lo resolvemos realizando**
-
-9. **Que otros assumptions tenemos, que si son probados como falsos, podria ocasionar que nuestro proyecto fracase:**
+10. **Que otros assumptions tenemos, que si son probados como falsos, podria ocasionar que nuestro proyecto fracase:**
+- Que los ciudadanos están dispuestos a adoptar una billetera digital pública
+- Que las entidades del Estado aceptarán documentos emitidos 100% en digital
 
     
-**Users:**
-
 **User Outcomes & Benefits:**
-¿Que está intentando conseguir el usuario?
-¿Como se quiere sentir el usuario?
-¿Como nuestro producto lo acerca a su objetivo?
-¿Por que nuestros usuarios se interesarian por nuestro producto? ¿Que beneficio podrian obtener?
-¿Que cambio en su comportamiento veremos que nos dira que nuestro objetivo ha sido logrado?
+¿Qué está intentando conseguir el usuario?
+Ciudadano: Trámites públicos más rápidos, transparentes y sin errores.
+Funcionario: Procesos más eficientes, con menos carga operativa y mayor control sobre los trámites gestionados.
+¿Cómo se quiere sentir el usuario?
+Ciudadano: Seguro, empoderado, informado y libre de frustraciones administrativas.
+Funcionario: Confiado, respaldado por el sistema, eficiente y con visibilidad sobre su desempeño.
+¿Cómo nuestro producto lo acerca a su objetivo?
+Ciudadano: Centralizando todos sus trámites y documentos en un solo lugar, con seguimiento en tiempo real y soporte inteligente.
+Funcionario: Brindando acceso a herramientas de gestión, verificación, trazabilidad y métricas clave en una sola plataforma.
+¿Por qué nuestros usuarios se interesarían por nuestro producto? ¿Qué beneficio podrían obtener?
+Ciudadano: Ahorro de tiempo, eliminación de colas físicas, menos errores y pérdida de documentos, trazabilidad total.
+Funcionario: Menor carga operativa, menos errores por duplicidad o falta de datos, control de calidad y cumplimiento de metas institucionales.
+¿Qué cambio en su comportamiento veremos que nos dirá que nuestro objetivo ha sido logrado?
+Ciudadano: Cuando la relación entre el Estado y el ciudadano mejore, el ciudadano pueda acceder a servicios y trámites públicos con facilidad y agilidad.
+Funcionario: Cuando los funcionarios puedan resolver trámites más rápido, con menos fricción, y tengan claridad sobre su rendimiento y el impacto de su gestión.
 
 
 **User Assumptions:** 
-**1. ¿Quien es el usuario?**
-**2. ¿Donde entra nuestro producto en su trabajo o su vida?**
+**1. ¿Quien es el usuario?** Ciudadanos y funcionarios publicos. 
+**2. ¿Donde entra nuestro producto en su trabajo o su vida?** 
+Ciudadanos: Durante la realización de trámites. 
+Funcionarios: Durante su trabajo, cuando necesiten consultar información y verificar trámites. 
 **3. ¿Cual es el problema que nuestro producto soluciona?**
+Ciudadanos: Largas colas, portales dispersos y poco intuitivos, procesos redundantes y lentos.
+Funcionarios:Herramientas fragmentadas, dificultad para acceder o verificar datos de ciudadanos, falta de trazabilidad.
 **4. ¿Como y cuando nuestro producto es usado?**
+Ciudadanos: En línea desde su computadora, al momento de realizar un trámite, revisar documentos, recibir notificaciones o compartir documentos validados.
+Funcionarios: Durante su jornada laboral diaria, usan el dashboard para gestionar casos, verificar documentos, consultar KPIs de atención, revisar solicitudes y auditar procesos.
 **5. ¿Que caracteristicas son importantes?**
+Ciudadanos: Interfaz intuitiva, seguridad de datos, visualizacion clara de documentos
+Funcionarios: Búsqueda rapida, dashboards, gestión eficiente de bandeja de trámites.
 **6. ¿Como deberia nuestro producto verse o comportarse?**
-
-**Business Assumptions:**
+Ciudadanos: Simple, amigable y confiable.
+Funcionarios: Profesional, ordenado y potente.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements
 Siguiendo el siguiente formato, extraido del libro "Lean Ux, 3rd edition", escrito por Jeff Gothelf y Josh Seiden: "We believe that [business outcome] will be achieved if [user] attains [user benefit] with [feature]".
 
+1. Creemos que reducir el tiempo promedio para completar trámites gubernamentales se logrará si los ciudadanos obtienen la capacidad de realizar trámites en línea sin tener que acudir a oficinas físicas ni volver a ingresar sus datos con un catálogo digital unificado que incluya formularios precargados y seguimiento del estado en tiempo real.
+2. Creemos que aumentar la confianza en los documentos digitales oficiales se logrará si los ciudadanos obtienen la certeza de que sus documentos son válidos, verificables y están actualizados con una billetera digital que contenga documentos asegurados mediante códigos QR y verificación en blockchain.
+3. Creemos que mejorar la satisfacción general de los ciudadanos con los servicios del Estado se logrará si los ciudadanos obtienen una experiencia centralizada y transparente para gestionar procesos oficiales con una plataforma única que brinde acceso a múltiples instituciones públicas.
+4. Creemos que reducir los errores y retrasos en la gestión de trámites se logrará si los funcionarios públicos obtienen acceso rápido a información validada y actualizada de los ciudadanos con un panel de verificación que incluya filtros, indicadores clave de desempeño (KPIs) y herramientas de trazabilidad.
+5. Creemos que reducir los costos operativos del gobierno se logrará si los funcionarios públicos obtienen una plataforma centralizada que evite la duplicación de datos y mejore la eficiencia con una solución interoperable que estandarice los procesos entre entidades públicas.
 #### 1.2.2.4. Lean UX Canvas
+<img width="694" height="421" alt="image" src="https://github.com/user-attachments/assets/6a5b7a03-a335-4339-a1db-e20022f109a9" />
 
 ## 1.3. Segmentos objetivo
 
