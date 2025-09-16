@@ -41,11 +41,11 @@
 - **Gestión de perfil**: Datos personales, contacto, autenticación.
 
 **Para funcionarios públicos**:
-
-- **Admin central (Ministerio de Transformación Digital)**: Gestión de roles, permisos, tableros de trámites, SLA, colas.
-- **Coordinador de entidad**: Catálogo de trámites, gestión de casos y KPIs locales.
 - **Principio de mínimo privilegio**: Accesos según función.
-- **Bitácora/Auditoría**: Registro de todas las acciones para trazabilidad.
+- **Visualización de métricas clave en tarjetas**: Puede visualizar los dnis digitales, partidas, verificaciones y solicitudes realizadas. Con comparativa con el rendimiento del dia anterior. Filtrado de datos por rango de timepo o región. 
+- **Visualización de Rendimiento por región**: Indicador de eficiencia operativa por región (Lima, Arequipa, Cusco, Piura).
+- **Actividad en tiempo real**: Últimos eventos realizados por funcionarios (tipo de acción, persona, lugar, hora)
+- **Visualización de tablas**: Con Lista con todos los documentos emitidos, ciudadanos con tramites recientes, oficinas de dicha entidad, reportes, auditorías, configuración
 
 ## 4) Usuarios / Público Objetivo
 
