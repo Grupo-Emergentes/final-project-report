@@ -212,26 +212,41 @@ Funcionarios de RENIEC y municipalidades que validan, procesan o emiten estos do
 #### 1.2.2.2. Lean UX Assumptions
 **Features:**
 **Ciudadano:** 
+
 Renovación de DNI: formulario precargado, validación de identidad, carga de foto, firma digital, pago en línea, seguimiento del trámite, entrega digital en la billetera.
+
 Cambio de domicilio: carga de comprobante, validación automática, actualización en DNI digital, notificación a entidades vinculadas.
+
 Inscripción de nacimiento: registro con acta médica digital, validación de padres, generación automática de partida y DNI del menor, documentos enviados a la billetera.
+
 Estado tributario: visualización del estado actual (activo/inactivo, deudas, omisiones), documento exportable con QR de verificación.
+
 Solicitud de RUC: alta del RUC para persona natural con formulario guiado, emisión del documento con QR y firma digital, integración con billetera.
+
 Matrimonio: agendamiento, validación de identidad por videollamada, lectura del acta, firma digital, emisión de constancia digital enviada a la billetera.
+
 DNI digital: acceso al documento desde la billetera con estado, metadatos y QR verificable.
+
 Notificaciones: alertas de vencimientos, cambios de estado, recordatorios de trámites pendientes, confirmaciones de emisión.
 
 **Funcionario:**
+
 Ver panel de indicadores clave: cantidad de DNIs digitales emitidos, partidas registradas, verificaciones realizadas y solicitudes pendientes, con comparación frente al día anterior.
+
 Consultar actividad en tiempo real: listado cronológico de las últimas acciones realizadas en el sistema, como emisión de DNI digital, verificación de identidad o registro de partida de nacimiento.
+
 Buscar documentos digitales: búsqueda por DNI, nombre o ID de documento para acceder rápidamente a registros individuales.
+
 Buscar ciudadanos, reportes y auditorias. 
+
 Exportar datos: descarga controlada de registros/documentos en diferentes formatos para reportes o auditorías.
+
 
 **Business Outcomes:**
 Extraído de el libro Lean UX, 3rd Edition (Gothelf, 2021)
 
 **¿Como podremos solucionar nuestro problema de negocio? ¿Que vamos a medir?**
+
 Unificación y adopción del sistema:
 Lograr que al menos el 60% de ciudadanos registrados usen activamente la plataforma dentro de los primeros tres meses, lo que evidenciará que prefieren este canal unificado frente a los portales fragmentados actuales.
 
@@ -272,37 +287,57 @@ Disminuir en al menos 50% los trámites rechazados o duplicados, mediante formul
 
     
 **User Outcomes & Benefits:**
-¿Qué está intentando conseguir el usuario?
+
+**¿Qué está intentando conseguir el usuario?**
+
 Ciudadano: Trámites públicos más rápidos, transparentes y sin errores.
+
 Funcionario: Procesos más eficientes, con menos carga operativa y mayor control sobre los trámites gestionados.
-¿Cómo se quiere sentir el usuario?
+
+**¿Cómo se quiere sentir el usuario?**
+
 Ciudadano: Seguro, empoderado, informado y libre de frustraciones administrativas.
+
 Funcionario: Confiado, respaldado por el sistema, eficiente y con visibilidad sobre su desempeño.
-¿Cómo nuestro producto lo acerca a su objetivo?
+
+**¿Cómo nuestro producto lo acerca a su objetivo?**
+
 Ciudadano: Centralizando todos sus trámites y documentos en un solo lugar, con seguimiento en tiempo real y soporte inteligente.
+
 Funcionario: Brindando acceso a herramientas de gestión, verificación, trazabilidad y métricas clave en una sola plataforma.
-¿Por qué nuestros usuarios se interesarían por nuestro producto? ¿Qué beneficio podrían obtener?
+
+**¿Por qué nuestros usuarios se interesarían por nuestro producto? ¿Qué beneficio podrían obtener?**
+
 Ciudadano: Ahorro de tiempo, eliminación de colas físicas, menos errores y pérdida de documentos, trazabilidad total.
+
 Funcionario: Menor carga operativa, menos errores por duplicidad o falta de datos, control de calidad y cumplimiento de metas institucionales.
-¿Qué cambio en su comportamiento veremos que nos dirá que nuestro objetivo ha sido logrado?
+
+**¿Qué cambio en su comportamiento veremos que nos dirá que nuestro objetivo ha sido logrado?**
+
 Ciudadano: Cuando la relación entre el Estado y el ciudadano mejore, el ciudadano pueda acceder a servicios y trámites públicos con facilidad y agilidad.
+
 Funcionario: Cuando los funcionarios puedan resolver trámites más rápido, con menos fricción, y tengan claridad sobre su rendimiento y el impacto de su gestión.
 
-
 **User Assumptions:** 
+
 **1. ¿Quien es el usuario?** Ciudadanos y funcionarios publicos. 
+
 **2. ¿Donde entra nuestro producto en su trabajo o su vida?** 
 Ciudadanos: Durante la realización de trámites. 
 Funcionarios: Durante su trabajo, cuando necesiten consultar información y verificar trámites. 
+
 **3. ¿Cual es el problema que nuestro producto soluciona?**
 Ciudadanos: Largas colas, portales dispersos y poco intuitivos, procesos redundantes y lentos.
 Funcionarios:Herramientas fragmentadas, dificultad para acceder o verificar datos de ciudadanos, falta de trazabilidad.
+
 **4. ¿Como y cuando nuestro producto es usado?**
 Ciudadanos: En línea desde su computadora, al momento de realizar un trámite, revisar documentos, recibir notificaciones o compartir documentos validados.
 Funcionarios: Durante su jornada laboral diaria, usan el dashboard para gestionar casos, verificar documentos, consultar KPIs de atención, revisar solicitudes y auditar procesos.
+
 **5. ¿Que caracteristicas son importantes?**
 Ciudadanos: Interfaz intuitiva, seguridad de datos, visualizacion clara de documentos
 Funcionarios: Búsqueda rapida, dashboards, gestión eficiente de bandeja de trámites.
+
 **6. ¿Como deberia nuestro producto verse o comportarse?**
 Ciudadanos: Simple, amigable y confiable.
 Funcionarios: Profesional, ordenado y potente.
@@ -389,9 +424,35 @@ En esta sección, nos centraremos en definir el significado de ciertos términos
 Para los As-Is y To-Be Scenario Maps se utilizará LucidChart / Miro.
 ## 3.2. User Stories
 
-| Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+| Epic | Título | Descripción | 
+|-----------------|--------|-------------|
+| EP1 |Información del Producto|Como visitante del sitio web, quiero obtener información relacionada al producto que se ofrece.| 
+| EP2 |Gestión Integral de Documentos Digitales|Como ciudadano usuario de la aplicación web, quiero tener todos mis documentos oficiales disponibles en una billetera digital única, para presentarlos en cualquier momento de forma confiable| 
+| EP3 |Trámites Unificados y Digitalizados|Como ciudadano usuario de la aplicación web, quiero realizar trámites públicos desde un solo lugar con formularios precargados y procesos digitalizados, para ahorrar tiempo y evitar errores.| 
+| EP4 |Paneles de Control y KPIs para Funcionarios|Como funcionario público, quiero acceder a un panel con indicadores clave, reportes y herramientas de trazabilidad, para gestionar trámites de forma más eficiente y medir mi desempeño.|
+|EP5|Validación y Revisión de Trámites|Como funcionario público, quiero revisar, validar y aprobar los trámites digitales presentados por los ciudadanos, para garantizar la veracidad de la información y la correcta emisión de documentos oficiales.| 
+| EP6 |Seguimiento y Notificaciones en Tiempo Real|Como ciudadano usuario de la aplicación web, quiero recibir notificaciones y hacer seguimiento en tiempo real al estado de mis trámites, para mantenerme informado y evitar retrasos.| 
+| EP7 |Creación de perfil|Como usuario de la aplicación web, quiero crear y acceder a mi perfil de usuario. | 
+| EP8 |API Restful para gestión de tramites y documentos|Como usuario de la aplicación web, quiero crear y acceder a mi perfil de usuario. | 
+
+| Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
 |-----------------|--------|-------------|--------------------------|----------------------------|
-|                 |        |             |                          |                            |
+|HU01|Obtener información de la empresa|Como visitante del sitio web, quiero obtener información adicional sobre la empresa a cargo del producto.| Given el visitante se encuentra en la sección de nosotros. When observa la información relevante sobre la empresa. Then se interesa en saber más sobre el producto. Y se redirecciona a la aplicación web/móvil.|EP01|
+|HU02|Informarse sobre los beneficios del producto|Como visitante del sitio web, quiero informarme sobre los beneficios del producto ofrecido.| <b>Given</b> el visitante se encuentra en la sección de beneficios. <br><b>When</b> observa los beneficios que se ofrecen al usar una solución.<br><b>Then</b> se interesa en saber más del producto.<br><b>Y</b> se redirecciona a la aplicación web/móvil.|EP01|
+|HU03|Conocer los testimonios de los clientes pasados|Como visitante, quiero accceder a los testimonios de clientes anteriores para evaluar la experiencia y la calidad de atención al cliente| <b>Given</b> el visitante se encuentra en la sección de beneficios. <br><b>When</b> observa los beneficios que se ofrecen al usar una solución.<br><b>Then</b> se interesa en saber más del producto.<br><b>Y</b> se redirecciona a la aplicación web/móvil.|EP01|
+|HU04|Informarse sobre los beneficios del producto|Como visitante, quiero conocer los diferentes planes de subscripción disponibles para determinar cuál se ajusta a mis necesidades.| <b>Given</b> el visitante se encuentra en la sección de planes de subscripción disponibles. <br><b>When</b> visualiza los diferentes planes<br><b>Then</b> puede determinar su plan de subscripción ideal.|EP01|
+|HU05|Visualizar documentos|Como ciudadano, quiero acceder y visualizar un documento almacenado en mi billetera digital para utilizarlo en diferentes procesos| <b>Given</b> el ciudadano se encuentra en la sección de Billetera digital <br><b>When</b> ingresa a la sección individual de un documento<br><b>Then</b> puede visualizarlo, acompañado de información sobre su contrato (Dirección del contrato, Hash del Contrato y Red), información personal y el codigo QR |EP02|
+|HU06|Generar un codigo QR|Como ciudadano, quiero generar un codigo QR válido para mi documento| <b>Given</b> el ciudadano se encuentra en la sección individual de un documento <br><b>When</b> genera un codigo QR para el documento<br><b>Then</b> puede visualizar un nuevo codigo QR para dicho documento.|EP02|
+|HU07|Solicitar el ingreso de un documento|Como ciudadano, quiero registrar un documento para que sea almacenado digitalmente en el sistema| <b>Given</b> el ciudadano se encuentra en la sección de Añadir documento <br><b>When</b> llene los datos e imágenes correspondientes<br><b>And</b> sean validos <b>Then</b> su documento se habrá registrado|EP02|
+|HU08|Compartir un documento|Como ciudadano, quiero descargar mi documento| <b>Given</b> el ciudadano se encuentra en la sección individual de un documento <br><b>When</b> descargue el formato <br><b>Then</b> puede visualizar un archivo pdf con su dni digital. |EP02|
+|HU08|Compartir un documento|Como ciudadano, quiero descargar mi documento| <b>Given</b> el ciudadano se encuentra en la sección individual de un documento <br><b>When</b> descargue el formato <br><b>Then</b> puede visualizar un archivo pdf con su dni digital. |EP02|
+|HU09|Renovación de DNI|Como ciudadano, quiero renovar mi DNI de manera digital desde la sección de servicios de la RENIEC.| <b>Given</b> el ciudadano accede a la sección de servicios de la RENIEC <br><b>When</b> selecciona la opción de Renovación de DNI y completa los datos requeridos <br><b>Then</b> el sistema genera una solicitud de renovación y el ciudadano puede visualizar la constancia en PDF. |EP03|
+|HU10|Cambio de domicilio|Como ciudadano, quiero actualizar mi domicilio en mi DNI desde la sección de servicio de la RENIEC| <b>Given</b> el ciudadano accede a la sección de servicios de la RENIEC <br><b>When</b> selecciona la opción de Cambio de domicilio e ingresa la nueva dirección <br><b>Then</b> el sistema actualiza la información y genera un comprobante en PDF. |EP03|
+|HU11|Inscripción de nacimiento|Como ciudadano, quiero inscribir un nacimiento de manera digital desde la sección de servicios de la RENIEC.| <b>Given</b> el ciudadano accede a la sección de servicios de la RENIEC <br><b>When</b> selecciona la opción de Inscripción de nacimiento y llena el formulario correspondiente <br><b>Then</b> el sistema genera la partida de nacimiento digital en PDF. |EP03|
+|HU12|Consulta de estado tributario|Como ciudadano, quiero consultar mi estado tributario desde la sección de servicios de la SUNAT.| <b>Given</b> el ciudadano accede a la sección de servicios de la SUNAT <br><b>When</b> selecciona la opción de Consulta de estado tributario <br><b>Then</b> el sistema muestra el estado actualizado y permite descargar un reporte en PDF. |EP03|
+|HU13|Solicitud de RUC|Como ciudadano, quiero solicitar un número de RUC de manera digital desde la sección de servicios  de la SUNAT.| <b>Given</b> el ciudadano accede a la sección de servicios  de la SUNAT <br><b>When</b> selecciona la opción de Solicitud de RUC e ingresa los datos requeridos <br><b>Then</b> el sistema genera un comprobante de la solicitud en PDF. |EP03|
+|HU14|Registro de matrimonio|Como ciudadano, quiero registrar mi matrimonio de manera digital desde la sección de servicios.| <b>Given</b> el ciudadano accede a la sección de servicios <br><b>When</b> selecciona la opción de Registro de matrimonio y completa los datos solicitados <br><b>Then</b> el sistema genera el acta de matrimonio digital en PDF. |EP03|
+|HU15|Buscar y filtrar servicios|Como ciudadano, quiero buscar y filtrar los servicios disponibles para encontrar fácilmente el trámite que necesito.| <b>Given</b> el ciudadano se encuentra en la sección de servicios <br><b>When</b> ingresa un término de búsqueda o aplica un filtro <br><b>Then</b> el sistema muestra la lista de servicios que coinciden con los criterios seleccionados. |EP03|
 
 
 ## 3.3. Impact Mapping
