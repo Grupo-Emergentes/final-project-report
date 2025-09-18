@@ -6,8 +6,8 @@
     <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"></img><br>
     <strong>Ingeniería de Software</strong><br>
-    <strong>Arquitectura de Software Emergentes - SALON</strong><br>
-    <strong>Profesor: De Los Rios </strong><br>
+    <strong>Arquitectura de Software Emergentes - 2520</strong><br>
+    <strong>Profesor: Christian Luis De Los Rios Fernandez  </strong><br>
     <br>INFORME
 </p>
 
@@ -27,7 +27,7 @@
 | :---------------------------------: | :--------: |
 |  | U202211572 |
 | Giacomo Zoppi Rodriguez | U202210029 |
-| Integrante 3    | U202210192 |
+| Mathias Tsuneo Kunimoto Watanabe   | U202210148 |
 | Integrante 4    | u20221a322 |
 
 
@@ -57,7 +57,7 @@ TB1
     <tr>
         <td>TB1</td>
         <td>29/03/2024</td>
-        <td>Mauricio Abraham Rivo Rojas Sánchez</td>
+        <td>Mathias Tsuneo Kunimoto Watanabe</td>
         <td>
         <ul>
         <li> Software Configuration Management </li>
@@ -130,6 +130,10 @@ MISION: Facilitar el acceso de los ciudadanos peruanos a servicios y documentos 
 | Miembros del equipo                             | Codigo Estudiante | Carrera                | Conocimientos / Habilidades |
 | ----------------------------------------------- | ----------------- | ---------------------- | --------------------------- |
 | Giacomo Zoppi Rodriguqez | U202210029            | Ingenieria de software | C++, C#, javascript y Python            |
+| Mathias Kunimoto Watanabe | U202210148            | Ingenieria de software | Cuento con sólida experiencia en desarrollo frontend, trabajando con tecnologías como React, Next.js, Vue.js, JavaScript y Tailwind CSS. Aplico principios de diseño moderno y rendimiento optimizado para construir interfaces intuitivas, escalables y de alta calidad. Me considero una persona sociable, organizada y con gran capacidad de adaptación, lo que me permite integrarme con facilidad en equipos dinámicos y colaborar eficazmente hacia el cumplimiento de objetivos comunes. Siempre busco superar mis límites: aprendo constantemente, me mantengo actualizado con las mejores prácticas del sector y aporto con una actitud proactiva, comprometida y orientada a resultados.            |
+| PONER NOMBRE | U202210029            | Ingenieria de software | C++, C#, javascript y Python            |
+| PONER NOMBRE | U202210029            | Ingenieria de software | C++, C#, javascript y Python            |
+
 
 
 ## 1.2. Solution Profile
