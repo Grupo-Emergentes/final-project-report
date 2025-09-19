@@ -448,8 +448,9 @@ UXPressia.
 Para elaborar los User Personas, Empathy Maps, Journey Maps e Impact Maps se utilizará 
 UXPressia.
 ### 2.3.4. Empathy Mapping
-Para elaborar los User Personas, Empathy Maps, Journey Maps e Impact Maps se utilizará 
-UXPressia.
+
+**User Empathy Mapping <img width="1050" height="1570" alt="img-Empathy Mapping" src="https://github.com/user-attachments/assets/0b079e7e-3503-416b-85a1-ad52e7b72148" />**
+
 ### 2.3.5. As-is Scenario Mapping
 Para los As-Is y To-Be Scenario Maps se utilizará LucidChart / Miro.
 ## 2.4. Ubiquitous Language
