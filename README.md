@@ -445,8 +445,9 @@ Para elaborar los User Personas, Empathy Maps, Journey Maps e Impact Maps se uti
 UXPressia.
 ### 2.3.2. User Task Matrix
 ### 2.3.3. User Journey Mapping
-Para elaborar los User Personas, Empathy Maps, Journey Maps e Impact Maps se utilizará 
-UXPressia.
+
+**User Journey Mapping <img width="1793" height="1593" alt="img-user-journey-mapping" src="https://github.com/user-attachments/assets/90b4ae30-e021-4da2-8d69-a38b79e76ea3" />**
+
 ### 2.3.4. Empathy Mapping
 Para elaborar los User Personas, Empathy Maps, Journey Maps e Impact Maps se utilizará 
 UXPressia.
