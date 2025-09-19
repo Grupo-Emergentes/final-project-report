@@ -440,10 +440,39 @@ AQUI VA UNA DESCRIPCION
 
 ## 2.3. Needfinding
 
-### 2.3.1. User Personas
-Para elaborar los User Personas, Empathy Maps, Journey Maps e Impact Maps se utilizará 
-UXPressia.
+### 2.3.1 User Personas
+
+**User persona – [Principal](<img width="1050" height="1990" alt="img-user-persona-1" src="https://github.com/user-attachments/assets/3e32b039-7424-4ad0-b4b9-33f6a9479897" />)**
+
+**User persona – [Secundario](<img width="1050" height="2110" alt="img-user-persona-2" src="https://github.com/user-attachments/assets/af93a27d-fa46-40cc-9b36-8b36c4aa482a" />)**
+
+
 ### 2.3.2. User Task Matrix
+
+| Funcionalidad                   | FREQUENCY (María Aguilar) | IMPORTANCE (María Aguilar) | FREQUENCY (Carlos Mendoza) | IMPORTANCE (Carlos Mendoza) |
+|---------------------------------|----------------------------|-----------------------------|-----------------------------|------------------------------|
+| Autenticarse en la plataforma   | Always                    | High                       | Always                     | High                        |
+| Visualizar perfil de usuario    | Always                    | High                       | Sometimes                  | Medium                      |
+| Actualizar datos de contacto    | Sometimes                 | Medium                     | Never                      | Low                         |
+| Acceder a la billetera digital  | Always                    | High                       | Sometimes                  | Medium                      |
+| Visualizar un documento específico | Always                 | High                       | Always                     | High                        |
+| Generar y mostrar código QR     | Always                    | High                       | Always                     | High                        |
+| Descargar documento en PDF      | Always                    | High                       | Sometimes                  | Medium                      |
+| Buscar y filtrar servicios/trámites | Always                | High                       | Never                      | Low                         |
+| Iniciar un nuevo trámite        | Always                    | High                       | Never                      | Low                         |
+| Hacer seguimiento a un trámite  | Always                    | High                       | Sometimes                  | Medium                      |
+| Recibir notificaciones          | Always                    | High                       | Sometimes                  | Medium                      |
+| Consultar historial de notificaciones | Always              | Medium                     | Sometimes                  | Medium                      |
+| Ver panel de control (Dashboard)| Never                     | Low                        | Always                     | High                        |
+| Filtrar métricas por tiempo o región | Never                 | Low                        | Always                     | High                        |
+| Buscar ciudadanos o documentos  | Never                     | Low                        | Always                     | High                        |
+| Revisar un trámite pendiente    | Never                     | Low                        | Always                     | High                        |
+| Validar documentos adjuntos     | Never                     | Low                        | Always                     | High                        |
+| Cambiar el estado de un trámite | Never                     | Low                        | Always                     | High                        |
+| Generar reportes y auditorías   | Never                     | Low                        | Always                     | High                        |
+| Acceder según rol               | Always                    | High                       | Always                     | High                        |
+
+
 ### 2.3.3. User Journey Mapping
 
 **User Journey Mapping <img width="1793" height="1593" alt="img-user-journey-mapping" src="https://github.com/user-attachments/assets/90b4ae30-e021-4da2-8d69-a38b79e76ea3" />**
