@@ -532,16 +532,84 @@ UXPressia.
 ## 4.2. Strategic-Level Domain-Driven Design
 
 ### 4.2.1. EventStorming
-recomiendo echarle un ojo a estos: 
-https://learning.oreilly.com/library/view/learning-domain-driven-design/9781098100124/ch12.html
-https://learning.oreilly.com/library/view/patterns-principles-and/9781118714706/part03.xhtml
-https://domainstorytelling.org/#dst-requirements
-https://openpracticelibrary.com/practice/event-storming/ 
+Paso 1: Exploración Libre
+Se arranca con una lluvia de ideas para listar eventos del negocio, siempre escritos en pasado. Usamos post-its en Miro para plasmar todo lo que “ya ocurrió” y mapear un panorama inicial de lo que el sistema debería cubrir.
+
+Paso 2: Línea de Tiempo
+Los eventos se ordenan en secuencia. Primero se construye un happy path (todo sale bien) y luego se agregan ramificaciones con fallas o resultados alternativos. Esto ayuda a ver cómo fluye el proceso y qué trayectorias posibles tiene.
+
+Paso 3: Puntos de Dolor
+Se marcan problemas o riesgos, como cuellos de botella, vacíos de documentación o falta de conocimiento.
+
+Paso 4: Eventos Clave
+De los eventos ya mapeados, se señalan los que representan cambios importantes en el proceso o en el contexto.
+
+Paso 5: Comandos
+Se anotan las acciones que generan los eventos, escritas en imperativo (ej. “Validar documento”). Aquí también se identifican los actores que ejecutan esos comandos.
+
+Paso 6: Políticas
+Algunos comandos no dependen de usuarios sino de reglas automáticas. En este paso se asignan esas políticas para que ciertas acciones se disparen solas cuando ocurre un evento.
+
+Paso 7: Modelos de Lectura
+Se definen vistas de datos que alimentarán consultas, reportes o pantallas del frontend, en función de los comandos.
+
+Paso 8: Sistemas Externos
+Se incorporan plataformas fuera del dominio (ej. RENIEC, SUNAT) que envían o reciben información mediante eventos o comandos.
+
+Paso 9: Aggregates
+Se agrupan conceptos relacionados que reciben comandos y generan eventos, representando unidades lógicas del dominio.
+
+Paso 10: Bounded Contexts
+Finalmente, los aggregates que comparten reglas o funciones se organizan en contextos delimitados, que sirven como bloques coherentes de funcionalidad dentro del sistema.
+
+
 ### 4.2.2 Candidate Context Discovery
+Definimos los siguientes Bounded Context con el proceso de Event Storming:
+- Profiles Bounded Context: Gestionar los usuarios y sus perfiles
+- IAM Bounded Context: Se encarga del acceso de usuarios, login y envío de código de acceso al correo de usuario. 
+- Procedure Bounded Context: Engloba todos los tramites del usuario. 
+- Wallet Bounded Context: Gestiona los documentos del usuario. 
+- Analytics Bounded Context: Gestiona las metricas y auditorias del funcionario publico
+- Notifications Bounded Context: Se encarga del envio de notificaciones al usuario. 
+<img width="1165" height="753" alt="image" src="https://github.com/user-attachments/assets/1c12dd46-7cb5-4a1d-a797-697f81d251e1" />
+
 
 ### 4.2.3 Domain Message Flows Modeling
+Escenario 1: El El ciudadano recibe una notificación cuando su tramite es aprobado por un funcionario
+El usuario una vez solicita la aprobación de un trámite adjunto. Junto a ello, envía la información y las imagenes requeridas. Cuando el funcionario publico revise el documento y lo apruebe o desapruebe, entonces le llegará al usuario una notificación. 
+<img width="963" height="444" alt="image" src="https://github.com/user-attachments/assets/0bf13284-3469-4742-b8ab-288b1086adc2" />
+
+Escenario 2: El ciudadano recibe una notificación cuando su documento es aprobado como válido
+El usuario una vez solicita la aprobación de un documento adjunto. Junto a ello, envía la información y las imagenes requeridas. Cuando se aprobado, le deberá llegar una notificación al usuario ciudadano. 
+<img width="954" height="433" alt="image" src="https://github.com/user-attachments/assets/f58792f0-80a5-4af3-abee-d4d2c5c0b905" />
+
+Escenario 3: El funcionario publico accede a analiticas sobre los ultimos tramites aprobados
+El funcionario publico desde las Analiticas, debe poder visualizar los ultimos tramites aprobados en su entidad así como aprobar alguno.
+<img width="959" height="439" alt="image" src="https://github.com/user-attachments/assets/ce44db21-1519-43e0-9c8a-3359eb81c2ad" />
+
+Escenario 4: El ciudadano hace un tramite, consultando información de su perfil
+Cuando el ciudadano hace un tramite, dicho tramite debe salir con su nombre, dni, etc. Datos que son extraidos de su perfil, para evitar doble ingreso de datos o ingreso de datos erroneo por parte del ciudadano. 
+<img width="965" height="449" alt="image" src="https://github.com/user-attachments/assets/43fd6584-6c43-4c99-9e10-e567e6f1f6f2" />
 
 ### 4.2.4 Bounded Context Canvases
+
+#### Procedure Management Bounded Context
+<img width="1014" height="716" alt="image" src="https://github.com/user-attachments/assets/b1a90ca1-58b6-41eb-a77b-57a077861e0a" />
+
+#### Wallet Bounded Context
+<img width="1061" height="740" alt="image" src="https://github.com/user-attachments/assets/3cfcbabf-3971-48fc-bea2-e4fc217fca5f" />
+
+#### IAM Bounded Context
+<img width="1010" height="716" alt="image" src="https://github.com/user-attachments/assets/91fcbb4d-ac22-44aa-8f20-3dcc9e4291b9" />
+
+#### Profiles Bounded Context
+<img width="1018" height="714" alt="image" src="https://github.com/user-attachments/assets/256ac56b-e379-4fb0-9ee1-23652ae903ab" />
+
+#### Notification Bounded Context
+<img width="1016" height="730" alt="image" src="https://github.com/user-attachments/assets/214c7efa-0595-48c5-a066-12e61f6a5727" />
+
+#### Analytics Bounded Context
+<img width="1040" height="733" alt="image" src="https://github.com/user-attachments/assets/fb619f27-072a-4fb3-ba5f-bd8d29b325a9" />
 
 ### 4.2.5 Context Mapping
 
