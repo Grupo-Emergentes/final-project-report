@@ -13,9 +13,9 @@
 
 <center>
 
-#### Startup: ** **
+#### Startup: **Digital**
 
-#### Product: ****
+#### Product: **Peru Digital**
 
 </center>
 
@@ -33,79 +33,112 @@
 
 </div>
 
+# Registro de Versiones del Informe 
+<table>
+  <thead>
+    <tr>
+      <th>Versión</th>
+      <th>Fecha</th>
+      <th>Participantes</th>
+      <th>Observaciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">TB1</td>
+      <td rowspan="4">29/03/2024</td>
+      <td>Mathias Tsuneo Kunimoto Watanabe</td>
+      <td>
+        User Persona <br>
+        User Task Matrix<br>
+        Empathy Mapping <br>
+        To be & As is scenarios
+      </td>
+    </tr>
+    <tr>
+      <td>Giacomo Zoppi Rodriguez</td>
+      <td>
+        Solution Profile <br>
+        Lean Ux Process <br>
+        User Stories <br>
+        Event Storming
+      </td>
+    </tr>
+    <tr>
+      <td>Janiel Franz Escalante</td>
+      <td>
+        Quality Attributes <br>
+        Scenario Atributes <br>
+        Segmento Objetivo
+      </td>
+    </tr>
+    <tr>
+      <td>Valentino Sebastian Cervantes Erequita</td>
+      <td>
+        Software Architecture Landscape Diagram <br>
+        Software Architecture Context Diagram <br>
+        Software Architecture Container Diagram <br>
+        Software Architecture Deployment Diagram
+      </td>
+    </tr>
+  </tbody>
+</table>
+
 # Project Report Collaboration Insights
 
 En esta sección, regirstraremos los cambios y logros que se completaron en cada entrega del reporte.
 
-TB1
+TB1: 
+La entrega TB1 finalizó con éxito y están documentadas en el siguiente repositorio de Github perteneciente a la organización del equipo. Durante el desarrollo del informe se tuvieron en cuenta los siguientes aspectos:
+
+Se redactaron y estructuraron los contenidos asignados a cada miembro utilizando el formato Markdown. Luego, se realizaron commits para garantizar el avance en el repositorio. Se completaron los siguientes puntos: capitulos I-IV, conclusiones y video exposición, en colaboración del equipo. Se llevaron a cabo reuniones semanales para hacer una revisión de lo elaborado por el grupo.
 
 # Student Outcome
 
+En Ingeniería de Software, el logro del curso contribuye a alcanzar el:
 
-# Registro de Versiones del Informe
+**ABET – EAC - Student Outcome 3:** Capacidad de comunicarse efectivamente con un rango de audiencias.  
+
+**Criterio:** La capacidad de adquirir y aplicar nuevos conocimientos según sea necesario, utilizando estrategias de aprendizaje apropiadas.  
+
+En el siguiente cuadro se describen las acciones realizadas por cada integrante y las conclusiones del equipo, que sustentan el haber alcanzado el logro del **ABET-EAC Student Outcome** durante el desarrollo del proyecto.  
 
 <table>
-    <thead>
-    <tr>
-        <th>Version</th>
-        <th>Fecha</th>
-        <th>Participantes</th>
-        <th>Observaciones</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>TB1</td>
-        <td>29/03/2024</td>
-        <td>Mathias Tsuneo Kunimoto Watanabe</td>
-        <td>
-        <ul>
-        <li> Software Configuration Management </li>
-        <li> Landing Page, Services & Applications Implementation  </li>
-        </ul>
-        </td>
-    </tr>
-    <tr>
-        <td>TB1</td>
-        <td>29/03/2024</td>
-        <td>Giacomo Zoppi Rodriguez</td>
-        <td>
-        <ul>
-        <li> Competidores</li>
-        <li> Entrevistas</li>
-        <li> Needfinding </li>
-        <li> Ubiquitous Language</li>
-        </ul>
-        </td>
-    </tr>
-    <tr>  
-    </tr>
-    <tr>
-        <td>TB1</td>
-        <td>29/03/2024</td>
-        <td>Integrante 3</td>
-        <td>
-        <ul>
-        <li> StartUp Profile</li>
-        <li> Solution Profile </li>
-        <li> Segmento Objetivo </li>
-        </ul>
-        </td>
-    </tr>
-    <tr>
-        <td rowspan="1">TB1</td>
-        <td rowspan="1">29/03/2024</td>
-        <td>Valentino Sebastian Cervantes Erequita</td>
-        <td>
-        <ul>
-        <li> Software Architecture Landscape Diagram</li>
-        <li> Software Architecture Context Diagram </li>
-        <li> Software Architecture Container Diagram </li>
-        <li> Software Architecture Deplyment Diagram </li>
-        </ul>
-        </td>
-    </tr>
-    </tbody>
+  <tr>
+    <th>Criterio Específico</th>
+    <th>Acciones Realizadas</th>
+    <th>Conclusiones</th>
+  </tr>
+  <tr>
+    <td>
+      Comunica oralmente sus ideas y/o resultados con objetividad a públicos de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto de ingeniería
+    </td>
+    <td>
+      <p><b>TB1:</b></p>
+      <p><b>Valentino Cervantes:</b> Participé de manera activa apoyando a mis compañeros cuando lo necesitaban y colaborando en el desarrollo de requisitos y la organización del equipo.</p>
+      <p><b>Giacomo Zoppi:</b> Contribuí eficazmente al trabajo en equipo, guiando dinámicas grupales como el Event Storming y apoyando en la asignación de tareas y la organización en el tablero Kanban.</p>
+      <p><b>Mathias Kunimoto:</b> Aporté ideas de manera constante y fui proactivo en el desarrollo de las secciones del informe que me correspondían, comunicando avances, dudas y opiniones a mis compañeros.</p>
+      <p><b>Janiel Escalante:</b> Favorecí un ambiente de confianza en el equipo, promoviendo la comunicación y el apoyo mutuo, y ayudando a resolver dudas de algunos integrantes respecto a sus tareas.</p>
+    </td>
+    <td>
+      <p><b>TB1:</b> En esta entrega logramos consolidar la comunicación oral como herramienta clave para la coordinación del equipo. La disposición para expresar ideas, aclarar dudas y apoyar a los compañeros permitió que cada integrante cumpliera con sus responsabilidades y que el informe avanzara de manera ordenada. El ambiente de confianza y las dinámicas grupales favorecieron la participación de todos y fortalecieron la colaboración en el proyecto.</p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Comunica en forma escrita ideas y/o resultados con objetividad a públicos de diferentes especialidades y niveles jerárquicos, en el marco del desarrollo de un proyecto de ingeniería
+    </td>
+    <td>
+      <p><b>TB1:</b></p>
+      <p><b>Valentino Cervantes:</b> Me enfoqué en comunicar de forma clara y objetiva las ideas del equipo, registrando nuestras discusiones y acuerdos para que todos los integrantes tuvieran la misma visión del proyecto.</p>
+      <p><b>Giacomo Zoppi:</b> Aporté transmitiendo por escrito las tareas y objetivos en el tablero Kanban, lo que permitió al grupo tener un seguimiento ordenado y transparente de los avances.</p>
+      <p><b>Mathias Kunimoto:</b> Redacté y documenté entregables técnicos como escenarios As-Is y To-Be, task matrix y user personas, asegurando claridad y precisión en los resultados.</p>
+      <p><b>Janiel Escalante:</b> Me encargué de plasmar por escrito entrevistas, los atributos de calidad y segmentos objetivos, comunicando los resultados de manera comprensible y alineada con los objetivos del proyecto.</p>
+    </td>
+    <td>
+      <p><b>TB1:</b> En esta entrega reforzamos nuestra capacidad de comunicar ideas y resultados de manera escrita con claridad y objetividad, adaptándonos a diferentes públicos del ámbito de la ingeniería. La documentación generada (User Stories, escenarios, diagramas, etc.) permitió dejar evidencia del trabajo realizado y asegurar que todos los integrantes compartieran una misma visión del proyecto. Asimismo, el uso del tablero Kanban fue clave para estructurar la información, dar seguimiento a las tareas y mantener la transparencia en cada fase del entregable.</p>
+    </td>
+  </tr>
 </table>
 
 ---
@@ -727,3 +760,6 @@ Model.
 
 <img width="1040" height="733" alt="image" src="https://github.com/user-attachments/assets/83eb267f-5627-4386-aef2-4280d3fc2676" />
 
+### Conclusiones
+### Bibliografía
+### Anexos
