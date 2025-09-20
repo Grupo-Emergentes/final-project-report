@@ -707,17 +707,24 @@ Cuando el ciudadano hace un tramite, dicho tramite debe salir con su nombre, dni
 
 ### 4.2.5 Context Mapping
 
+<img width="1040" height="733" alt="image" src="https://github.com/user-attachments/assets/5b6b926d-c3db-40c5-8b0d-9f1ba5596a3b" />
+
 ## 4.3 Software Architecture
 
 ### 4.3.1. Software Architecture System Landscape Diagram
 Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4 
-Model,
+Model.
+
+<img width="1040" height="733" alt="image" src="https://github.com/user-attachments/assets/3aa4a024-d955-47d0-8555-83a3c6621dc2" />
+
 ### 4.3.2. Software Architecture Context Level Diagrams
 Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4 
-Model,
+Model.
+<img width="1040" height="733" alt="image" src="https://github.com/user-attachments/assets/f473fd58-75fe-4979-89f2-eefdc29f28a3" />
+
 ### 4.3.3. Software Architecture Container Level Diagrams
-Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4 
-Model,
+<img width="1040" height="733" alt="image" src="https://github.com/user-attachments/assets/798acccf-db95-4525-a63b-e563325d5116" />
 ### 4.3.4. Software Architecture Deployment Diagrams
-Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4 
-Model,
+
+<img width="1040" height="733" alt="image" src="https://github.com/user-attachments/assets/83eb267f-5627-4386-aef2-4280d3fc2676" />
+
