@@ -25,10 +25,10 @@
 
 |               Member                |    Code    |
 | :---------------------------------: | :--------: |
-|  | U202211572 |
 | Giacomo Zoppi Rodriguez | U202210029 |
 | Mathias Tsuneo Kunimoto Watanabe   | U202210148 |
 | Integrante 4    | u20221a322 |
+| Valentino Sebastian Cervantes Erequita   | u202110140 |
 
 
 </div>
@@ -95,14 +95,13 @@ TB1
     <tr>
         <td rowspan="1">TB1</td>
         <td rowspan="1">29/03/2024</td>
-        <td>Integrante 4</td>
+        <td>Valentino Sebastian Cervantes Erequita</td>
         <td>
         <ul>
-        <li> Style Guidelines</li>
-        <li> Information Architecture </li>
-        <li> Landing Page UI Design </li>
-        <li> Web Applications UX/UI Design </li>
-        <li> Web Application Prototyping</li>
+        <li> Software Architecture Landscape Diagram</li>
+        <li> Software Architecture Context Diagram </li>
+        <li> Software Architecture Container Diagram </li>
+        <li> Software Architecture Deplyment Diagram </li>
         </ul>
         </td>
     </tr>
@@ -132,7 +131,7 @@ MISION: Facilitar el acceso de los ciudadanos peruanos a servicios y documentos 
 | Giacomo Zoppi Rodriguqez | U202210029            | Ingenieria de software | C++, C#, javascript y Python            |
 | Mathias Kunimoto Watanabe | U202210148            | Ingenieria de software | Cuento con sólida experiencia en desarrollo frontend, trabajando con tecnologías como React, Next.js, Vue.js, JavaScript y Tailwind CSS. Aplico principios de diseño moderno y rendimiento optimizado para construir interfaces intuitivas, escalables y de alta calidad. Me considero una persona sociable, organizada y con gran capacidad de adaptación, lo que me permite integrarme con facilidad en equipos dinámicos y colaborar eficazmente hacia el cumplimiento de objetivos comunes. Siempre busco superar mis límites: aprendo constantemente, me mantengo actualizado con las mejores prácticas del sector y aporto con una actitud proactiva, comprometida y orientada a resultados.            |
 | PONER NOMBRE | U202210029            | Ingenieria de software | C++, C#, javascript y Python            |
-| PONER NOMBRE | U202210029            | Ingenieria de software | C++, C#, javascript y Python            |
+| Valentino Sebastian Cervantes Erequita | U2023110140            | Ingenieria de software | C++, C#, Java y Typescript            |
 
 
 
