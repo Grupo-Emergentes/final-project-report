@@ -409,6 +409,37 @@ Incluir Stakeholders internos y externos.
 
 ### 2.2.1. Diseño de entrevistas
 
+Preguntas generales
+¿Qué navegador usas con más frecuencia?
+¿Qué dispositivo tecnológico usas con más frecuencia?
+¿Presentas alguna frustración en el trabajo?
+¿Cuáles son los canales de interacción que usas?
+¿Cómo se llama el distrito o lugar de tu residencia?
+¿Qué objetivos tienes tanto laboralmente como personalmente?
+
+Preguntas para el Usuario Ciudadano
+	1.	¿Qué tipo de trámites públicos realizas con mayor frecuencia (ej. DNI, licencias, impuestos, permisos)?
+	2.	¿Qué dificultades sueles encontrar al hacer trámites (colas, documentos, pagos, tiempos de espera)?
+	3.	¿Te gustaría poder guardar en una sola plataforma tus documentos oficiales (DNI, pasaporte, recibos, certificados)?
+	4.	¿Qué nivel de confianza tienes en los servicios digitales del Estado? ¿Por qué?
+	5.	¿Has perdido alguna vez un documento o comprobante que necesitabas para un trámite? ¿Cómo lo resolviste?
+	6.	¿Cuánto valoras que el sistema sea rápido y que puedas hacer todo en un solo lugar, en vez de usar varias plataformas distintas?
+	7 .	¿Qué información mínima quisieras ver siempre sobre tus trámites (estado, plazos, historial)?
+	8.	¿Qué barreras te desaniman a usar servicios digitales del Estado (tecnología, confianza, accesibilidad, desconocimiento)?
+
+⸻
+
+Preguntas para el Funcionario Público
+	1.	¿Qué tipo de trámites gestionas habitualmente en tu institución?
+	2.	¿Cuáles son los principales problemas al atender a los ciudadanos (ej. falta de información, errores en formularios, tiempos de validación)?
+	3.	¿Cómo recibes hoy los documentos de los ciudadanos (físicos, PDF, escaneados, fotos)? ¿Qué problemas hay con eso?
+	4.	¿Qué tan frecuente es que tengas que rechazar un trámite por falta de documentos o información incorrecta?
+	5.	¿Qué tan útil sería para ti que el sistema valide automáticamente la autenticidad de documentos con tecnología?
+	6.	¿Qué indicadores o métricas te interesan más para medir la gestión de trámites (tiempos de resolución, cantidad por día, errores)?
+	7.	¿Qué herramientas digitales actuales usas y cuáles consideras poco eficientes?
+     8.	¿Qué preocupaciones tendrías respecto a adoptar una nueva plataforma (seguridad, capacitación, carga administrativa)?
+
+
 ### 2.2.2. Registro de entrevistas
 
 Inicio: 0:00 <br><br>
@@ -508,6 +539,7 @@ Para los As-Is y To-Be Scenario Maps se utilizará LucidChart / Miro.
 
 | Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
 |-----------------|--------|-------------|--------------------------|----------------------------|
+|HU01|Obtener información de la empresa|Como visitante del sitio web, quiero obtener información adicional sobre la empresa a cargo del producto.| Given el visitante se encuentra en la sección de nosotros. When observa la información relevante sobre la empresa. Then se interesa en saber más sobre el producto. Y se redirecciona a la aplicación web/móvil.|EP01|
 |HU02|Informarse sobre los beneficios del producto|Como visitante del sitio web, quiero informarme sobre los beneficios del producto ofrecido.| <b>Given</b> el visitante se encuentra en la sección de beneficios. <br><b>When</b> observa los beneficios que se ofrecen al usar una solución.<br><b>Then</b> se interesa en saber más del producto.<br><b>Y</b> se redirecciona a la aplicación web/móvil.|EP01|
 |HU03|Conocer los testimonios de los clientes pasados|Como visitante, quiero accceder a los testimonios de clientes anteriores para evaluar la experiencia y la calidad de atención al cliente| <b>Given</b> el visitante se encuentra en la sección de beneficios. <br><b>When</b> observa los beneficios que se ofrecen al usar una solución.<br><b>Then</b> se interesa en saber más del producto.<br><b>Y</b> se redirecciona a la aplicación web/móvil.|EP01|
 |HU04|Informarse sobre los beneficios del producto|Como visitante, quiero conocer los diferentes planes de subscripción disponibles para determinar cuál se ajusta a mis necesidades.| <b>Given</b> el visitante se encuentra en la sección de planes de subscripción disponibles. <br><b>When</b> visualiza los diferentes planes<br><b>Then</b> puede determinar su plan de subscripción ideal.|EP01|
@@ -547,8 +579,39 @@ UXPressia.
 
 ## 3.4. Product Backlog
 
-| Orden | User Story ID | Título                                                        | Descripción                                                                                                                                     | Story Points (1/2/3/5/8) |
-|-------|---------------|---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
+| Story ID | Título | Descripción |Story Points (1/2/3/5/8)|
+|----------|--------|-------------|-----------|
+| HU02 | Informarse sobre los beneficios del producto | Como visitante del sitio web, quiero informarme sobre los beneficios del producto ofrecido. | 2 |
+| HU03 | Conocer los testimonios de los clientes pasados | Como visitante, quiero acceder a los testimonios de clientes anteriores para evaluar la experiencia y la calidad de atención al cliente. |2 |
+| HU04 | Conocer planes de suscripción | Como visitante, quiero conocer los diferentes planes de subscripción disponibles para determinar cuál se ajusta a mis necesidades. |2 |
+| HU05 | Visualizar documentos | Como ciudadano, quiero acceder y visualizar un documento almacenado en mi billetera digital para utilizarlo en diferentes procesos. |5 |
+| HU06 | Generar un código QR | Como ciudadano, quiero generar un código QR válido para mi documento. |3 |
+| HU07 | Solicitar el ingreso de un documento | Como ciudadano, quiero registrar un documento para que sea almacenado digitalmente en el sistema. |3  |
+| HU08 | Compartir un documento | Como ciudadano, quiero descargar mi documento. |2 |
+| HU09 | Renovación de DNI | Como ciudadano, quiero renovar mi DNI de manera digital desde la sección de servicios de la RENIEC. |5 |
+| HU10 | Cambio de domicilio | Como ciudadano, quiero actualizar mi domicilio en mi DNI desde la sección de servicio de la RENIEC. |3 |
+| HU11 | Inscripción de nacimiento | Como ciudadano, quiero inscribir un nacimiento de manera digital desde la sección de servicios de la RENIEC. |5 |
+| HU12 | Consulta de estado tributario | Como ciudadano, quiero consultar mi estado tributario desde la sección de servicios de la SUNAT. |2 |
+| HU13 | Solicitud de RUC | Como ciudadano, quiero solicitar un número de RUC de manera digital desde la sección de servicios de la SUNAT. |2 |
+| HU14 | Registro de matrimonio | Como ciudadano, quiero registrar mi matrimonio de manera digital desde la sección de servicios. |5 |
+| HU15 | Buscar y filtrar servicios | Como ciudadano, quiero buscar y filtrar los servicios disponibles para encontrar fácilmente el trámite que necesito. |1|
+| HU17 | Acceso según rol | Como funcionario público, quiero que mi acceso al sistema esté limitado según mi función, para garantizar el principio de mínimo privilegio y la seguridad de los trámites. |1 |
+| HU18 | Visualizar métricas clave | Como funcionario público, quiero visualizar en tarjetas los indicadores de DNIs digitales, partidas, verificaciones y solicitudes realizadas. |2 |
+| HU19 | Filtrar métricas por tiempo o región | Como funcionario público, quiero filtrar la información por rango de tiempo o por región, para obtener análisis más específicos y relevantes. |81|
+| HU20 | Generar reportes y auditorías | Como funcionario público, quiero generar reportes y auditorías de la actividad registrada, para garantizar transparencia y trazabilidad. |2 |
+| HU21 | Revisar trámite | Como funcionario público, quiero revisar los trámites solicitados para brindar un servicio transparente a la ciudadanía. |3 |
+| HU22 | Validar documentos adjuntos | Como funcionario público, quiero revisar los documentos cargados por el ciudadano y validarlos. |2 |
+| HU23 | Cambiar estado de trámite | Como funcionario público, quiero actualizar el estado de un trámite, para reflejar su progreso y generar la constancia correspondiente. |2 |
+| HU24 | Notificación de cambio de estado | Como ciudadano, quiero recibir notificaciones cuando cambie el estado de mi trámite. |2 |
+| HU25 | Historial de notificaciones | Como ciudadano, quiero acceder a un historial de notificaciones, para revisar eventos pasados y tener trazabilidad de mis trámites. |1 |
+| HU26 | Ingresar a la plataforma como ciudadano | Como ciudadano, quiero ingresar a la plataforma para visualizar mis trámites y documentos. |1 |
+| HU27 | Ingresar a la plataforma como funcionario | Como funcionario público, quiero acceder a la plataforma con mis credenciales, para revisar trámites y gestionar documentos. |1 |
+| HU28 | Actualización de datos | Como usuario de la aplicación web, quiero actualizar mis datos de contacto, para mantener mi perfil al día. |1 |
+| HU29 | Visualización del perfil | Como usuario de la aplicación web, quiero visualizar mi perfil con mis datos oficiales y documentos asociados. |1 |
+| HT01 | Iniciar sesión como ciudadano | Como ciudadano quiero autenticarme con mi DNI y un código de verificación vía SMS para acceder a mis trámites y documentos. |1 |
+| HTU02 | Consultar trámites del ciudadano | Como ciudadano quiero consultar mis trámites activos o pasados para visualizar su estado. |3 |
+| HTU03 | Subir documentos a un trámite | Como ciudadano quiero adjuntar documentos a un trámite para que puedan ser validados. | 3|
+| HTU05 | Cambiar estado de trámite | Como funcionario quiero aprobar o rechazar un trámite para cerrar su revisión. | 3|
 
 # Capítulo IV: Strategic-Level Software Design
 
