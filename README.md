@@ -442,33 +442,56 @@ Incluir Stakeholders internos y externos.
 ### 2.2.1. Diseño de entrevistas
 
 Preguntas generales
+
 ¿Qué navegador usas con más frecuencia?
+
 ¿Qué dispositivo tecnológico usas con más frecuencia?
+
 ¿Presentas alguna frustración en el trabajo?
+
 ¿Cuáles son los canales de interacción que usas?
+
 ¿Cómo se llama el distrito o lugar de tu residencia?
+
 ¿Qué objetivos tienes tanto laboralmente como personalmente?
 
+
 Preguntas para el Usuario Ciudadano
+
 	1.	¿Qué tipo de trámites públicos realizas con mayor frecuencia (ej. DNI, licencias, impuestos, permisos)?
+ 
 	2.	¿Qué dificultades sueles encontrar al hacer trámites (colas, documentos, pagos, tiempos de espera)?
+ 
 	3.	¿Te gustaría poder guardar en una sola plataforma tus documentos oficiales (DNI, pasaporte, recibos, certificados)?
+ 
 	4.	¿Qué nivel de confianza tienes en los servicios digitales del Estado? ¿Por qué?
+ 
 	5.	¿Has perdido alguna vez un documento o comprobante que necesitabas para un trámite? ¿Cómo lo resolviste?
+ 
 	6.	¿Cuánto valoras que el sistema sea rápido y que puedas hacer todo en un solo lugar, en vez de usar varias plataformas distintas?
+ 
 	7 .	¿Qué información mínima quisieras ver siempre sobre tus trámites (estado, plazos, historial)?
+ 
 	8.	¿Qué barreras te desaniman a usar servicios digitales del Estado (tecnología, confianza, accesibilidad, desconocimiento)?
+ 
 
 ⸻
 
 Preguntas para el Funcionario Público
 	1.	¿Qué tipo de trámites gestionas habitualmente en tu institución?
+ 
 	2.	¿Cuáles son los principales problemas al atender a los ciudadanos (ej. falta de información, errores en formularios, tiempos de validación)?
+ 
 	3.	¿Cómo recibes hoy los documentos de los ciudadanos (físicos, PDF, escaneados, fotos)? ¿Qué problemas hay con eso?
+ 
 	4.	¿Qué tan frecuente es que tengas que rechazar un trámite por falta de documentos o información incorrecta?
+ 
 	5.	¿Qué tan útil sería para ti que el sistema valide automáticamente la autenticidad de documentos con tecnología?
+ 
 	6.	¿Qué indicadores o métricas te interesan más para medir la gestión de trámites (tiempos de resolución, cantidad por día, errores)?
+ 
 	7.	¿Qué herramientas digitales actuales usas y cuáles consideras poco eficientes?
+ 
      8.	¿Qué preocupaciones tendrías respecto a adoptar una nueva plataforma (seguridad, capacitación, carga administrativa)?
 
 
@@ -505,9 +528,18 @@ AQUI VA UNA DESCRIPCION
 
 ### 2.3.1 User Personas
 
-**User persona – [Principal](<img width="1050" height="1990" alt="img-user-persona-1" src="https://github.com/user-attachments/assets/3e32b039-7424-4ad0-b4b9-33f6a9479897" />)**
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/3e32b039-7424-4ad0-b4b9-33f6a9479897" alt="User persona – Principal" width="400"/>
+</p>
 
-**User persona – [Secundario](<img width="1050" height="2110" alt="img-user-persona-2" src="https://github.com/user-attachments/assets/af93a27d-fa46-40cc-9b36-8b36c4aa482a" />)**
+<p align="center"><em>User persona – Principal: Ciudadano que realiza la mayoría de trámites de identificación (DNI, rectificación, duplicado).</em></p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/af93a27d-fa46-40cc-9b36-8b36c4aa482a" alt="User persona – Secundario" width="400"/>
+</p>
+
+<p align="center"><em>User persona – Funcionario: Valida documentos y visualiza métricas</em></p>
+
 
 
 ### 2.3.2. User Task Matrix
@@ -613,14 +645,14 @@ Para los As-Is y To-Be Scenario Maps se utilizará LucidChart / Miro.
 |HU19|Filtrar métricas por tiempo o región|Como funcionario público, quiero filtrar la información por rango de tiempo o por región, para obtener análisis más específicos y relevantes.| <b>Given</b> el funcionario se encuentra en el panel de métricas <br><b>When</b> selecciona filtros de tiempo o región <br><b>Then</b> el sistema muestra la información actualizada según los criterios.|EP4|
 |HU20|Generar reportes y auditorías|Como funcionario público, quiero generar reportes y auditorías de la actividad registrada, para garantizar transparencia y trazabilidad de los procesos.| <b>Given</b> el funcionario accede a la sección de auditoría <br><b>When</b> solicita un reporte <br><b>Then</b> el sistema genera un documento descargable en PDF con la información requerida.|EP4|
 | HU21 | Revisar trámite | Como funcionario público, quiero revisar los tramites solicitados para brindar un servicio transparente a la ciudadania.| <b>Given</b> el funcionario accede a la bandeja de trámites pendientes <br><b>When</b> selecciona un trámite específico <br><b>Then</b> puede visualizar toda la información y documentos asociados para su revisión. |EP5|
-| HU23 | Validar documentos adjuntos | <b>Given</b> el funcionario se encuentra dentro del detalle de un trámite <br><b>When</b> revisa los documentos cargados por el ciudadano <br><b>Then</b> puede marcar cada documento como válido o inválido, registrando observaciones en caso de rechazo. |EP5|
+| HU23 | Validar documentos adjuntos | Como funcionario público, quiero validar los documentos adjuntos para garantizar que el tramite solicitado por el ciudadano sea correcto.  | <b>Given</b> el funcionario se encuentra dentro del detalle de un trámite <br><b>When</b> revisa los documentos cargados por el ciudadano <br><b>Then</b> puede marcar cada documento como válido o inválido, registrando observaciones en caso de rechazo. |EP5|
 | HU24 | Cambiar estado de trámite | Como funcionario público, quiero actualizar el estado de un trámite, para reflejar su progreso y generar la constancia correspondiente. | <b>Given</b> el funcionario ha validado la información del trámite <br><b>When</b> selecciona la opción de aprobar <br><b>Then</b> el trámite cambia a estado “aprobado” y se genera la constancia digital correspondiente. |EP5|
 | HU25 | Notificación de cambio de estado | Como ciudadano, quiero recibir notificaciones cuando cambie el estado de mi trámite, para mantenerme informado en tiempo real. | <b>Given</b> el trámite del ciudadano cambia de estado (pendiente, aprobado, rechazado, observado) <br><b>When</b> el sistema registra la acción <br><b>Then</b> el ciudadano recibe una notificación en tiempo real con el nuevo estado. |EP6|
-| HU36 | Historial de notificaciones | Como ciudadano, quiero acceder a un historial de notificaciones, para revisar eventos pasados y tener trazabilidad de mis trámites. | <b>Given</b> el ciudadano accede a la sección de notificaciones <br><b>When</b> revisa el historial <br><b>Then</b> puede ver todas las notificaciones recibidas con fecha, hora y tipo de evento. |EP6|
-|HU037|Ingresar a la plataforma como ciudadano|Como ciudadano, quiero ingresar a la plataforma para visualizar mis tramites y documentos| Escenario 1: <b>Given</b> el ciudadano ingrese los digitos de su DNI <br><b>And</b>los del codigo de verificación que le llegó al telefono celular<b>When</b> los datos ingresados sean correctos y validos <br><b>Then</b> podrá entrar a la plataforma, con sus datos personales ya ingresados, gracias a consultas hechas a APIs. Escenario 2: <b>Given</b> el ciudadano ingrese los digitos de su DNI y solicite el codigo de verificación<br><b>When</b> el ciudadano no reciba su código de verificación <br><b>Then</b> podrá generar y recibir otro en su lugar  |EP07|
-| HU38 | Ingresar a la plataforma como funcionario | Como funcionario público, quiero acceder a la plataforma con mis credenciales, para revisar trámites y gestionar documentos. | <b>Given</b> el funcionario publico accede a la sección de configuración de perfil <br><b>When</b> actualiza algunos datos editabes <br><b>Then</b> el sistema actualiza la información|EP07|
-| HU39 | Actualización de datos | Como usuario de la aplicación web, quiero actualizar mis datos de contacto, para mantener mi perfil al día y recibir notificaciones correctamente. | <b>Given</b> el usuario de la aplicación web accede a la sección de configuración de perfil <br><b>When</b> actualiza algunos datos editabes <br><b>Then</b> el sistema actualiza la información|EP07|
-| HU40 | Visualización del perfil | Como usuario de la aplicación web, quiero visualizar mi perfil con mis datos oficiales y documentos asociados, para validar mi identidad digital y acceder a mis trámites. | <b>Given</b> el usuario de la aplicación web accede correctamente a la aplicación <br><b>When</b> ingresa a la sección de perfil <br><b>Then</b> puede visualizar sus datos oficiales y los documentos vinculados a su identidad digital. |EP07|
+| HU26 | Historial de notificaciones | Como ciudadano, quiero acceder a un historial de notificaciones, para revisar eventos pasados y tener trazabilidad de mis trámites. | <b>Given</b> el ciudadano accede a la sección de notificaciones <br><b>When</b> revisa el historial <br><b>Then</b> puede ver todas las notificaciones recibidas con fecha, hora y tipo de evento. |EP6|
+|HU027|Ingresar a la plataforma como ciudadano|Como ciudadano, quiero ingresar a la plataforma para visualizar mis tramites y documentos| Escenario 1: <b>Given</b> el ciudadano ingrese los digitos de su DNI <br><b>And</b>los del codigo de verificación que le llegó al telefono celular<b>When</b> los datos ingresados sean correctos y validos <br><b>Then</b> podrá entrar a la plataforma, con sus datos personales ya ingresados, gracias a consultas hechas a APIs. Escenario 2: <b>Given</b> el ciudadano ingrese los digitos de su DNI y solicite el codigo de verificación<br><b>When</b> el ciudadano no reciba su código de verificación <br><b>Then</b> podrá generar y recibir otro en su lugar  |EP07|
+| HU28 | Ingresar a la plataforma como funcionario | Como funcionario público, quiero acceder a la plataforma con mis credenciales, para revisar trámites y gestionar documentos. | <b>Given</b> el funcionario publico accede a la sección de configuración de perfil <br><b>When</b> actualiza algunos datos editabes <br><b>Then</b> el sistema actualiza la información|EP07|
+| HU29 | Actualización de datos | Como usuario de la aplicación web, quiero actualizar mis datos de contacto, para mantener mi perfil al día y recibir notificaciones correctamente. | <b>Given</b> el usuario de la aplicación web accede a la sección de configuración de perfil <br><b>When</b> actualiza algunos datos editabes <br><b>Then</b> el sistema actualiza la información|EP07|
+| HU30 | Visualización del perfil | Como usuario de la aplicación web, quiero visualizar mi perfil con mis datos oficiales y documentos asociados, para validar mi identidad digital y acceder a mis trámites. | <b>Given</b> el usuario de la aplicación web accede correctamente a la aplicación <br><b>When</b> ingresa a la sección de perfil <br><b>Then</b> puede visualizar sus datos oficiales y los documentos vinculados a su identidad digital. |EP07|
 | HT01 | Iniciar sesión como ciudadano | Como ciudadano quiero autenticarme con mi DNI y un código de verificación vía SMS para acceder a mis trámites y documentos. | Scenario: Autenticación exitosa Given el endpoint POST /api/auth/citizen recibe DNI y código válidos. When se envía la solicitud. Then la respuesta devuelve 200 OK y un token de sesión. Scenario: Autenticación fallida. Given el ciudadano envía datos incorrectos. When se consulta /api/auth/citizen. Then la respuesta devuelve 401 Unauthorized. |EP08|
 | HTU02 | Consultar trámites del ciudadano | Como ciudadano quiero consultar mis trámites activos o pasados para visualizar su estado. | **Scenario: Trámites encontrados**<br>Given el endpoint GET /api/citizen/{dni}/procedures recibe un DNI válido <br>When se consulta con un token de sesión <br>Then la respuesta devuelve 200 OK y la lista de trámites. <br><br> **Scenario: Sin trámites**<br>Given no existen trámites asociados al ciudadano <br>When se consulta /api/citizen/{dni}/procedures <br>Then la respuesta devuelve 200 OK y un array vacío. |
 | HTU03 | Subir documentos a un trámite | Como ciudadano quiero adjuntar documentos a un trámite para que puedan ser validados. | **Scenario: Documento cargado exitosamente**<br>Given el endpoint POST /api/procedures/{id}/documents está disponible <br>When el ciudadano envía un PDF válido <br>Then la respuesta devuelve 201 Created y confirma la carga. <br><br> **Scenario: Error en la carga**<br>Given el documento no cumple con el formato permitido <br>When se intenta subir <br>Then la respuesta devuelve 400 Bad Request. |
@@ -650,7 +682,7 @@ UXPressia.
 | HU15 | Buscar y filtrar servicios | Como ciudadano, quiero buscar y filtrar los servicios disponibles para encontrar fácilmente el trámite que necesito. |1|
 | HU17 | Acceso según rol | Como funcionario público, quiero que mi acceso al sistema esté limitado según mi función, para garantizar el principio de mínimo privilegio y la seguridad de los trámites. |1 |
 | HU18 | Visualizar métricas clave | Como funcionario público, quiero visualizar en tarjetas los indicadores de DNIs digitales, partidas, verificaciones y solicitudes realizadas. |2 |
-| HU19 | Filtrar métricas por tiempo o región | Como funcionario público, quiero filtrar la información por rango de tiempo o por región, para obtener análisis más específicos y relevantes. |81|
+| HU19 | Filtrar métricas por tiempo o región | Como funcionario público, quiero filtrar la información por rango de tiempo o por región, para obtener análisis más específicos y relevantes. |1|
 | HU20 | Generar reportes y auditorías | Como funcionario público, quiero generar reportes y auditorías de la actividad registrada, para garantizar transparencia y trazabilidad. |2 |
 | HU21 | Revisar trámite | Como funcionario público, quiero revisar los trámites solicitados para brindar un servicio transparente a la ciudadanía. |3 |
 | HU22 | Validar documentos adjuntos | Como funcionario público, quiero revisar los documentos cargados por el ciudadano y validarlos. |2 |
