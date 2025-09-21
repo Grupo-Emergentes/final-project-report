@@ -93,6 +93,9 @@ La entrega TB1 finalizó con éxito y están documentadas en el siguiente reposi
 
 Se redactaron y estructuraron los contenidos asignados a cada miembro utilizando el formato Markdown. Luego, se realizaron commits para garantizar el avance en el repositorio. Se completaron los siguientes puntos: capitulos I-IV, conclusiones y video exposición, en colaboración del equipo. Se llevaron a cabo reuniones semanales para hacer una revisión de lo elaborado por el grupo.
 
+<img width="1354" height="714" alt="image" src="https://github.com/user-attachments/assets/e5c74e8c-ff2b-469a-9bfd-4e7f3288ee8e" />
+
+
 # Student Outcome
 
 En Ingeniería de Software, el logro del curso contribuye a alcanzar el:
@@ -161,8 +164,6 @@ MISION: Facilitar el acceso de los ciudadanos peruanos a servicios y documentos 
 
 | Miembros del equipo                             | Codigo Estudiante | Carrera                | Conocimientos / Habilidades |
 | ----------------------------------------------- | ----------------- | ---------------------- | --------------------------- |
-| Nombre                              | Código       | Carrera                  | Perfil                                                                                                                                                                                                                                                                   |
-|-------------------------------------|--------------|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Giacomo Zoppi Rodríguez             | U202210029   | Ingeniería de Software   | Manejo lenguajes como C++, C#, JavaScript y Python. Tengo interés en el desarrollo de software con enfoque en soluciones prácticas y orientadas a resultados. Me considero una persona analítica, perseverante y con capacidad para adaptarme a distintos retos técnicos. |
 | Mathias Kunimoto Watanabe           | U202210148   | Ingeniería de Software   | Cuento con sólida experiencia en desarrollo frontend, trabajando con tecnologías como React, Next.js, Vue.js, JavaScript y Tailwind CSS. Aplico principios de diseño moderno y rendimiento optimizado para construir interfaces intuitivas, escalables y de alta calidad. Me considero una persona sociable, organizada y con gran capacidad de adaptación, lo que me permite integrarme con facilidad en equipos dinámicos y colaborar eficazmente hacia el cumplimiento de objetivos comunes. Siempre busco superar mis límites: aprendo constantemente, me mantengo actualizado con las mejores prácticas del sector y aporto con una actitud proactiva, comprometida y orientada a resultados. |
 | Janiel Franz Escalante Baygorrea    | U202210029   | Ingeniería de Software   | Con conocimientos en C++, Typescript, JavaScript y Java. Me interesa el desarrollo de aplicaciones orientadas a la eficiencia y la innovación tecnológica. Me destaco por ser responsable, colaborativo y dispuesto a asumir desafíos que potencien mi aprendizaje.                  |
