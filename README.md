@@ -27,8 +27,8 @@
 | :---------------------------------: | :--------: |
 | Giacomo Zoppi Rodriguez | U202210029 |
 | Mathias Tsuneo Kunimoto Watanabe   | U202210148 |
-| Integrante 4    | u20221a322 |
-| Valentino Sebastian Cervantes Erequita   | u202110140 |
+| Janiel Franz Escalante Baygorrea   | u20221a322 |
+| Valentino Sebastian Cervantes Erequita   | u201912668 |
 
 
 </div>
@@ -161,10 +161,13 @@ MISION: Facilitar el acceso de los ciudadanos peruanos a servicios y documentos 
 
 | Miembros del equipo                             | Codigo Estudiante | Carrera                | Conocimientos / Habilidades |
 | ----------------------------------------------- | ----------------- | ---------------------- | --------------------------- |
-| Giacomo Zoppi Rodriguqez | U202210029            | Ingenieria de software | C++, C#, javascript y Python            |
-| Mathias Kunimoto Watanabe | U202210148            | Ingenieria de software | Cuento con sólida experiencia en desarrollo frontend, trabajando con tecnologías como React, Next.js, Vue.js, JavaScript y Tailwind CSS. Aplico principios de diseño moderno y rendimiento optimizado para construir interfaces intuitivas, escalables y de alta calidad. Me considero una persona sociable, organizada y con gran capacidad de adaptación, lo que me permite integrarme con facilidad en equipos dinámicos y colaborar eficazmente hacia el cumplimiento de objetivos comunes. Siempre busco superar mis límites: aprendo constantemente, me mantengo actualizado con las mejores prácticas del sector y aporto con una actitud proactiva, comprometida y orientada a resultados.            |
-| PONER NOMBRE | U202210029            | Ingenieria de software | C++, C#, javascript y Python            |
-| Valentino Sebastian Cervantes Erequita | U2023110140            | Ingenieria de software | C++, C#, Java y Typescript            |
+| Nombre                              | Código       | Carrera                  | Perfil                                                                                                                                                                                                                                                                   |
+|-------------------------------------|--------------|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Giacomo Zoppi Rodríguez             | U202210029   | Ingeniería de Software   | Manejo lenguajes como C++, C#, JavaScript y Python. Tengo interés en el desarrollo de software con enfoque en soluciones prácticas y orientadas a resultados. Me considero una persona analítica, perseverante y con capacidad para adaptarme a distintos retos técnicos. |
+| Mathias Kunimoto Watanabe           | U202210148   | Ingeniería de Software   | Cuento con sólida experiencia en desarrollo frontend, trabajando con tecnologías como React, Next.js, Vue.js, JavaScript y Tailwind CSS. Aplico principios de diseño moderno y rendimiento optimizado para construir interfaces intuitivas, escalables y de alta calidad. Me considero una persona sociable, organizada y con gran capacidad de adaptación, lo que me permite integrarme con facilidad en equipos dinámicos y colaborar eficazmente hacia el cumplimiento de objetivos comunes. Siempre busco superar mis límites: aprendo constantemente, me mantengo actualizado con las mejores prácticas del sector y aporto con una actitud proactiva, comprometida y orientada a resultados. |
+| Janiel Franz Escalante Baygorrea    | U202210029   | Ingeniería de Software   | Con conocimientos en C++, Typescript, JavaScript y Java. Me interesa el desarrollo de aplicaciones orientadas a la eficiencia y la innovación tecnológica. Me destaco por ser responsable, colaborativo y dispuesto a asumir desafíos que potencien mi aprendizaje.                  |
+| Valentino Sebastian Cervantes Erequita | U2023110140 | Ingeniería de Software   | Programador con experiencia en C++, C#, Java y TypeScript. Tengo motivación por aprender nuevas tecnologías y aplicarlas en proyectos reales. Soy una persona dedicada, organizada y comprometida con la calidad del trabajo, con interés en crecer en el ámbito profesional. |
+
 
 
 
@@ -390,10 +393,6 @@ Siguiendo el siguiente formato, extraido del libro "Lean Ux, 3rd edition", escri
 <img width="694" height="421" alt="image" src="https://github.com/user-attachments/assets/6a5b7a03-a335-4339-a1db-e20022f109a9" />
 
 ## 1.3. Segmentos objetivo
-
-Incluir Stakeholders internos y externos. 
-
-# Capítulo II: Requirements Elicitation & Analysis
 **1\. Ciudadanos Peruanos Mayores de 18 Años**
 
 - **Características:** Personas que necesitan acceder a documentos oficiales (DNI, partidas de nacimiento, matrimonio, RUC, etc.) y realizar trámites con entidades públicas.
@@ -407,6 +406,8 @@ Incluir Stakeholders internos y externos.
 - **Características:** Colaboradores responsables de gestionar expedientes, emitir documentos, atender consultas y realizar auditorías.
 - **Dolor actual:** Sistemas desactualizados, procesos manuales, duplicación de datos y sobrecarga administrativa.
 - **Valor para ellos:** Herramientas de gestión digital (dashboards, KPIs, auditorías automáticas, trazabilidad con QR) que reducen la carga operativa, mejoran la eficiencia y permiten enfocarse en la atención al ciudadano.
+
+# Capítulo II: Requirements Elicitation & Analysis
 
 ## 2.1. Competidores
 
@@ -510,9 +511,6 @@ Preguntas para el Funcionario Público
 
 ### 2.2.2. Registro de entrevistas
 
-Inicio: 0:00 <br><br>
-Fin: 36:51
-
 **Entrevista 01 Sector Ciudadano**
 
 **Nombres: Italo D'Alessandro** 
@@ -531,9 +529,33 @@ Fin: 36:51
 
 **Enlace de entrevista: https://1drv.ms/v/c/30F46A21D6B1C088/EX7KXbq4DitAvF202v818K8B1SnncVDWF4cs3PadiZFxzg?e=tzazyo** 
 
-**Enlace de entrevista: Ítalo es un joven de 20 años que realiza con frecuencia trámites como DNI, certificados y pagos municipales. Se frustra por las largas colas, la falta de información clara y la pérdida de tiempo en distintas oficinas. Confía poco en los servicios digitales del Estado, pero valora mucho la idea de una plataforma centralizada donde pueda guardar sus documentos y hacer gestiones rápidas desde el celular.**
+**Resumen: Ítalo es un joven de 20 años que realiza con frecuencia trámites como DNI, certificados y pagos municipales. Se frustra por las largas colas, la falta de información clara y la pérdida de tiempo en distintas oficinas. Confía poco en los servicios digitales del Estado, pero valora mucho la idea de una plataforma centralizada donde pueda guardar sus documentos y hacer gestiones rápidas desde el celular.**
 
-**Entrevista 02 Sector Funcionario**
+**Entrevista 02 Sector Ciudadano**
+
+**Nombres: Eduardo Alvaro** 
+
+**Apellidos: Sihuar Ccotarma** 
+
+**Edad: 20** 
+
+**Distrito:Jesús Maria** 
+
+<img width="1392" height="679" alt="image" src="https://github.com/user-attachments/assets/2b1cf8ed-1fe3-405c-97f5-f8bd0cc32ab1" />
+
+
+**Inicia:** 0:00
+
+**Duración:** 7:28
+
+**Enlace de entrevista: https://1drv.ms/v/c/30F46A21D6B1C088/EdvG75VHQqFMvvZ_-ew2jMQBtWLxI7Q6XuzAD7Fe8yPx5A?e=YOqKjZ**
+
+**Resumen**  Eduardo usa principalmente su celular con Google Chrome para informarse sobre trámites, aunque prefiere acudir de manera presencial porque suele tener dudas al momento de subir documentos y no confía del todo en los procesos digitales.
+
+Comenta que su mayor frustración son las largas colas y la falta de información clara sobre los requisitos. Los trámites que realiza con mayor frecuencia son la renovación del DNI, el pago de arbitrios y algunos permisos municipales. Generalmente presenta documentos en físico, aunque en ocasiones se los solicitan en PDF.
+
+
+**Entrevista 01 Sector Funcionario**
 
 **Nombres: Alonso Illia** 
 
@@ -551,7 +573,31 @@ Fin: 36:51
 
 **Enlace de entrevista: [https://1drv.ms/v/c/30F46A21D6B1C088/EX7KXbq4DitAvF202v818K8B1SnncVDWF4cs3PadiZFxzg?e=tzazyo](https://1drv.ms/v/c/30F46A21D6B1C088/Ebgsdpcy1yRBgBRTNrSztUABBAqFFa5sajG5klRQFwV8aA?e=bunSAz)** 
 
-**Enlace de entrevista: Alonso, de 27 años, trabaja gestionando trámites como permisos, constancias y licencias. Su mayor frustración es la duplicidad de tareas, los documentos incompletos y los sistemas lentos que retrasan la atención a los ciudadanos. Considera clave contar con una plataforma integrada que valide documentos automáticamente, reduzca rechazos y agilice los procesos sin generar más carga administrativa.** 
+**Resumen: Alonso, de 27 años, trabaja gestionando trámites como permisos, constancias y licencias. Su mayor frustración es la duplicidad de tareas, los documentos incompletos y los sistemas lentos que retrasan la atención a los ciudadanos. Considera clave contar con una plataforma integrada que valide documentos automáticamente, reduzca rechazos y agilice los procesos sin generar más carga administrativa.** 
+
+**Entrevista 02 Sector Funcionario**
+
+**Nombres: Sergio Marco** 
+
+**Apellidos: Cadillo Sanchez** 
+
+**Edad: 27** 
+
+**Distrito:San Juan de Lurigancho** 
+
+<img width="1410" height="787" alt="image" src="https://github.com/user-attachments/assets/77af74b3-8673-4401-ab5d-bdd1b56b9048" />
+<img width="1392" height="629" alt="image" src="https://github.com/user-attachments/assets/191513f6-8dc4-4a70-9f2d-d4be76b6fa97" />
+
+**Inicia:** 0:00
+
+**Duración:** 4:28
+
+**Enlace de entrevista: https://1drv.ms/v/c/30F46A21D6B1C088/EdGP_998NfFGjX7mENH1dTQBF5bF_-kaEtjfA3II6J6RvQ?e=zUVhev** 
+
+**Resumen:** Sergio Cadillo tiene 27 años y trabaja como registrador en ventanilla de RENIEC. Utiliza principalmente una computadora de escritorio con navegador Google Chrome para gestionar trámites como emisión y rectificación de DNI, duplicados y registros civiles. Vive en San Juan de Lurigancho y busca, en lo laboral, brindar un servicio ágil y correcto, mientras que en lo personal desea terminar su carrera profesional y mejorar sus ingresos.
+
+Entre sus principales frustraciones se encuentran la lentitud de los sistemas y la falta de información de los ciudadanos al presentar documentos. Actualmente recibe documentos en físico, aunque a veces en PDF o fotos. Comenta que rechaza trámites por errores o información incompleta. Considera que la validación automática de documentos sería muy útil para agilizar procesos. Valora indicadores como tiempos de resolución, número de trámites diarios y porcentaje de rechazos para medir su desempeño  
+
 
 
 ### 2.2.3. Análisis de entrevistas
