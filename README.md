@@ -603,6 +603,50 @@ Entre sus principales frustraciones se encuentran la lentitud de los sistemas y 
 
 ### 2.2.3. Análisis de entrevistas
 
+#### Segmento Ciudadano  
+
+**Frustraciones principales**
+- Pérdida de tiempo en colas y visitas presenciales.  
+- Falta de información clara sobre requisitos.  
+- Dificultades al subir documentos (formatos, dudas).  
+- Desconfianza en los servicios digitales actuales.  
+
+**Necesidades**
+- Trámites rápidos, simples y centralizados en un solo portal.  
+- Claridad en los pasos y requisitos antes de iniciar un trámite.  
+- Accesibilidad móvil (la mayoría usa celular como canal principal).  
+- Seguridad y confianza en la validez legal de documentos digitales.  
+
+**Oportunidades de diseño**
+- Plataforma **mobile-first**, disponible 24/7.  
+- **Repositorio digital personal** para guardar documentos (DNI, certificados, licencias).  
+- **Asistente virtual** paso a paso para subir documentos y resolver dudas.  
+- Validaciones automáticas antes del envío (formato, tamaño, requisitos completos).  
+- Confirmaciones visuales y legales (firma electrónica, blockchain).  
+
+---
+
+#### Segmento Funcionario  
+
+**Frustraciones principales**
+- Sistemas lentos que retrasan la atención.  
+- Duplicidad de tareas por falta de integración.  
+- Documentos incompletos o mal presentados → rechazos frecuentes.  
+- Falta de indicadores claros para medir desempeño.  
+
+**Necesidades**
+- Procesos más ágiles y eficientes.  
+- Validación automática de documentos y datos (DNI, RUC, etc.).  
+- Reducción de rechazos con ciudadanos mejor informados.  
+- Herramientas de monitoreo (KPI y métricas de productividad).  
+
+**Oportunidades de diseño**
+- **Integración con APIs oficiales** (RENIEC, SUNAT) para validación en línea.  
+- **Formularios inteligentes** que eviten errores y documentos incompletos.  
+- **Checklists previos** para ciudadanos antes de enviar trámites.  
+- **Dashboards para funcionarios** con métricas como: tiempo de resolución, número de trámites diarios, % de rechazos.  
+- Automatización en la validación documental (ej. blockchain para garantizar integridad).  
+
 ## 2.3. Needfinding
 
 ### 2.3.1 User Personas
