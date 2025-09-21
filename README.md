@@ -394,6 +394,19 @@ Siguiendo el siguiente formato, extraido del libro "Lean Ux, 3rd edition", escri
 Incluir Stakeholders internos y externos. 
 
 # Capítulo II: Requirements Elicitation & Analysis
+**1\. Ciudadanos Peruanos Mayores de 18 Años**
+
+- **Características:** Personas que necesitan acceder a documentos oficiales (DNI, partidas de nacimiento, matrimonio, RUC, etc.) y realizar trámites con entidades públicas.
+- **Dolor actual:** Deben lidiar con plataformas fragmentadas, trámites presenciales, demoras y falta de transparencia.
+- **Valor para ellos:** Acceso rápido y unificado a servicios y documentos digitales, reducción de burocracia, mayor confianza en la trazabilidad y seguridad de sus datos.
+- **Enfoque inicial:** Jóvenes y adultos con acceso a internet y dispositivos móviles/computadoras, especialmente en zonas urbanas.
+- Pacientes con Trastornos Mentales: Individuos de todas las edades y géneros, pero con un mayor enfoque en adultos jóvenes (18-35 años) y mujeres, quienes son más propensas a buscar atención para trastornos como la depresión y la ansiedad. Más de un millón de personas en Perú padecen trastornos mentales, y 8 de cada 10 no reciben la atención que necesitan. Los casos han aumentado significativamente desde 2021, reflejando la gravedad de la crisis en la salud mental en el país.
+
+**2\. Funcionarios Públicos de Entidades Estatales**
+
+- **Características:** Colaboradores responsables de gestionar expedientes, emitir documentos, atender consultas y realizar auditorías.
+- **Dolor actual:** Sistemas desactualizados, procesos manuales, duplicación de datos y sobrecarga administrativa.
+- **Valor para ellos:** Herramientas de gestión digital (dashboards, KPIs, auditorías automáticas, trazabilidad con QR) que reducen la carga operativa, mejoran la eficiencia y permiten enfocarse en la atención al ciudadano.
 
 ## 2.1. Competidores
 
@@ -701,10 +714,71 @@ UXPressia.
 # Capítulo IV: Strategic-Level Software Design
 
 ## 4.1. Strategic-Level Attribute-Driven Design
-
 ### 4.1.1. Design Purpose
+
+Para el desarrollo de la aplicación, el propósito del diseño debe centrarse en:
+
+- **Disponibilidad y confiabilidad:** Garantizar que la plataforma sea robusta, escalable y esté disponible 24/7 para todos los ciudadanos y funcionarios públicos.
+- **Alto rendimiento:** Ofrecer tiempos de respuesta rápidos y un desempeño óptimo incluso ante un alto volumen de usuarios y transacciones.
+- **Usabilidad e inclusión:** Diseñar una aplicación intuitiva, fácil de usar y accesible, considerando distintos niveles de alfabetización digital y dispositivos.
+- **Seguridad y confianza:** Proteger los datos sensibles de ciudadanos y entidades públicas mediante autenticación segura, encriptación y cumplimiento de estándares internacionales.
+- **Transparencia y trazabilidad:** Asegurar que cada acción dentro de la plataforma pueda ser verificada, fortaleciendo la confianza entre Estado y ciudadanos.
+
 ### 4.1.2. Attribute-Driven Design Inputs
-### 4.1.3. Quality Attribute Scenarios
+
+#### 4.1.2.1 Primary Functionality (Primary User Stories)
+
+- **Renovación de DNI (HU-09):**  
+Como ciudadano, quiero renovar mi DNI de manera digital desde la sección de servicios de la RENIEC.  
+_Relevancia:_ Esta funcionalidad es clave, ya que requiere que la plataforma se integre con los sistemas centrales de la RENIEC y maneje procesos críticos de identificación. Afecta la seguridad (validación de identidad, firma digital) y la disponibilidad, dado que es uno de los trámites más solicitados en el país.
+
+- **Inscripción de nacimiento (HU-11):**  
+Como ciudadano, quiero inscribir un nacimiento de manera digital desde la sección de servicios de la RENIEC.  
+_Relevancia:_ Este proceso implica la gestión de documentos oficiales que deben ser almacenados de forma segura y trazable. Requiere que la arquitectura soporte generación, verificación y resguardo de actas digitales, con integración hacia registros civiles.
+
+- **Consulta de estado tributario (HU-12):**  
+Como ciudadano, quiero consultar mi estado tributario desde la sección de servicios de la SUNAT.  
+_Relevancia:_ La consulta en tiempo real exige integraciones con la SUNAT y un diseño orientado a alta disponibilidad. Afecta el rendimiento, ya que debe manejar grandes volúmenes de datos y devolver resultados rápidos y confiables.
+
+- **Solicitud de RUC (HU-13):**  
+Como ciudadano, quiero solicitar un número de RUC de manera digital desde la sección de servicios de la SUNAT.  
+_Relevancia:_ Esta historia requiere que la plataforma gestione un flujo transaccional seguro y verificado, con almacenamiento de datos sensibles. Impacta la arquitectura en términos de validación, persistencia de datos y escalabilidad del sistema.
+
+- **Registro de matrimonio (HU-14):**  
+Como ciudadano, quiero registrar mi matrimonio de manera digital desde la sección de servicios.  
+_Relevancia:_ Similar a la inscripción de nacimiento, esta funcionalidad demanda manejo de documentos oficiales con valor legal. Afecta la arquitectura al requerir mecanismos de firma digital, auditoría y resguardo de documentos para futuras verificaciones.
+
+- **Visualizar métricas clave (HU-18):**  
+Como funcionario público, quiero visualizar en tarjetas los indicadores de DNIs digitales, partidas, verificaciones y solicitudes realizadas, para monitorear el desempeño de mi entidad.  
+_Relevancia:_ Esta historia habilita el componente de _dashboards operativos_ en la plataforma. Impacta directamente en la arquitectura de datos, ya que requiere sistemas de recolección, agregación y visualización en tiempo real, además de asegurar confidencialidad en la información expuesta.
+
+- **Generar un código QR (HU-06)**  
+    Como ciudadano, quiero generar un código QR válido para mi documento, de modo que otras personas o entidades puedan verificar su autenticidad fácilmente.
+
+Relevancia:
+
+Esta funcionalidad es fundamental, ya que convierte cada documento en un recurso verificable de forma sencilla y portable. Permite que terceros (instituciones públicas, privadas o ciudadanos) validen la autenticidad del documento escaneando el QR, sin necesidad de procesos manuales.
+
+#### 4.1.2.2 Quality attribute Scenarios
+
+\- Interoperabilidad: El sistema debe trabajar con multiples serivicos externos como RENIEC, SUNAT, etc.
+
+\- Performance: El sistema debe responder en tiempo de 1s como máximo
+
+\-Seguridad: Inicio de sesión. QR con blockchain
+
+\-Usabilidad: El usuario debe poder navegar sin confusiones, en una interfaz minimalista
+
+| ID  | Atributo | Fuente | Estímulo | Artefacto | Entorno | Respuesta | Medida |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| QA-01 | Disponibilidad | Componente de software o hardware | Un error de software o hardware ocurre en la aplicación | Aplicación | El servicio que provee una funcionalidad de la aplicación se cae | El sistema detecta la falla, muestra un mensaje al cliente, el load balancer redirige a un servidor en funcionamiento, y la aplicación se restablece. | El servicio vuelve a estar operativo en menos de 3 minutos. Disponibilidad 24/7 garantizada. |
+| Si la aplicación se cae, el servicio debe volver a estar operativo en menos de 3 minutos, ya que la importancia de la aplicación reside en que pueda será usado las 24 h del día |     |     |     |     |     |     |     |
+| QA-02 | Interoperabilidad | Servicio externo (RENIEC, SUNAT, etc.) | Un usuario solicita un trámite que requiere integración con un sistema externo | Aplicación | Durante una transacción en la plataforma que depende de un API externo | El sistema consume la API, valida la respuesta y presenta el resultado al usuario de manera consistente, incluso si un servicio externo está lento o caído. | 95% de las llamadas externas deben responder correctamente; en caso de error, ofrecer fallback o mensaje claro en menos de 2s. |
+| QA-03 | Performance | Usuario final | Un ciudadano o funcionario solicita acceder a un servicio digital | Aplicación | Plataforma en operación con carga concurrente de usuarios | El sistema procesa la solicitud y entrega la respuesta sin retrasos perceptibles. | 90% de las respuestas deben completarse en ≤ 1 segundo, incluso bajo 1000 usuarios concurrentes. |
+| QA-04 | Seguridad – Autenticación y Registro | Usuario (ciudadano o funcionario) | Inicio de sesión o registro en la aplicación | Servicio de autenticación | Usuario accediendo desde web o móvil | El sistema valida la identidad del usuario mediante autenticación segura (DNI + clave, firma digital, o validación multifactor).<br><br>Los datos sensibles en login y registro se transmiten y almacenan cifrados.<br><br>Se garantiza la confidencialidad e integridad de la información personal. | Autenticación completada en ≤ 5 segundos.<br><br>Cero fugas de información sensible en auditorías de seguridad. |
+| QA-05 | Seguridad – Integridad de Documentos | Usuario (ciudadano o funcionario) | Generación, descarga o validación de QR asociado a algún documento | Aplicación | Usuario accediendo desde web o móvil | El sistema genera QR vinculados a los documentos del ciudadano.<br><br>Cada QR se valida contra blockchain para asegurar que no ha sido alterado.<br><br>Se garantiza no repudio: un QR válido siempre corresponde a un documento oficial. | 100% de los QR deben validarse contra blockchain.<br><br>Tiempo de validación ≤ 3 segundos. |
+
+### 4.1.3. Architectural Drivers Backlog
 ### 4.1.4. Architectural Design Decisions
 ### 4.1.5. Quality Attribute Scenario Refinements
 
