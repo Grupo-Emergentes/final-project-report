@@ -923,9 +923,63 @@ Esta funcionalidad es fundamental, ya que convierte cada documento en un recurso
 | QA-04 | Seguridad – Autenticación y Registro | Usuario (ciudadano o funcionario) | Inicio de sesión o registro en la aplicación | Servicio de autenticación | Usuario accediendo desde web o móvil | El sistema valida la identidad del usuario mediante autenticación segura (DNI + clave, firma digital, o validación multifactor).<br><br>Los datos sensibles en login y registro se transmiten y almacenan cifrados.<br><br>Se garantiza la confidencialidad e integridad de la información personal. | Autenticación completada en ≤ 5 segundos.<br><br>Cero fugas de información sensible en auditorías de seguridad. |
 | QA-05 | Seguridad – Integridad de Documentos | Usuario (ciudadano o funcionario) | Generación, descarga o validación de QR asociado a algún documento | Aplicación | Usuario accediendo desde web o móvil | El sistema genera QR vinculados a los documentos del ciudadano.<br><br>Cada QR se valida contra blockchain para asegurar que no ha sido alterado.<br><br>Se garantiza no repudio: un QR válido siempre corresponde a un documento oficial. | 100% de los QR deben validarse contra blockchain.<br><br>Tiempo de validación ≤ 3 segundos. |
 
-### 4.1.3. Architectural Drivers Backlog
-### 4.1.4. Architectural Design Decisions
-### 4.1.5. Quality Attribute Scenario Refinements
+### 4.1.3. Architectural Drivers Backlog  
+
+Los **drivers arquitectónicos** representan los factores clave que guían las decisiones de diseño de la plataforma. Incluyen objetivos de negocio, necesidades de usuario, restricciones y atributos de calidad prioritarios.  
+
+- **Business Drivers**  
+  - Centralizar trámites digitales en un solo portal.  
+  - Reducir la burocracia y los tiempos de atención.  
+  - Mejorar la confianza ciudadana en los servicios digitales del Estado.  
+  - Asegurar validez legal de los documentos mediante firma digital y blockchain.  
+
+- **User Drivers**  
+  - Ciudadanos: rapidez, simplicidad y seguridad en trámites.  
+  - Funcionarios: reducción de rechazos, dashboards con métricas, integración con sistemas existentes.  
+
+- **Technical Drivers**  
+  - Integración con APIs oficiales (RENIEC, SUNAT, etc.).  
+  - Autenticación segura (DNI+clave, firma digital, validación con QR).  
+  - Interoperabilidad con múltiples servicios estatales.  
+  - Arquitectura escalable y disponible 24/7.  
+
+- **Constraints**  
+  - Cumplimiento normativo (Ley de Firmas y Certificados Digitales, Ley 27444).  
+  - Uso obligatorio de autoridades de certificación acreditadas.  
+  - Disponibilidad mínima del 99.9%.  
+
+---
+
+### 4.1.4. Architectural Design Decisions  
+
+Las **decisiones arquitectónicas** son elecciones clave tomadas para garantizar que la plataforma cumpla con los drivers y atributos de calidad:  
+
+1. **Arquitectura basada en microservicios** para aislar módulos (trámites RENIEC, SUNAT, validaciones, dashboard) y garantizar escalabilidad.  
+2. **Data Lake centralizado** para almacenar y procesar documentos digitalizados y métricas de uso.  
+3. **Uso de blockchain** para registrar huellas digitales de documentos y validarlos vía QR.  
+4. **Autenticación multi-factor** (DNI+clave, firma digital, OTP) para fortalecer la seguridad.  
+5. **API Gateway** para gestionar integraciones con entidades externas y controlar accesos.  
+6. **Infraestructura en la nube** con balanceadores de carga y redundancia para alta disponibilidad.  
+
+---
+
+### 4.1.5. Quality Attribute Scenario Refinements  
+
+Refinamiento de escenarios de atributos de calidad previamente definidos:  
+
+- **Disponibilidad (QA-01)**  
+  - *Refinamiento:* El sistema debe contar con monitoreo proactivo (logging + alertas) y failover automático en menos de 3 minutos.  
+
+- **Interoperabilidad (QA-02)**  
+  - *Refinamiento:* Cada microservicio debe exponer APIs RESTful compatibles con JSON, con tiempo de respuesta ≤ 1s al consultar RENIEC o SUNAT.  
+
+- **Performance (QA-03)**  
+  - *Refinamiento:* El sistema debe soportar al menos 10,000 transacciones concurrentes, respondiendo en ≤ 1s en operaciones críticas (renovación de DNI, validación QR).  
+
+- **Seguridad (QA-04a - Autenticación)**  
+  - *Refinamiento:* Inicio de sesión seguro con encriptación AES-256 y validación en ≤ 5 segundos.  
+- **Seguridad (QA-04b - Blockchain QR)**  
+  - *Refinamiento:* El 100% de los QR generados deben validarse contra blockchain garantizando integridad e inmutabilidad del documento.  
 
 ## 4.2. Strategic-Level Domain-Driven Design
 
