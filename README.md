@@ -548,7 +548,28 @@ AQUI VA UNA DESCRIPCION
 Para los As-Is y To-Be Scenario Maps se utilizará LucidChart / Miro.
 ## 2.4. Ubiquitous Language
 
-En esta sección, nos centraremos en definir el significado de ciertos términos utilizados en el ambiente de nuestra solución en la gestión hotelera.
+| Término Inglés              | Término Español          | Definición                                                                                                                                       |
+|-----------------------------|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| Citizen                     | Ciudadano                | Persona natural, mayor de 18 años, que interactúa con la plataforma para gestionar sus documentos oficiales y realizar trámites con entidades del Estado. |
+| Public Official             | Funcionario Público      | Empleado del Estado (RENIEC, SUNAT, municipalidad, etc.) encargado de validar, aprobar, rechazar o auditar trámites y documentos dentro de la plataforma. |
+| Digital Wallet              | Billetera Digital        | Espacio personal y seguro dentro de la plataforma donde el ciudadano almacena, visualiza y comparte sus documentos oficiales digitales (DNI, RUC, partidas, etc.). |
+| Digital Document            | Documento Digital        | Representación electrónica de un documento oficial emitido por una entidad del Estado, que incluye metadatos, estado de vigencia y un código QR para su verificación. |
+| Procedure / Service          | Trámite / Servicio       | Proceso formal que el ciudadano inicia en la plataforma para obtener un documento o servicio del Estado (ej: renovar DNI, inscribir nacimiento, solicitar RUC). |
+| Procedure Catalog            | Catálogo de Trámites     | Listado unificado y filtrable de todos los trámites disponibles en la plataforma, agrupados por entidad (RENIEC, SUNAT, MTC, etc.). |
+| Procedure Status             | Estado del Trámite       | Condición actual en la que se encuentra un trámite iniciado por el ciudadano (Pendiente, En Revisión, Aprobado, Rechazado, Observado). |
+| Notification                 | Notificación             | Alerta automática enviada al ciudadano (vía app, email o SMS) sobre cambios de estado, vencimientos o recordatorios relacionados con sus trámites o documentos. |
+| Work Inbox (Official)        | Bandeja de Trámites      | Espacio de trabajo del funcionario público donde visualiza, filtra y gestiona los trámites asignados o pendientes de su entidad. |
+| Validate Document            | Validar Documento        | Acción que realiza el funcionario público para confirmar que un documento adjuntado por el ciudadano cumple con los requisitos y es auténtico. |
+| Approve/Reject Procedure     | Aprobar/Rechazar Trámite | Acción final del funcionario público que cierra el ciclo de un trámite, generando el documento digital correspondiente o solicitando correcciones al ciudadano. |
+| Dashboard (Official)         | Panel de Control         | Interfaz visual para funcionarios públicos que muestra KPIs, métricas de desempeño, actividad en tiempo real y herramientas de reporte/auditoría. |
+| QR Code                      | Código QR                | Código de barras bidimensional generado para cada documento digital, que permite su verificación rápida y segura mediante escaneo. |
+| Blockchain Verification      | Verificación Blockchain  | Mecanismo de seguridad que utiliza tecnología blockchain para garantizar la integridad, inmutabilidad y autenticidad de los documentos digitales emitidos. |
+| SLA (Service Level Agreement)| SLA (Acuerdo de Nivel de Servicio) | Compromiso medible sobre el tiempo máximo de respuesta o resolución de un trámite, utilizado para medir la eficiencia de los funcionarios y entidades. |
+| Audit Trail                  | Trazabilidad / Auditoría | Registro cronológico e inmutable de todas las acciones realizadas por ciudadanos y funcionarios dentro de la plataforma, para garantizar transparencia y rendición de cuentas. |
+| Role-Based Access Control    | Control de Acceso por Rol| Mecanismo que limita las funciones y datos que un funcionario puede ver o modificar en la plataforma, según su cargo o entidad (Principio de Mínimo Privilegio). |
+| Real-Time Tracking           | Seguimiento en Tiempo Real | Funcionalidad que permite al ciudadano ver el estado actual de su trámite en cualquier momento, sin necesidad de llamar o acudir a una oficina. |
+| Pre-filled Form              | Formulario Precargado    | Plantilla de trámite que se llena automáticamente con los datos del ciudadano almacenados en el sistema, reduciendo errores y tiempo de llenado. |
+| Video Call Verification      | Validación por Videollamada | Proceso de verificación de identidad en tiempo real mediante videollamada, utilizado en trámites como el registro de matrimonio. |
 
 # Capítulo III: Requirements Specification
 
