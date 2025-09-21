@@ -399,7 +399,7 @@ Incluir Stakeholders internos y externos.
 
 ### 2.1.1. Análisis competitivo
 
-| Empresas | **PONER NUESTRO NOMBRE** | **Portal Único del Estado (Gob.pe)** | **RENIEC - Trámites en Línea** | **SUNAT - Mi Portal** |
+| Empresas | **Peru Digital** | **Portal Único del Estado (Gob.pe)** | **RENIEC - Trámites en Línea** | **SUNAT - Mi Portal** |
 |----------|-----------------------------------|--------------------------------------|--------------------------------|-----------------------|
 | **Perfil** | | | | |
 | **Overview** | Plataforma integral que unifica trámites y documentos digitales de múltiples entidades estatales en un solo lugar, con billetera digital, verificación por QR, seguimiento en tiempo real y paneles de control para funcionarios públicos. Inspirada en Diia (Ucrania). | Portal agregador de enlaces a otros portales estatales. No unifica trámites ni datos. Funciona como directorio oficial del Estado peruano. | Sistema de trámites específicos de identidad: renovación de DNI, cambio de domicilio, consulta de vigencia. Parcialmente digitalizado. | Plataforma enfocada en trámites tributarios: consulta de RUC, estado tributario, emisión de comprobantes, declaración de impuestos. |
@@ -545,7 +545,7 @@ AQUI VA UNA DESCRIPCION
 **User Empathy Mapping <img width="1050" height="1570" alt="img-Empathy Mapping" src="https://github.com/user-attachments/assets/0b079e7e-3503-416b-85a1-ad52e7b72148" />**
 
 ### 2.3.5. As-is Scenario Mapping
-Para los As-Is y To-Be Scenario Maps se utilizará LucidChart / Miro.
+**As-is Scenario Mapping ![img-as-is](https://github.com/user-attachments/assets/1bfcddcb-8d2c-4670-9f17-72307e38f19a)**
 ## 2.4. Ubiquitous Language
 
 En esta sección, nos centraremos en definir el significado de ciertos términos utilizados en el ambiente de nuestra solución en la gestión hotelera.
