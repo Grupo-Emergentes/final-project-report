@@ -500,26 +500,45 @@ Preguntas para el Funcionario Público
 Inicio: 0:00 <br><br>
 Fin: 36:51
 
-**Entrevista 01**
+**Entrevista 01 Sector Ciudadano**
 
-**Nombres:** 
+**Nombres: Italo D'Alessandro** 
 
-**Apellidos:** 
+**Apellidos: Luna Capuñay** 
 
-**Edad:** 
+**Edad: 20** 
 
-**Distrito/Ciudad** 
+**Distrito:San Juan de Lurigancho** 
 
-IMAGEN VA AQUI
+![img-entrevista-ciudadano](https://github.com/user-attachments/assets/d472e0b7-a757-46e3-9ea4-6a2c03f7e463)
 
 **Inicia:** 0:00
 
-**Duración:** X minutos
+**Duración:** 4:21
 
+**Enlace de entrevista: https://1drv.ms/v/c/30F46A21D6B1C088/EX7KXbq4DitAvF202v818K8B1SnncVDWF4cs3PadiZFxzg?e=tzazyo** 
 
-**Enlace de entrevista:** 
+**Enlace de entrevista: Ítalo es un joven de 20 años que realiza con frecuencia trámites como DNI, certificados y pagos municipales. Se frustra por las largas colas, la falta de información clara y la pérdida de tiempo en distintas oficinas. Confía poco en los servicios digitales del Estado, pero valora mucho la idea de una plataforma centralizada donde pueda guardar sus documentos y hacer gestiones rápidas desde el celular.**
 
-AQUI VA UNA DESCRIPCION
+**Entrevista 02 Sector Funcionario**
+
+**Nombres: Alonso Illia** 
+
+**Apellidos: Chuctaya Beckenbauer** 
+
+**Edad: 27** 
+
+**Distrito:Comas** 
+
+![img-entrevista-2](https://github.com/user-attachments/assets/6a61c687-d107-4487-bcc5-ecda4691dba9)
+
+**Inicia:** 0:00
+
+**Duración:** 5:13
+
+**Enlace de entrevista: [https://1drv.ms/v/c/30F46A21D6B1C088/EX7KXbq4DitAvF202v818K8B1SnncVDWF4cs3PadiZFxzg?e=tzazyo](https://1drv.ms/v/c/30F46A21D6B1C088/Ebgsdpcy1yRBgBRTNrSztUABBAqFFa5sajG5klRQFwV8aA?e=bunSAz)** 
+
+**Enlace de entrevista: Alonso, de 27 años, trabaja gestionando trámites como permisos, constancias y licencias. Su mayor frustración es la duplicidad de tareas, los documentos incompletos y los sistemas lentos que retrasan la atención a los ciudadanos. Considera clave contar con una plataforma integrada que valide documentos automáticamente, reduzca rechazos y agilice los procesos sin generar más carga administrativa.** 
 
 
 ### 2.2.3. Análisis de entrevistas
