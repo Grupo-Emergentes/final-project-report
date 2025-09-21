@@ -553,7 +553,42 @@ En esta sección, nos centraremos en definir el significado de ciertos términos
 # Capítulo III: Requirements Specification
 
 ## 3.1. To-Be Scenario Mapping
-Para los As-Is y To-Be Scenario Maps se utilizará LucidChart / Miro.
+
+**AS-IS ![img-as-is](https://github.com/user-attachments/assets/38853634-2773-4907-a47d-0419892d9e61)**
+
+### Requisitos funcional 
+
+| ID   | Requisito Funcional               | Descripción                                                                                                                                   |
+|------|-----------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| RF01 | Autenticación con DNI y código SMS | El ciudadano debe poder ingresar a la plataforma usando su DNI y un código de verificación enviado por SMS.                                    |
+| RF02 | Billetera Digital de Documentos    | El ciudadano debe tener un espacio centralizado para almacenar, visualizar y compartir sus documentos oficiales (DNI, RUC, partidas, etc.) con QR verificable. |
+| RF03 | Catálogo Unificado de Trámites     | El ciudadano debe poder buscar y filtrar trámites por entidad (RENIEC, SUNAT, etc.), tipo, requisitos y duración.                              |
+| RF04 | Formularios Precargados            | Al iniciar un trámite, los datos del ciudadano (nombre, DNI, dirección) deben precargarse automáticamente para minimizar la entrada manual.    |
+| RF05 | Seguimiento en Tiempo Real del Trámite | El ciudadano debe poder ver el estado actual de su trámite (Pendiente, En Revisión, Aprobado, Rechazado) con una línea de tiempo clara.        |
+| RF06 | Notificaciones Automáticas         | El sistema debe enviar notificaciones (push, email, SMS) al ciudadano sobre cambios de estado, vencimientos o recordatorios.                   |
+| RF07 | Carga de Documentos con Foto y Firma Digital | El ciudadano debe poder cargar documentos tomando una foto desde su celular y firmando digitalmente en pantalla.                               |
+| RF08 | Trámites 100% en Línea             | El ciudadano debe poder completar trámites clave (DNI, RUC, matrimonio, nacimiento) sin necesidad de ir a una oficina física.                  |
+| RF09 | Panel de Control para Funcionarios | El funcionario debe tener un dashboard con KPIs (trámites procesados, tiempos promedio), filtros por región/fecha y actividad en tiempo real. |
+| RF10 | Validación y Aprobación de Trámites | El funcionario debe poder revisar, validar documentos y aprobar/rechazar trámites con observaciones.                                           |
+| RF11 | Control de Acceso por Rol          | El sistema debe limitar las funciones que cada funcionario puede realizar según su rol y entidad (Principio de Mínimo Privilegio).             |
+| RF12 | Generación de Reportes y Auditorías | El funcionario debe poder generar y exportar reportes de actividad para auditorías internas o externas.                                        |
+
+### Requisitos no funcional 
+
+| ID    | Requisito No Funcional        | Descripción                                                                                                                                   |
+|-------|--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| RNF01 | Disponibilidad                 | La plataforma debe estar disponible el 99.9% del tiempo, especialmente en horario laboral (7 AM - 8 PM).                                      |
+| RNF02 | Rendimiento                    | Cualquier acción del usuario (cargar documento, iniciar trámite, cambiar estado) debe completarse en menos de 3 segundos.                     |
+| RNF03 | Seguridad                      | Todos los datos personales y documentos deben estar cifrados en tránsito y en reposo. La autenticación debe ser robusta (2FA opcional).        |
+| RNF04 | Usabilidad (Ciudadano)         | La interfaz debe ser intuitiva y usable por personas no técnicas. El 90% de los usuarios deben poder completar un trámite sin ayuda en su primer intento. |
+| RNF05 | Usabilidad (Funcionario)       | La interfaz para funcionarios debe ser profesional, ordenada y eficiente, permitiendo completar tareas complejas con pocos clics.              |
+| RNF06 | Escalabilidad                  | El sistema debe soportar hasta 1 millón de usuarios activos y 10,000 transacciones concurrentes sin degradación del servicio.                   |
+| RNF07 | Interoperabilidad              | La plataforma debe integrarse vía API con sistemas legados de RENIEC, SUNAT, municipalidades, etc., para obtener y actualizar datos.            |
+| RNF08 | Confiabilidad / Trazabilidad   | Cada acción en el sistema (por ciudadano o funcionario) debe quedar registrada en un log inmutable para auditoría (Audit Trail).                |
+| RNF09 | Compatibilidad Móvil           | La plataforma web debe ser 100% responsive y funcionar perfectamente en smartphones (iOS y Android).                                           |
+| RNF10 | Accesibilidad                  | La plataforma debe cumplir con estándares WCAG 2.1 nivel AA para garantizar el acceso a personas con discapacidad.                             |
+
+
 ## 3.2. User Stories
 
 | Epic | Título | Descripción | 
