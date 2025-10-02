@@ -1106,6 +1106,92 @@ Model.
 
 <img width="1040" height="733" alt="image" src="https://github.com/user-attachments/assets/83eb267f-5627-4386-aef2-4280d3fc2676" />
 
+# Capítulo V: Tactital-Level Software Design
+
+## 5.1. Bounded Context: IAM
+### 5.1.1 Domain Layer
+### 5.1.2 Interface Layer
+### 5.1.3 Application Layer
+### 5.1.4 Infrastructure Layer
+### 5.1.5 Bounded Context Software Architecture Component Level Diagrams
+### 5.1.6 Bounded Context Software Architecture Code Level Diagrams
+### 5.1.6.1 Bounded Context Domain Layer Class Diagram
+### 5.1.6.2 Bounded Context Database Design Diagram
+
+## 5.2. Bounded Context: Profiles
+### 5.2.1 Domain Layer
+### 5.2.2 Interface Layer
+### 5.2.3 Application Layer
+### 5.2.4 Infrastructure Layer
+### 5.2.5 Bounded Context Software Architecture Component Level Diagrams
+### 5.2.6 Bounded Context Software Architecture Code Level Diagrams
+### 5.2.6.1 Bounded Context Domain Layer Class Diagram
+### 5.2.6.2 Bounded Context Database Design Diagram
+
+## 5.3. Bounded Context: Notification
+### 5.3.1 Domain Layer
+### 5.3.2 Interface Layer
+### 5.3.3 Application Layer
+### 5.3.4 Infrastructure Layer
+### 5.3.5 Bounded Context Software Architecture Component Level Diagrams
+### 5.3.6 Bounded Context Software Architecture Code Level Diagrams
+### 5.3.6.1 Bounded Context Domain Layer Class Diagram
+### 5.3.6.2 Bounded Context Database Design Diagram
+
+## 5.4. Bounded Context: Wallet
+### 5.4.1 Domain Layer
+### 5.4.2 Interface Layer
+### 5.4.3 Application Layer
+### 5.4.4 Infrastructure Layer
+### 5.4.5 Bounded Context Software Architecture Component Level Diagrams
+### 5.4.6 Bounded Context Software Architecture Code Level Diagrams
+### 5.4.6.1 Bounded Context Domain Layer Class Diagram
+### 5.4.6.2 Bounded Context Database Design Diagram
+
+## 5.5. Bounded Context: Procedure Management
+### 5.5.1 Domain Layer
+### 5.5.2 Interface Layer
+### 5.5.3 Application Layer
+### 5.5.4 Infrastructure Layer
+### 5.5.5 Bounded Context Software Architecture Component Level Diagrams
+### 5.5.6 Bounded Context Software Architecture Code Level Diagrams
+### 5.5.6.1 Bounded Context Domain Layer Class Diagram
+### 5.5.6.2 Bounded Context Database Design Diagram
+
+## 5.6. Bounded Context: Analytics
+### 5.6.1 Domain Layer
+### 5.6.2 Interface Layer
+### 5.6.3 Application Layer
+### 5.6.4 Infrastructure Layer
+### 5.6.5 Bounded Context Software Architecture Component Level Diagrams
+### 5.6.6 Bounded Context Software Architecture Code Level Diagrams
+### 5.6.6.1 Bounded Context Domain Layer Class Diagram
+### 5.6.6.2 Bounded Context Database Design Diagram
+
+# Capítulo VI: Solution UX Design
+
+## 6.1. Style Guidelines
+### 6.1.1 General Style Guidelines
+### 6.1.2 Web, Mobile & Devices Style Guidelines
+
+## 6.2. Information Architecture
+### 6.2.1 Organization Systems
+### 6.2.2 Labeling Systems
+### 6.2.3 Searching Systems
+### 6.2.4 SEO Tags and Meta Tags
+### 6.2.5 Navigation Systems
+
+## 6.3. Landing Page UI Design
+### 6.3.1 Landing Page Wireframe
+### 6.3.1 Landing Page Mock-up
+
+## 6.4. Application UX/UI Design
+### 6.4.1 Applications Wireframes
+### 6.4.2 Applications Wireflow Diagrams
+
+
+
+
 ### Conclusiones
 
 1. La gestión de trámites en el Perú sigue siendo lenta, fragmentada y poco integrada, lo que genera sobrecarga para los funcionarios y pérdida de tiempo y dinero para los ciudadanos.  
