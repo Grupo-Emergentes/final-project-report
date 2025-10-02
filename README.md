@@ -1176,10 +1176,86 @@ Model.
 
 ## 6.2. Information Architecture
 ### 6.2.1 Organization Systems
+
+Se implementaron tres sistemas de organización visual: jerárquica, secuencial y matricial. Cada uno se emplea de acuerdo con las características de la información o actividad a desarrollar, lo que garantiza una navegación clara, una experiencia de usuario eficiente y una adaptación óptima a diversos contextos.
+
+**Visual Hierarchy**: La organización jerárquica se emplea principalmente en la página principal y en el dashboard de servicios del estado. Este enfoque permite destacar visualmente elementos importantes como los trámites más frecuentes, documentos de la wallet digital y notificaciones prioritarias, facilitando que el usuario identifique rápidamente las opciones más relevantes para sus necesidades.
+
+**Step-by-Step to Accomplish:** La organización secuencial se utiliza en funciones que implican seguir un proceso ordenado, donde cada paso depende del anterior. Un ejemplo de esto es el flujo de solicitud de trámites complejos como el registro de matrimonio o solicitud de RUC, donde el usuario debe avanzar progresivamente desde la selección del trámite hasta la confirmación y pago.
+
+**Matricial:** Este tipo de organización se aplica en la vista de tablas de la sección de Analytics y Reportes, permitiendo mostrar múltiples atributos de cada entidad (como ID de trámite, tipo, estado, fecha y usuario) de forma estructurada. Esta disposición facilita la comparación y gestión simultánea de múltiples elementos, optimizando la supervisión y el control de los trámites del sistema.
+
 ### 6.2.2 Labeling Systems
+
+En Perú Digital, se busca representar los datos mediante etiquetas simples y directas, para facilitar la comprensión tanto de ciudadanos como de funcionarios públicos. Esta estrategia de etiquetado ayuda a reducir la curva de aprendizaje y permite una navegación más fluida.
+
+**a. Etiquetas Simplificadas y Claras**
+El uso de etiquetas breves y significativas es clave para una interfaz intuitiva. Las siguientes son algunas de las etiquetas implementadas en la aplicación web:
+
+Dashboard → Inicio
+
+Procedures → Trámites
+
+Wallet → Documentos
+
+Analytics → Reportes
+
+Notifications → Notificaciones
+
+Profile → Perfil
+
+Payments → Pagos
+
+Help → Ayuda
+
+Log Out → Cerrar Sesión
+
+Estas etiquetas están seleccionadas para que representen con precisión el contenido de cada sección, minimizando ambigüedades y tecnicismos.
+
+**b. Asociaciones Clave**
+Se establecen conexiones claras entre términos funcionales y sus beneficios esperados para el usuario. Esto refuerza la usabilidad del sistema:
+
+"Trámites" se asocia con solicitudes, renovaciones y registros civiles.
+
+"Wallet/Documentos" se vincula a DNI digital, documentos personales y verificaciones.
+
+"Reportes" está relacionado con analytics, métricas y datos estadísticos.
+
+"Notificaciones" permite gestionar alertas del sistema y actualizaciones de trámites.
+
+"Pagos" conecta con transacciones, comprobantes y estados de pago.
+
+El etiquetado evita redundancias o términos complejos, priorizando la funcionalidad y la claridad para usuarios no técnicos.
+
 ### 6.2.3 Searching Systems
+El usuario que utilice la aplicación de Perú Digital se encontrará con un gran volumen de información, por lo que es importante ofrecerle opciones de búsqueda efectivas. Para ello, se implementarán las siguientes opciones de búsqueda:
+
+**Filtros de búsqueda avanzada:** El usuario podrá aplicar filtros a su búsqueda para refinar los resultados. Estos filtros incluirán opciones como tipo de trámite, entidad estatal (RENIEC, SUNAT, etc.), entre otros. Esto permitirá al usuario encontrar rápidamente la información que necesita.
+
+**Búsqueda por categorías de trámites:** El usuario podrá buscar trámites por categorías predefinidas como "Documentación", "Tributario", "Registro Civil", lo que le permitirá encontrar rápidamente el servicio que requiere.
+
+**Búsqueda en Analytics:** Los administradores podrán buscar reportes específicos y filtrar datos por usuario, tipo de trámite, fechas y estados, facilitando el análisis y la generación de insights.
+
 ### 6.2.4 SEO Tags and Meta Tags
+
+Con el objetivo de mejorar la visibilidad de Perú Digital en los motores de búsqueda, atraer nuevos usuarios y proporcionar información relevante sobre la plataforma, se incorporarán las siguientes **Meta Tags** como etiquetas HTML dentro del `<head>` de las páginas principales:
+
+```html
+<title>Perú Digital - Plataforma Unificada de Servicios del Estado</title>
+<meta name="description" content="Perú Digital es una plataforma unificada que centraliza todos los servicios del estado peruano, incluyendo trámites, documentos digitales y pagos en un solo lugar.">
+<meta name="keywords" content="trámites perú, servicios del estado, DNI digital, RENIEC, SUNAT, trámites en línea, documentos digitales">
+<meta name="author" content="Perú Digital Team">
+```
+
 ### 6.2.5 Navigation Systems
+
+**Búsqueda por filtros, páginas y orden:** El usuario podrá aplicar filtros múltiples a su búsqueda para refinar los resultados en las secciones de Trámites y Analytics. Estos filtros incluirán opciones como fecha, tipo de trámite, estado y entidad responsable. De igual manera, existen barras de acceso rápido a las páginas más importantes de la aplicación, como "Inicio", "Trámites", "Documentos", "Reportes". Estas barras de acceso rápido estarán disponibles en la parte superior de la pantalla y permitirán al usuario navegar rápidamente a las páginas que necesita.
+
+**Navegación contextual:** El sistema adapta las opciones de navegación según el perfil del usuario (ciudadano, funcionario, administrador), mostrando solo las funcionalidades relevantes para cada rol.
+
+**Navegación por pestañas:** Para secciones complejas como la creación de trámites, se implementa un sistema de pestañas que guía al usuario a través del proceso paso a paso, manteniendo la simplicidad y evitando la sobrecarga de información.
+
+**Indicadores de posición visual:** En lugar de breadcrumbs tradicionales, se utilizan indicadores visuales como barras de progreso y títulos de sección claros para que el usuario siempre sepa en qué parte del sistema se encuentra.
 
 ## 6.3. Landing Page UI Design
 ### 6.3.1 Landing Page Wireframe
