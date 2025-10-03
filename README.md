@@ -1039,11 +1039,12 @@ Finalmente, los aggregates que comparten reglas o funciones se organizan en cont
 Definimos los siguientes Bounded Context con el proceso de Event Storming:
 - Profiles Bounded Context: Gestionar los usuarios y sus perfiles
 - IAM Bounded Context: Se encarga del acceso de usuarios, login y envío de código de acceso al correo de usuario. 
-- Procedure Bounded Context: Engloba todos los tramites del usuario. 
-- Wallet Bounded Context: Gestiona los documentos del usuario. 
-- Analytics Bounded Context: Gestiona las metricas y auditorias del funcionario publico
-- Notifications Bounded Context: Se encarga del envio de notificaciones al usuario. 
-<img width="1165" height="753" alt="image" src="https://github.com/user-attachments/assets/1c12dd46-7cb5-4a1d-a797-697f81d251e1" />
+- Procedure Bounded Context: Engloba todos los tramites del usuario, incluido los pagos necesarios para su elaboración.
+- Wallet Bounded Context: Gestiona los documentos del usuario y su blockchain.  
+- Analytics Bounded Context: Gestiona las metricas y reportes generados por el funcionario publico
+- Notifications Bounded Context: Se encarga de la comunicación entre el sistema y el usuario, incluido los mensajes al chatbot. 
+<img width="1321" height="781" alt="image" src="https://github.com/user-attachments/assets/1dc5d945-c4d7-4680-88e6-23fff5f070e6" />
+
 
 
 ### 4.2.3 Domain Message Flows Modeling
@@ -1069,7 +1070,7 @@ Cuando el ciudadano hace un tramite, dicho tramite debe salir con su nombre, dni
 <img width="1014" height="716" alt="image" src="https://github.com/user-attachments/assets/b1a90ca1-58b6-41eb-a77b-57a077861e0a" />
 
 #### Wallet Bounded Context
-<img width="1061" height="740" alt="image" src="https://github.com/user-attachments/assets/3cfcbabf-3971-48fc-bea2-e4fc217fca5f" />
+<img width="837" height="582" alt="image" src="https://github.com/user-attachments/assets/db513141-2fc6-4cf6-881a-3fb1908f9983" />
 
 #### IAM Bounded Context
 <img width="1010" height="716" alt="image" src="https://github.com/user-attachments/assets/91fcbb4d-ac22-44aa-8f20-3dcc9e4291b9" />
@@ -1077,11 +1078,11 @@ Cuando el ciudadano hace un tramite, dicho tramite debe salir con su nombre, dni
 #### Profiles Bounded Context
 <img width="1018" height="714" alt="image" src="https://github.com/user-attachments/assets/256ac56b-e379-4fb0-9ee1-23652ae903ab" />
 
-#### Notification Bounded Context
-<img width="1016" height="730" alt="image" src="https://github.com/user-attachments/assets/214c7efa-0595-48c5-a066-12e61f6a5727" />
+#### Communication Bounded Context
+<img width="872" height="630" alt="image" src="https://github.com/user-attachments/assets/a9fa920c-18df-44d0-a525-ed445b8c35bc" />
 
 #### Analytics Bounded Context
-<img width="1040" height="733" alt="image" src="https://github.com/user-attachments/assets/fb619f27-072a-4fb3-ba5f-bd8d29b325a9" />
+<img width="862" height="606" alt="image" src="https://github.com/user-attachments/assets/689b30b3-6f03-473a-b24c-8599c94ff193" />
 
 ### 4.2.5 Context Mapping
 
