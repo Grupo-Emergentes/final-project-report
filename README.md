@@ -837,8 +837,7 @@ Entre sus principales frustraciones se encuentran la lentitud de los sistemas y 
 | HTU05 | Cambiar estado de trámite | Como funcionario quiero aprobar o rechazar un trámite para cerrar su revisión. | **Scenario: Trámite aprobado**<br>Given el endpoint POST /api/procedures/{id}/status recibe estado “aprobado” <br>When el funcionario lo confirma <br>Then la respuesta devuelve 200 OK y genera la constancia digital. <br><br> **Scenario: Trámite rechazado**<br>Given el funcionario decide rechazar <br>When envía estado “rechazado” <br>Then la respuesta devuelve 200 OK y se notifica al ciudadano. |
 
 ## 3.3. Impact Mapping
-Para elaborar los User Personas, Empathy Maps, Journey Maps e Impact Maps se utilizará 
-UXPressia.
+<img width="1240" height="806" alt="Impact mapping" src="https://github.com/user-attachments/assets/71a24a04-1e8f-4b31-a2ff-391ae7b04547" />
 
 ## 3.4. Product Backlog
 
