@@ -1211,13 +1211,174 @@ Model.
 ### 5.4.6.2 Bounded Context Database Design Diagram
 
 ## 5.5. Bounded Context: Procedure Management
+
+| **Nombre** | Procedure |
+|-------------|------------|
+| **Relaciones** | Citizen, Payment, Funcionario |
+| **Descripción** | Esta entidad representa un trámite o procedimiento solicitado por un ciudadano dentro del sistema. Contiene información sobre su estado, fechas, validaciones requeridas, y la relación con pagos y funcionarios responsables. |
+
+### Atributos
+| **Nombre** | **Tipo de Dato** | **Visibilidad** |
+|-------------|------------------|-----------------|
+| id | int | Privado |
+| citizenId | int | Privado |
+| type | Enum | Privado |
+| state | Enum | Privado |
+| startDate | timestamp | Privado |
+| endDate | timestamp | Privado |
+| procedureNoSql | UUID | Privado |
+| category | Enum | Privado |
+| paymentId | UUID | Privado |
+| requiredAmount | int | Privado |
+| paymentState | string | Privado |
+| requireValidation | bool | Privado |
+| funcionarioId | UUID | Privado |
+| comments | string | Privado |
+
+### Métodos
+| **Método** | **Descripción (opcional)** |
+|-------------|----------------------------|
+| Procedure() | Constructor por defecto |
+| Procedure(int citizenId, Enum type, Enum category, UUID funcionarioId) | Constructor con parámetros principales |
+| updateState(Enum newState) | Actualiza el estado del procedimiento |
+| assignPayment(UUID paymentId, int amount) | Asocia un pago al trámite y define el monto requerido |
+| validateProcedure(bool validationStatus) | Marca si el trámite requiere validación adicional |
+| addComment(String comment) | Agrega comentarios de seguimiento o revisión |
+| completeProcedure(timestamp endDate) | Finaliza el trámite y registra su fecha de cierre |
+| getProcedureInfo() | Retorna la información completa del trámite |
+
+
+| **Nombre** | Payment |
+|-------------|----------|
+| **Relaciones** | Procedure |
+| **Descripción** | Esta entidad representa el registro de pago asociado a un trámite o procedimiento. Contiene información sobre el monto, el estado del pago, el método utilizado y la fecha de creación. |
+
+### Atributos
+| **Nombre** | **Tipo de Dato** | **Visibilidad** |
+|-------------|------------------|-----------------|
+| id | UUID | Privado |
+| amount | Decimal | Privado |
+| status | Enum | Privado |
+| paymentMethod | String | Privado |
+| created_At | DateTime | Privado |
+
+### Métodos
+| **Método** | **Descripción (opcional)** |
+|-------------|----------------------------|
+| Payment() | Constructor por defecto |
+| Payment(Decimal amount, String paymentMethod) | Constructor con parámetros principales |
+| updateStatus(Enum newStatus) | Actualiza el estado del pago |
+| getPaymentInfo() | Retorna los detalles del pago |
+| markAsCompleted() | Cambia el estado del pago a completado |
+| isPending() | Verifica si el pago se encuentra pendiente |
+
+
 ### 5.5.1 Domain Layer
+
+| Aggregate | **Procedure** |
+|--------------------|----------------|
+| **Atributos** | id: int <br> citizenId: int <br> type: Enum <br> state: Enum <br> startDate: timestamp <br> endDate: timestamp <br> procedureNoSql: UUID <br> category: Enum <br> paymentId: UUID <br> requiredAmount: int <br> paymentState: string <br> requireValidation: bool <br> funcionarioId: UUID <br> comments: string |
+| **Métodos** | startProcedure() <br> validateProcedure() <br> updateState(Enum newState) <br> assignFuncionario(UUID funcionarioId) <br> attachPayment(UUID paymentId, int amount) <br> finalizeProcedure() <br> addComment(String comment) |
+
+| Entity | **Payment** |
+|-----------------|-------------|
+| **Atributos** | id: UUID <br> amount: Decimal <br> status: Enum <br> paymentMethod: String <br> created_At: DateTime |
+| **Métodos** | createPayment(Decimal amount, String paymentMethod) <br> updateStatus(Enum newStatus) <br> markAsCompleted() <br> isPending(): bool <br> getPaymentDetails(): String |
+
+
+| Value Object | **ProcedureType** |
+|------------------------|------------------|
+| **Valores (Enum)** | BirthCertificate <br> DNI Renewal <br> MarriageRegistration <br> AddressChange <br> RUC Request <br> TaxStatusInquiry |
+| **Métodos** | fromString(String type): ProcedureType <br> toString(): String |
+
+
 ### 5.5.2 Interface Layer
+
+| Controller | **ProcedureController** |
+|--------------------|--------------------------|
+| **Servicios** | - procedureQueryService: ProcedureQueryService <br> - procedureCommandService: ProcedureCommandService |
+| **Métodos** | + ProcedureController() <br> + createProcedure(createProcedureResource: CreateProcedureResource): ResponseEntity <br> + getProcedureById(procedureId: Long): ResponseEntity <br> + getProceduresByCitizenId(citizenId: Long): ResponseEntity <br> + updateProcedureState(procedureId: Long, updateProcedureResource: UpdateProcedureResource): ResponseEntity <br> + assignFuncionario(procedureId: Long, assignFuncionarioResource: AssignFuncionarioResource): ResponseEntity <br> + attachPayment(procedureId: Long, attachPaymentResource: AttachPaymentResource): ResponseEntity <br> + deleteProcedure(procedureId: Long): ResponseEntity |
+
+| Controller | **PaymentController** |
+|--------------------|------------------------|
+| **Servicios** | - paymentQueryService: PaymentQueryService <br> - paymentCommandService: PaymentCommandService |
+| **Métodos** | + PaymentController() <br> + createPayment(createPaymentResource: CreatePaymentResource): ResponseEntity <br> + getPaymentById(paymentId: UUID): ResponseEntity <br> + getPaymentsByStatus(status: Enum): ResponseEntity <br> + updatePaymentStatus(paymentId: UUID, updatePaymentResource: UpdatePaymentResource): ResponseEntity <br> + deletePayment(paymentId: UUID): ResponseEntity |
+
+
 ### 5.5.3 Application Layer
+
+| CommandServiceHandler | **ProcedureCommandServiceImpl** |
+|-------------------------------|----------------------------------|
+| **Dependencias** | - procedureRepository: ProcedureRepository <br> - paymentRepository: PaymentRepository <br> - funcionarioRepository: FuncionarioRepository |
+| **Métodos** | + handle(command: CreateProcedureCommand): Optional<Procedure> <br> + handle(command: UpdateProcedureStateCommand): Optional<Procedure> <br> + handle(command: AssignFuncionarioCommand): Optional<Procedure> <br> + handle(command: AttachPaymentCommand): Optional<Procedure> <br> + handle(command: DeleteProcedureCommand): void |
+
+| QueryServiceHandler | **ProcedureQueryServiceImpl** |
+|------------------------------|-------------------------------|
+| **Dependencias** | - procedureRepository: ProcedureRepository |
+| **Métodos** | + handle(query: GetProcedureByIdQuery): Optional<Procedure> <br> + handle(query: GetProceduresByCitizenIdQuery): List<Procedure> <br> + handle(query: GetAllProceduresQuery): List<Procedure> |
+
+
+| CommandServiceHandler | **PaymentCommandServiceImpl** |
+|-------------------------------|-------------------------------|
+| **Dependencias** | - paymentRepository: PaymentRepository <br> - procedureRepository: ProcedureRepository |
+| **Métodos** | + handle(command: CreatePaymentCommand): Optional<Payment> <br> + handle(command: UpdatePaymentStatusCommand): Optional<Payment> <br> + handle(command: DeletePaymentCommand): void |
+
+| QueryServiceHandler | **PaymentQueryServiceImpl** |
+|------------------------------|-----------------------------|
+| **Dependencias** | - paymentRepository: PaymentRepository |
+| **Métodos** | + handle(query: GetPaymentByIdQuery): Optional<Payment> <br> + handle(query: GetPaymentsByStatusQuery): List<Payment> <br> + handle(query: GetAllPaymentsQuery): List<Payment> |
+
+
 ### 5.5.4 Infrastructure Layer
+
+| Repository | **ProcedureRepository** |
+|----------------------|------------------------|
+| **Métodos** | + findById(id: Long): Optional<Procedure> <br> + findByCitizenId(citizenId: Long): List<Procedure> <br> + findByState(state: ProcedureState): List<Procedure> <br> + findByFuncionarioId(funcionarioId: UUID): List<Procedure> <br> + findByCategory(category: ProcedureCategory): List<Procedure> <br> + findAll(): List<Procedure> |
+
+| Repository | **FuncionarioRepository** |
+|----------------------|--------------------------|
+| **Métodos** | + findById(funcionarioId: UUID): Optional<Funcionario> <br> + findByDni(dni: String): Optional<Funcionario> <br> + findAllByRole(role: String): List<Funcionario> |
+
+| Repository | **PaymentRepository** |
+|----------------------|----------------------|
+| **Métodos** | + findById(paymentId: UUID): Optional<Payment> <br> + findByStatus(status: PaymentStatus): List<Payment> <br> + findByProcedureId(procedureId: Long): Optional<Payment> <br> + findAll(): List<Payment> |
+
+| Component | **BlockchainAdapter** |
+|---------------------|----------------------|
+| **Dependencias** | - blockchainClient: BlockchainClient |
+| **Métodos** | + recordProcedureOnLedger(procedure: Procedure): String <br> + verifyProcedureHash(hash: String): Boolean <br> + getTransactionDetails(txHash: String): BlockchainTransaction |
+
+| Model | **ProcedureSmartContract** |
+|------------------|-------------------------|
+| **Constantes / Funciones** | + BINARY: static String <br> + FUNC_REGISTER_PROCEDURE: static String <br> + FUNC_GET_PROCEDURE: static String <br> + FUNC_VERIFY_PROCEDURE: static String <br> + ProcedureSmartContract() <br> + deploy(web3j: Web3j, credentials: Credentials, gasProvider: ContractGasProvider): ProcedureSmartContract <br> + load(contractAddress: String, web3j: Web3j, credentials: Credentials): ProcedureSmartContract <br> + getProcedure(procedureId: Long): Tuple <br> + registerProcedure(procedure: Tuple): String <br> + verifyProcedure(hash: String): Boolean |
+
+| Service | **EthereumProcedureContractService** |
+|-------------------|-------------------------------------|
+| **Dependencias** | - ethereumRpcUrl: String <br> - web3j: Web3j <br> - privateKey: String <br> - credentials: Credentials |
+| **Métodos** | + EthereumProcedureContractService() <br> + deployContract(procedureTuple: Tuple): String <br> + load(contractAddress: String): ProcedureSmartContract <br> + registerProcedure(procedure: Tuple): String <br> + getProcedure(procedureId: Long): Tuple <br> + verifyProcedure(hash: String): Boolean |
+
+| Mapper | **ProcedureContractMapper** |
+|------------------|-----------------------------|
+| **Métodos** | + toProcedureContract(procedure: Procedure, hash: String): ProcedureSmartContract <br> + toProcedureTuple(procedure: Procedure): Tuple <br> + fromProcedureTuple(tuple: Tuple): Procedure |
+
+| Repository | **ProcedureNoSqlRepository** |
+|----------------------|------------------------------|
+| **Dependencias** | - mongoTemplate: MongoTemplate <br> - collectionName: String = "procedure_nosql" |
+| **Métodos** | + findById(id: UUID): Optional<ProcedureDocument> <br> + findByProcedureId(procedureId: Long): Optional<ProcedureDocument> <br> + save(document: ProcedureDocument): ProcedureDocument <br> + updateFields(procedureId: Long, updates: Map<String, Object>): ProcedureDocument <br> + deleteByProcedureId(procedureId: Long): void <br> + findAllByCitizenId(citizenId: Int): List<ProcedureDocument> |
+
+
 ### 5.5.5 Bounded Context Software Architecture Component Level Diagrams
+
+<img width="1087" height="844" alt="image" src="https://github.com/user-attachments/assets/780b27af-fa51-4471-a80a-0605a23a6681" />
+
 ### 5.5.6 Bounded Context Software Architecture Code Level Diagrams
+
 ### 5.5.6.1 Bounded Context Domain Layer Class Diagram
+
+
+<img width="1290" height="688" alt="image" src="https://github.com/user-attachments/assets/7a3646d4-5244-4839-ac41-003d5d393a6b" />
+
+
 ### 5.5.6.2 Bounded Context Database Design Diagram
 
 ## 5.6. Bounded Context: Analytics
