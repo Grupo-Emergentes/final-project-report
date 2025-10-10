@@ -1317,7 +1317,26 @@ Con el objetivo de mejorar la visibilidad de Perú Digital en los motores de bú
 
 ## 6.3. Landing Page UI Design
 ### 6.3.1 Landing Page Wireframe
+![wirefram-1](https://github.com/user-attachments/assets/7dcea97c-ecc4-4901-96c7-3ecaf6e8bbce)
+![wirefram-2](https://github.com/user-attachments/assets/c4a0dc36-9179-4c1f-9f6b-cb48bc917b63)
+![wirefram-3](https://github.com/user-attachments/assets/538cc66d-3d30-45f0-9647-7389e9d3f19d)
+![wirefram-4](https://github.com/user-attachments/assets/762e8f07-54ca-4784-b2d3-13ca0e66099a)
+![wirefram-5](https://github.com/user-attachments/assets/6ce512b3-36cb-43dd-a4bd-d55479c434b4)
+![wirefram-6](https://github.com/user-attachments/assets/1b130a78-a1a2-406d-b875-aec80f91a0d5)
+![wirefram-7](https://github.com/user-attachments/assets/e3b1e77c-52ec-481f-895e-59d77797858a)
+![wirefram-8](https://github.com/user-attachments/assets/e4c3957f-da4b-44a2-8398-955700cafd19)
+![wirefram-9](https://github.com/user-attachments/assets/c736e3ee-9fc3-448d-aee8-3f63a9600ad3)
+
 ### 6.3.1 Landing Page Mock-up
+![mockup-1](https://github.com/user-attachments/assets/a9aa47ec-9128-4c37-bd7d-a1789d8a2a95)
+![mockup-2](https://github.com/user-attachments/assets/bc25d321-929e-4c03-9f94-a20f32a784e0)
+![mockup-3](https://github.com/user-attachments/assets/1f30347a-d583-4a43-9353-55dac684d881)
+![mockup-4](https://github.com/user-attachments/assets/85bce5e1-80e9-481f-9986-d0f5da00f0c8)
+![mockup-5](https://github.com/user-attachments/assets/4e8165cb-0b9d-464d-9ea1-318f5e7c1394)
+![mockup-6](https://github.com/user-attachments/assets/708235eb-673d-4e9e-bb8c-1a38a2938bb3)
+![mockup-7](https://github.com/user-attachments/assets/da60706c-3c11-4bd8-953b-f96b62a0ad17)
+![mockup-8](https://github.com/user-attachments/assets/8d7c4cdd-baa5-4822-85d9-5e340d15215d)
+
 
 ## 6.4. Application UX/UI Design
 ### 6.4.1 Applications Wireframes
