@@ -1151,18 +1151,22 @@ Cuando el ciudadano hace un tramite, dicho tramite debe salir con su nombre, dni
 Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4 
 Model.
 
-<img width="1040" height="733" alt="image" src="https://github.com/user-attachments/assets/3aa4a024-d955-47d0-8555-83a3c6621dc2" />
+<img width="868" height="790" alt="image" src="https://github.com/user-attachments/assets/2241047e-1c5f-42e6-a176-69475eb80a99" />
 
 ### 4.3.2. Software Architecture Context Level Diagrams
 Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4 
 Model.
-<img width="1040" height="733" alt="image" src="https://github.com/user-attachments/assets/f473fd58-75fe-4979-89f2-eefdc29f28a3" />
+<img width="974" height="860" alt="image" src="https://github.com/user-attachments/assets/67cab89f-fbac-4a41-ac10-5fef6efe32cb" />
+
 
 ### 4.3.3. Software Architecture Container Level Diagrams
-<img width="1040" height="733" alt="image" src="https://github.com/user-attachments/assets/798acccf-db95-4525-a63b-e563325d5116" />
+
+<img width="1112" height="766" alt="image" src="https://github.com/user-attachments/assets/b572ee1b-d0ab-4b88-b44f-c9877a733d38" />
+
 ### 4.3.4. Software Architecture Deployment Diagrams
 
-<img width="1040" height="733" alt="image" src="https://github.com/user-attachments/assets/83eb267f-5627-4386-aef2-4280d3fc2676" />
+<img width="1347" height="877" alt="image" src="https://github.com/user-attachments/assets/a54715d7-29b7-4a30-b17e-3554f37746f8" />
+
 
 # Capítulo V: Tactital-Level Software Design
 
