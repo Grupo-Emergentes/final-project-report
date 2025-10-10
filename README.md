@@ -943,63 +943,122 @@ Esta funcionalidad es fundamental, ya que convierte cada documento en un recurso
 | QA-04 | Seguridad – Autenticación y Registro | Usuario (ciudadano o funcionario) | Inicio de sesión o registro en la aplicación | Servicio de autenticación | Usuario accediendo desde web o móvil | El sistema valida la identidad del usuario mediante autenticación segura (DNI + clave, firma digital, o validación multifactor).<br><br>Los datos sensibles en login y registro se transmiten y almacenan cifrados.<br><br>Se garantiza la confidencialidad e integridad de la información personal. | Autenticación completada en ≤ 5 segundos.<br><br>Cero fugas de información sensible en auditorías de seguridad. |
 | QA-05 | Seguridad – Integridad de Documentos | Usuario (ciudadano o funcionario) | Generación, descarga o validación de QR asociado a algún documento | Aplicación | Usuario accediendo desde web o móvil | El sistema genera QR vinculados a los documentos del ciudadano.<br><br>Cada QR se valida contra blockchain para asegurar que no ha sido alterado.<br><br>Se garantiza no repudio: un QR válido siempre corresponde a un documento oficial. | 100% de los QR deben validarse contra blockchain.<br><br>Tiempo de validación ≤ 3 segundos. |
 
+| ID  | Título | Descripción | Aceptación |
+| --- | --- | --- | --- |
+| CON-01 | Uso de Python para el desarrollo del chatbot | El servicio de chatbot debe implementarse en Python, dado que este lenguaje ofrece un ecosistema maduro de librerías y frameworks para IA/ML (por ejemplo, TensorFlow, PyTorch, Hugging Face, LangChain), así como amplia comunidad y soporte.<br><br>El objetivo es garantizar mantenibilidad, disponibilidad de talento y facilidad de integración con servicios de IA. | Escenario 1: Estructura del proyecto en Python<br><br>Given que el equipo inicia el desarrollo del servicio de chatbot<br><br>When se crea la base del proyecto<br><br>Then la estructura debe estar en Python con dependencias gestionadas mediante pip/poetry<br><br>And el código debe cumplir con convenciones PEP8 y pruebas unitarias básicas<br><br>Escenario 2: Integración con librerías de IA<br><br>Given que el chatbot necesita procesar lenguaje natural<br><br>When se configure el módulo de IA<br><br>Then debe utilizar librerías del ecosistema Python (ej. Hugging Face, spaCy, NLTK)<br><br>And debe poder ejecutarse en entornos locales y en contenedores Docker |
+| --- | --- | --- | --- |
+| CON-02 | Uso de Javascript para el desarrollo del Wallet basado en Blockchain | El servicio de Wallet que interactúa con la blockchain debe implementarse en JavaScript/Node.js, ya que el equipo cuenta con mayor experiencia en este lenguaje frente a otros disponibles.<br><br>Esto permitirá optimizar la curva de aprendizaje, acelerar el desarrollo y aprovechar librerías y SDKs maduros del ecosistema JavaScript orientados a blockchain. | Escenario 1: Estructura del proyecto en NodeJs<br><br>Given que el equipo inicia el desarrollo del servicio de wallet<br><br>When se crea la base del proyecto<br><br>Then la estructura debe estar en Node.js con dependencias gestionadas mediante npm o yarn<br><br>And el código debe seguir convenciones de estilo (ESLint, Prettier) y pruebas unitarias<br><br>Escenario 2: Integración con Blockchain<br><br>Given que el servicio de wallet debe firmar y validar transacciones en blockchain<br><br>When se configure la conexión con la red blockchain<br><br>Then debe implementarse utilizando librerías JavaScript reconocidas (ej. web3.js, ethers.js, hyperledger-fabric-sdk-node)<br><br>And las transacciones deben registrarse y consultarse exitosamente desde la blockchain<br><br>Escenario 3: Contenerización<br><br>Given que el servicio de wallet se despliega en un entorno cloud<br><br>When se construye la imagen del contenedor<br><br>Then debe basarse en un Dockerfile con entorno Node.js LTS<br><br>And debe permitir ejecutar el servicio de manera portable en Kubernetes o Docker Compose |
+| --- | --- | --- | --- |
+| CON-03 | Uso del ecosistema amazon para realizar el despliegue | La infraestructura de la plataforma deberá desplegarse sobre Amazon Web Services (AWS) aprovechando sus servicios administrados (EKS, RDS, S3, Cognito, CloudWatch, etc.). Esta decisión se toma para garantizar escalabilidad, disponibilidad global, seguridad certificada y facilidad de integración entre microservicios. | Scenario 1: Infraestructura en AWS<br><br>**Given** que el equipo requiere desplegar un nuevo microservicio o componente de la arquitectura,  <br><br>**When** se realice la configuración y despliegue,  <br><br>**Then** este debe ejecutarse dentro del ecosistema de AWS utilizando sus servicios nativos o administrados. |
+| --- | --- | --- | --- |
+
 ### 4.1.3. Architectural Drivers Backlog  
 
-Los **drivers arquitectónicos** representan los factores clave que guían las decisiones de diseño de la plataforma. Incluyen objetivos de negocio, necesidades de usuario, restricciones y atributos de calidad prioritarios.  
-
-- **Business Drivers**  
-  - Centralizar trámites digitales en un solo portal.  
-  - Reducir la burocracia y los tiempos de atención.  
-  - Mejorar la confianza ciudadana en los servicios digitales del Estado.  
-  - Asegurar validez legal de los documentos mediante firma digital y blockchain.  
-
-- **User Drivers**  
-  - Ciudadanos: rapidez, simplicidad y seguridad en trámites.  
-  - Funcionarios: reducción de rechazos, dashboards con métricas, integración con sistemas existentes.  
-
-- **Technical Drivers**  
-  - Integración con APIs oficiales (RENIEC, SUNAT, etc.).  
-  - Autenticación segura (DNI+clave, firma digital, validación con QR).  
-  - Interoperabilidad con múltiples servicios estatales.  
-  - Arquitectura escalable y disponible 24/7.  
-
-- **Constraints**  
-  - Cumplimiento normativo (Ley de Firmas y Certificados Digitales, Ley 27444).  
-  - Uso obligatorio de autoridades de certificación acreditadas.  
-  - Disponibilidad mínima del 99.9%.  
-
----
+| Driver ID | Título | Descripción | Importancia | Architecture<br><br>Technical<br><br>Complexity |
+| --- | --- | --- | --- | --- |
+| QA-01 | Atributo de calidad | El sistema debe recuperarse automáticamente ante fallos de software o hardware y mantener operación 24/7. | Alta | Alta |
+| --- | --- | --- | --- | --- |
+| QA-02 | Atributo de calidad | La aplicación debe integrarse de manera confiable con APIs externas, aún si estas presentan fallos o lentitud. | Alta | Alta |
+| --- | --- | --- | --- | --- |
+| QA-03 | Atributo de calidad | El sistema debe responder sin retrasos perceptibles, incluso con carga concurrente. | Alta | Alta |
+| --- | --- | --- | --- | --- |
+| QA-04 | Atributo de calidad | El sistema debe validar identidades con autenticación multifactor y garantizar cifrado de datos sensibles. | Alta | Alta |
+| --- | --- | --- | --- | --- |
+| QA-05 | Atributo de calidad | Los documentos deben garantizar no repudio mediante validación en blockchain. | Alta | Media |
+| --- | --- | --- | --- | --- |
+| CON-01 | Restricción técnica | Se debe implementar en Python para aprovechar librerías de IA/ML y disponibilidad de talento. | Media | Media |
+| --- | --- | --- | --- | --- |
+| CON-02 | Restricción técnica | El equipo domina JavaScript, lo que asegura productividad y acceso a librerías maduras del ecosistema. | Alta | Media |
+| --- | --- | --- | --- | --- |
+| CON-03 | Restricción técnica | AWS ofrece escalabilidad global, seguridad certificada y servicios gestionados que reducen complejidad. | Alta | Alta |
+| --- | --- | --- | --- | --- |
 
 ### 4.1.4. Architectural Design Decisions  
 
-Las **decisiones arquitectónicas** son elecciones clave tomadas para garantizar que la plataforma cumpla con los drivers y atributos de calidad:  
+Las decisiones arquitectónicas son elecciones clave tomadas para garantizar que la plataforma cumpla con los **drivers arquitectónicos** (atributos de calidad y restricciones):
 
-1. **Arquitectura basada en microservicios** para aislar módulos (trámites RENIEC, SUNAT, validaciones, dashboard) y garantizar escalabilidad.  
-2. **Data Lake centralizado** para almacenar y procesar documentos digitalizados y métricas de uso.  
-3. **Uso de blockchain** para registrar huellas digitales de documentos y validarlos vía QR.  
-4. **Autenticación multi-factor** (DNI+clave, firma digital, OTP) para fortalecer la seguridad.  
-5. **API Gateway** para gestionar integraciones con entidades externas y controlar accesos.  
-6. **Infraestructura en la nube** con balanceadores de carga y redundancia para alta disponibilidad.  
+- **Arquitectura basada en microservicios** para aislar módulos (chatbot, wallet blockchain, trámites RENIEC, SUNAT, validaciones, dashboard) y facilitar escalabilidad, mantenibilidad y despliegues independientes.  
 
----
+- **Bases de datos independientes por microservicio** (ej. RDS/Aurora para datos transaccionales, DynamoDB para almacenamiento NoSQL) con el fin de garantizar autonomía y evitar acoplamiento.  
+
+- **Uso de inteligencia artificial para el chatbot**, implementado en **Python** con librerías de procesamiento de lenguaje natural y frameworks de IA/ML (TensorFlow, PyTorch, Hugging Face, LangChain), a fin de ofrecer atención automatizada a los ciudadanos y asistencia inteligente al personal.  
+
+- **Uso de blockchain** para registrar las huellas digitales de los documentos oficiales y validarlos a través de QR, asegurando integridad y no repudio.  
+
+- **Autenticación multifactor (DNI + clave, firma digital, OTP)** con cifrado en tránsito y en reposo, garantizando la confidencialidad y seguridad de la información sensible.  
+
+- **Amazon API Gateway** como punto de entrada único para gestionar integraciones con sistemas externos (RENIEC, SUNAT, etc.), controlar accesos y aplicar políticas de seguridad.  
+
+- **Infraestructura en AWS con balanceadores de carga (ALB/NLB) y despliegue en ECS/EKS** para lograr disponibilidad 24/7, recuperación ante fallos en menos de 3 minutos y escalado automático bajo demanda.  
+
+- **Uso de Amazon Cognito** para la gestión de identidades de usuarios, integrando mecanismos de autenticación y autorización seguros.  
+
+- **Monitoreo centralizado con CloudWatch y trazabilidad distribuida con X-Ray**, permitiendo identificar fallos, medir rendimiento y cumplir con los acuerdos de disponibilidad definidos (SLAs).
+- 
 
 ### 4.1.5. Quality Attribute Scenario Refinements  
 
-Refinamiento de escenarios de atributos de calidad previamente definidos:  
+#### Scenario 1 – Performance en hora pico
+| Elemento             | Detalle |
+|-----------------------|---------|
+| **Scenario(s)**       | Como usuario en hora pico, quiero registrar o verificar la validez de un documento desde mi dispositivo, para asegurar que la información esté disponible y validada sin retrasos. |
+| **Business Goals**    | Garantizar rapidez y consistencia en el registro y validación de documentos durante alta demanda. |
+| **Relevant Quality Attributes** | Performance, Availability, Usability |
+| **Stimulus**          | El usuario presiona “Registrar/Verificar documento” en la app durante hora pico. |
+| **Stimulus Source**   | Usuario final (ciudadano). |
+| **Environment**       | Aplicación móvil/web con conexión estable a internet, alta concurrencia. |
+| **Artifact**          | Módulo de validación documental + servicio de blockchain. |
+| **Response**          | El documento se guarda o valida y la confirmación es enviada al usuario. |
+| **Response Measure**  | Respuesta completada en ≤ 2 segundos, sin errores de validación. |
+| **Questions & Issues**| ¿Cómo se gestiona la concurrencia de múltiples usuarios? ¿Existen mecanismos de balanceo de carga? |
 
-- **Disponibilidad (QA-01)**  
-  - *Refinamiento:* El sistema debe contar con monitoreo proactivo (logging + alertas) y failover automático en menos de 3 minutos.  
+---
 
-- **Interoperabilidad (QA-02)**  
-  - *Refinamiento:* Cada microservicio debe exponer APIs RESTful compatibles con JSON, con tiempo de respuesta ≤ 1s al consultar RENIEC o SUNAT.  
+#### Scenario 2 – Seguridad y autenticación
+| Elemento             | Detalle |
+|-----------------------|---------|
+| **Scenario(s)**       | Como ciudadano, solo yo puedo acceder a mi cuenta, dado que la plataforma contiene información confidencial. |
+| **Business Goals**    | Proteger confidencialidad y privacidad de la información sensible. |
+| **Relevant Quality Attributes** | Security, Usability |
+| **Stimulus**          | El usuario intenta iniciar sesión en la plataforma. |
+| **Stimulus Source**   | Usuario final (ciudadano). |
+| **Environment**       | Acceso desde web o móvil, con MFA habilitado. |
+| **Artifact**          | Módulo de autenticación y gestión de usuarios. |
+| **Response**          | Validación con MFA (DNI + clave + OTP/firma digital). Acceso otorgado solo al titular. |
+| **Response Measure**  | Autenticación completada en ≤ 5 segundos. Cero accesos indebidos. |
+| **Questions & Issues**| ¿Cómo se protegen los datos de autenticación? ¿Qué pasa si un usuario pierde su método MFA? |
 
-- **Performance (QA-03)**  
-  - *Refinamiento:* El sistema debe soportar al menos 10,000 transacciones concurrentes, respondiendo en ≤ 1s en operaciones críticas (renovación de DNI, validación QR).  
+---
 
-- **Seguridad (QA-04a - Autenticación)**  
-  - *Refinamiento:* Inicio de sesión seguro con encriptación AES-256 y validación en ≤ 5 segundos.  
-- **Seguridad (QA-04b - Blockchain QR)**  
-  - *Refinamiento:* El 100% de los QR generados deben validarse contra blockchain garantizando integridad e inmutabilidad del documento.  
+#### Scenario 3 – Integridad con Blockchain
+| Elemento             | Detalle |
+|-----------------------|---------|
+| **Scenario(s)**       | Como usuario, quiero que los datos generados y validados sean siempre precisos, sin posibilidad de manipulación. |
+| **Business Goals**    | Garantizar integridad, autenticidad y no repudio de documentos y transacciones. |
+| **Relevant Quality Attributes** | Integrity, Security, Reliability |
+| **Stimulus**          | Un documento es registrado o validado en la plataforma. |
+| **Stimulus Source**   | Usuario final o funcionario. |
+| **Environment**       | Plataforma conectada al servicio de blockchain. |
+| **Artifact**          | Servicio de blockchain + módulo de validación documental. |
+| **Response**          | Registro del hash en blockchain y devolución de QR verificable. |
+| **Response Measure**  | 100% de los documentos registrados deben contar con hash único validable en blockchain. |
+| **Questions & Issues**| ¿Cómo se gestiona la verificación offline de un QR? ¿Qué ocurre si la blockchain no está disponible? |
+
+---
+
+#### Scenario 4 – Alta disponibilidad
+| Elemento             | Detalle |
+|-----------------------|---------|
+| **Scenario(s)**       | Como usuario, si intento ingresar y la aplicación falla, esta debe recuperarse y estar disponible nuevamente en menos de un minuto. |
+| **Business Goals**    | Asegurar alta disponibilidad y resiliencia de la plataforma. |
+| **Relevant Quality Attributes** | Availability, Reliability, Fault Tolerance |
+| **Stimulus**          | El usuario intenta acceder, pero ocurre un fallo en el sistema. |
+| **Stimulus Source**   | Usuario final. |
+| **Environment**       | Aplicación en producción, fallo inesperado en servidor o software. |
+| **Artifact**          | Servidores de aplicación + balanceador de carga. |
+| **Response**          | El sistema detecta el fallo, redirige al servidor redundante y notifica al usuario. |
+| **Response Measure**  | Tiempo máximo de recuperación ≤ 1 minuto. |
+| **Questions & Issues**| ¿El sistema cuenta con failover automático? ¿Cómo se garantiza que no se pierda información durante la caída? |.  
 
 ## 4.2. Strategic-Level Domain-Driven Design
 
