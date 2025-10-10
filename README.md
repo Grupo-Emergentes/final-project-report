@@ -1229,8 +1229,21 @@ Model.
 # Capítulo VI: Solution UX Design
 
 ## 6.1. Style Guidelines
+
+En esta sección se establecen las normas de estilo que guiarán el desarrollo del producto desde sus inicios. Estas directrices definen un marco común para la selección de tipografías, escalas tipográficas y la paleta de colores, lo que facilitará el diseño de Peru Digital desde las primeras fases del prototipado. Servirán como referencia esencial para todo el equipo, ofreciendo pautas claras sobre cómo implementar los distintos elementos visuales en cada sección de la plataforma. De esta manera, se agiliza el proceso de trabajo y se garantiza una identidad visual uniforme y coherente en toda la experiencia de Peru Digital.
+
 ### 6.1.1 General Style Guidelines
+
+En este apartado se reúnen los pilares visuales de nuestra plataforma: la paleta de colores, los íconos, el logotipo y la tipografía seleccionados con propósito. Estos componentes no solo definen la estética de la interfaz web, sino que también sientan las bases de una identidad visual clara y reconocible. Cada elección responde a un criterio cuidadoso, orientado a mantener coherencia en todos los puntos de contacto con el usuario y a transmitir, de forma atractiva y coherente, los valores que representamos.
+
 ### 6.1.2 Web, Mobile & Devices Style Guidelines
+Los lineamientos para diseño web y móvil se basan en la tipografía Inter, ya establecida en la guía general de estilo. Su diseño limpio y moderno la hace ideal para garantizar una lectura clara y una estética actual en cualquier pantalla.  
+
+Además, se ha definido una paleta cromática específica para la landing page y la app, junto con una versión estandarizada del logotipo, limitando al mínimo sus variaciones. El documento también incluye las especificaciones de los componentes interactivos como los distintos tipos de botones, el formato visual de las tarjetas empleadas en áreas clave del sitio, y un conjunto de íconos pensado para guiar al usuario de forma intuitiva. Todo esto se articula con el objetivo de ofrecer una identidad visual consistente y una experiencia fluida, sin importar el dispositivo desde el que se acceda.
+
+<img width="1440" height="994" alt="style-1" src="https://github.com/user-attachments/assets/09d0ecbc-6c22-49c7-85f0-9db99548c33b" />
+<img width="1440" height="994" alt="style-2" src="https://github.com/user-attachments/assets/97811b05-966b-4638-a6dd-b662043d5d1f" />
+
 
 ## 6.2. Information Architecture
 ### 6.2.1 Organization Systems
