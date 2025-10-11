@@ -1482,8 +1482,153 @@ Model.
 
 <img width="1033" height="488" alt="image" src="https://github.com/user-attachments/assets/0b63ccd5-e930-49f7-9f8f-09eed8c82c7f" />
 
+### 5.6.6.2 Bounded Context Database Design Diagram
+
+
+## 5.6. Bounded Context: ChatBot
+### 5.6.1 Domain Layer
+#### **Entidad: ChatMessage**
+
+| **Nombre** | ChatMessage |
+|-------------|-------------|
+| **Relaciones** | Citizen |
+| **Descripción** | Representa un mensaje enviado o recibido por el ciudadano a través del chatbot, el cual forma parte del historial de interacción con el sistema. |
+
+##### **Atributos**
+| **Nombre** | **Tipo de Dato** | **Visibilidad** |
+|-------------|------------------|-----------------|
+| id | UUID | Privado |
+| citizenId | UUID | Privado |
+| message | String | Privado |
+| createdAt | Date | Privado |
+
+##### **Métodos**
+| **Método** | **Descripción (opcional)** |
+|-------------|----------------------------|
+| ChatMessage() | Constructor por defecto |
+| ChatMessage(UUID, UUID, String, Date) | Constructor con parámetros |
+| getMessage() | Retorna el contenido del mensaje |
+| getCitizenId() | Retorna el identificador del ciudadano |
+| getCreatedAt() | Retorna la fecha del mensaje |
+
+#### **<<Aggregate>> ChatSession**
+
+| **Nombre** | ChatSession |
+|-------------|-------------|
+| **Relaciones** | ChatMessage, Citizen |
+| **Descripción** | Representa una sesión de chat activa o histórica entre un ciudadano y el chatbot, gestionando los mensajes enviados y recibidos durante la interacción. |
+
+##### **Atributos**
+| **Nombre** | **Tipo de Dato** | **Visibilidad** |
+|-------------|------------------|-----------------|
+| id | UUID | Privado |
+| citizenId | UUID | Privado |
+| messages | ChatMessage[] | Privado |
+| startedAt | Date | Privado |
+| endedAt | Date | Privado |
+| status | ChatSessionStatus (Enum) | Privado |
+
+##### **Métodos**
+| **Método** | **Descripción (opcional)** |
+|-------------|----------------------------|
+| ChatSession() | Constructor por defecto |
+| ChatSession(UUID, UUID) | Constructor con parámetros |
+| addMessage(chatMessage: ChatMessage) | Agrega un nuevo mensaje a la sesión |
+| closeSession() | Cierra la sesión actual |
+| getMessages() | Retorna el historial de mensajes |
+| getStatus() | Retorna el estado de la sesión |
+
+
+### 5.6.2 Interface Layer
+
+#### **<<Aggregate>> ChatSession**
+
+| **Nombre** | ChatSession |
+|-------------|-------------|
+| **Relaciones** | ChatMessage, Citizen |
+| **Descripción** | Representa una sesión de chat activa o histórica entre un ciudadano y el chatbot, gestionando los mensajes enviados y recibidos durante la interacción. |
+
+##### **Atributos**
+| **Nombre** | **Tipo de Dato** | **Visibilidad** |
+|-------------|------------------|-----------------|
+| id | UUID | Privado |
+| citizenId | UUID | Privado |
+| messages | ChatMessage[] | Privado |
+| startedAt | Date | Privado |
+| endedAt | Date | Privado |
+| status | ChatSessionStatus (Enum) | Privado |
+
+##### **Métodos**
+| **Método** | **Descripción (opcional)** |
+|-------------|----------------------------|
+| ChatSession() | Constructor por defecto |
+| ChatSession(UUID, UUID) | Constructor con parámetros |
+| addMessage(chatMessage: ChatMessage) | Agrega un nuevo mensaje a la sesión |
+| closeSession() | Cierra la sesión actual |
+| getMessages() | Retorna el historial de mensajes |
+| getStatus() | Retorna el estado de la sesión |
+
+
+### 5.6.3 Application Layer
+
+#### **<<CommandServiceHandler>> ChatSessionCommandServiceImpl**
+- chatSessionRepository: ChatSessionRepository  
+- chatMessageRepository: ChatMessageRepository  
+
++ handle(command: CreateChatSessionCommand): Optional<ChatSession>  
++ handle(command: CloseChatSessionCommand): Optional<ChatSession>  
++ handle(command: AddMessageToSessionCommand): Optional<ChatMessage>  
++ handle(command: DeleteChatSessionCommand): void  
+
+---
+
+#### **<<QueryServiceHandler>> ChatSessionQueryServiceImpl**
+- chatSessionRepository: ChatSessionRepository  
+
++ handle(query: GetChatSessionByIdQuery): Optional<ChatSession>  
++ handle(query: GetChatSessionsByCitizenIdQuery): List<ChatSession>  
++ handle(query: GetAllChatSessionsQuery): List<ChatSession>  
+
+---
+
+#### **<<CommandServiceHandler>> ChatMessageCommandServiceImpl**
+- chatMessageRepository: ChatMessageRepository  
+- chatSessionRepository: ChatSessionRepository  
+
++ handle(command: CreateChatMessageCommand): Optional<ChatMessage>  
++ handle(command: DeleteChatMessageCommand): void  
+
+---
+
+#### **<<QueryServiceHandler>> ChatMessageQueryServiceImpl**
+- chatMessageRepository: ChatMessageRepository  
+
++ handle(query: GetMessagesBySessionIdQuery): List<ChatMessage>  
++ handle(query: GetMessagesByCitizenIdQuery): List<ChatMessage>  
++ handle(query: GetMessageByIdQuery): Optional<ChatMessage>  
+
+### 5.6.4 Infrastructure Layer
+
+<<Repository>> ChatMessageRepository
++save(message: ChatMessage): void  
++findById(id: UUID): Optional<ChatMessage>  
++findByCitizenId(citizenId: UUID): List<ChatMessage>  
++findAll(): List<ChatMessage>
+
+### 5.6.5 Bounded Context Software Architecture Component Level Diagrams
+
+<img width="848" height="723" alt="image" src="https://github.com/user-attachments/assets/b6a7bddd-d001-40af-adfe-b859372f923e" />
+
+### 5.6.6 Bounded Context Software Architecture Code Level Diagrams
+
+### 5.6.6.1 Bounded Context Domain Layer Class Diagram
+
+<img width="691" height="288" alt="image" src="https://github.com/user-attachments/assets/74537fba-778f-47e1-9b59-795307535a43" />
 
 ### 5.6.6.2 Bounded Context Database Design Diagram
+
+
+
 
 # Capítulo VI: Solution UX Design
 
