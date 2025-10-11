@@ -1459,6 +1459,9 @@ Model.
 <img width="1290" height="688" alt="image" src="https://github.com/user-attachments/assets/7a3646d4-5244-4839-ac41-003d5d393a6b" />
 
 ### 5.5.6.2 Bounded Context Database Design Diagram
+<img width="1052" height="570" alt="image" src="https://github.com/user-attachments/assets/c29fb952-c488-410e-bf46-0f3b49c12d84" />
+
+
 
 ## 5.6. Bounded Context: Analytics
 ### 5.6.1 Domain Layer
@@ -1565,6 +1568,7 @@ Model.
 <img width="1033" height="488" alt="image" src="https://github.com/user-attachments/assets/0b63ccd5-e930-49f7-9f8f-09eed8c82c7f" />
 
 ### 5.6.6.2 Bounded Context Database Design Diagram
+<img width="428" height="561" alt="image" src="https://github.com/user-attachments/assets/d95b6e52-ef86-4581-8d6e-f57c5e935798" />
 
 
 ## 5.7. Bounded Context: ChatBot
@@ -1707,6 +1711,7 @@ Repository ChatMessageRepository
 <img width="691" height="288" alt="image" src="https://github.com/user-attachments/assets/74537fba-778f-47e1-9b59-795307535a43" />
 
 ### 5.7.6.2 Bounded Context Database Design Diagram
+<img width="693" height="392" alt="image" src="https://github.com/user-attachments/assets/d8846742-40e1-4e21-9936-dae1ad90f244" />
 
 
 # Capítulo VI: Solution UX Design
