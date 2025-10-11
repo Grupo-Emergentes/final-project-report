@@ -1267,9 +1267,47 @@ createdAt	Date	privado
 updatedAt	Date	privado	
 ---	---	---	---
 ### 5.2.1 Domain Layer
+Contiene las **entidades principales del dominio**: `Profile`, `Citizen`, `Funcionario` y el `Institution (Enum)`.  
+Define las reglas de negocio y comportamientos del perfil, incluyendo la lógica para actualizar y validar datos del ciudadano.
+
+- **Responsabilidad principal:** mantener la integridad de los datos de perfil.  
+- **Entidades:** Profile, Citizen, Funcionario  
+- **Value Objects / Enum:** Institution  
+
+---
+
 ### 5.2.2 Interface Layer
+Define las **interfaces** para la comunicación entre el dominio y las capas externas (API o servicios).  
+Expone endpoints o controladores para la gestión de perfiles y verificación de identidad.
+
+- **Ejemplos:**  
+  - `ProfileController`  
+  - `CitizenController`  
+  - `InstitutionAdapter`  
+
+---
+
 ### 5.2.3 Application Layer
+Coordina los **casos de uso** que interactúan con las entidades de dominio.  
+Orquesta la lógica de actualización de perfiles y validación con las instituciones externas (RENIEC, SUNARP, SUNAT).
+
+- **Casos de uso principales:**  
+  - `UpdateProfileUseCase`  
+  - `VerifyCitizenProfileUseCase`  
+  - `RegisterFuncionarioUseCase`  
+
+---
+
 ### 5.2.4 Infrastructure Layer
+Implementa los **repositorios y adaptadores** que acceden a la base de datos o servicios externos.  
+Se encarga de la persistencia del perfil y la comunicación con APIs de instituciones.
+
+- **Componentes:**  
+  - `ProfileRepository` (implementación de persistencia)  
+  - `InstitutionAPIClient` (cliente HTTP para RENIEC, SUNARP, etc.)  
+  - `CitizenMapper`  
+
+---
 ### 5.2.5 Bounded Context Software Architecture Component Level Diagrams
 ### 5.2.6 Bounded Context Software Architecture Code Level Diagrams
 ### 5.2.6.1 Bounded Context Domain Layer Class Diagram
@@ -1296,9 +1334,48 @@ read	Bool	privado
 createdAt	Date	privado	
 ---	---	---	---
 ### 5.3.1 Domain Layer
+Incluye la entidad principal `Notification`, que define los atributos y métodos necesarios para gestionar notificaciones del sistema.  
+Controla la lógica para crear, enviar y marcar notificaciones como leídas.
+
+- **Entidades:** Notification  
+- **Value Objects:** NotificationId  
+- **Eventos de Dominio:** `NotificationCreated`, `NotificationRead`  
+
+---
+
 ### 5.3.2 Interface Layer
+Define los puntos de entrada al sistema de notificaciones, como controladores REST o mensajería asíncrona.  
+Permite que otros BC (Wallet, Profiles, IAM) generen notificaciones.
+
+- **Ejemplos:**  
+  - `NotificationController`  
+  - `NotificationEventHandler`  
+  - `NotificationPublisher`  
+
+---
+
 ### 5.3.3 Application Layer
+Gestiona los casos de uso relacionados con el envío de notificaciones, utilizando los servicios del dominio.  
+Implementa lógica para agrupar, programar o reenviar notificaciones.
+
+- **Casos de uso:**  
+  - `PushNotificationUseCase`  
+  - `MarkNotificationAsReadUseCase`  
+  - `SendBulkNotificationUseCase`  
+
+---
+
 ### 5.3.4 Infrastructure Layer
+Se encarga de la persistencia y comunicación con servicios externos (colas de mensajes, correo electrónico, SMS, etc.).  
+Proporciona implementaciones concretas para el envío de notificaciones.
+
+- **Componentes:**  
+  - `NotificationRepository`  
+  - `NotificationQueueAdapter`  
+  - `EmailNotificationService`  
+  - `FirebasePushAdapter`  
+
+---
 ### 5.3.5 Bounded Context Software Architecture Component Level Diagrams
 ### 5.3.6 Bounded Context Software Architecture Code Level Diagrams
 ### 5.3.6.1 Bounded Context Domain Layer Class Diagram
@@ -1318,9 +1395,48 @@ QRCode	String	público
 blockchainInformation	BlockchainInformation	privado	
 ---	---	---	---
 ### 5.4.1 Domain Layer
+Contiene las entidades de negocio relacionadas con las transacciones y su información en blockchain.  
+Define la lógica de generación, validación y almacenamiento de transacciones.
+
+- **Entidades:** Transaction  
+- **Value Objects:** BlockchainInformation (hash, signature)  
+- **Eventos de Dominio:** `TransactionValidated`, `TransactionStored`  
+
+---
+
 ### 5.4.2 Interface Layer
+Define las interfaces que exponen los servicios de Wallet BC al exterior (API REST o eventos).  
+Permite a otros BCs crear y consultar transacciones.
+
+- **Ejemplos:**  
+  - `TransactionController`  
+  - `WalletEventListener`  
+  - `BlockchainIntegrationAdapter`  
+
+---
+
 ### 5.4.3 Application Layer
+Coordina los casos de uso que implican la gestión de transacciones.  
+Incluye la lógica de validación con blockchain y generación de QR.
+
+- **Casos de uso:**  
+  - `CreateTransactionUseCase`  
+  - `ValidateTransactionUseCase`  
+  - `StoreTransactionUseCase`  
+
+---
+
 ### 5.4.4 Infrastructure Layer
+Implementa los repositorios y adaptadores necesarios para conectarse a blockchain y bases de datos.  
+Gestiona el almacenamiento seguro y auditable de las transacciones.
+
+- **Componentes:**  
+  - `TransactionRepository`  
+  - `BlockchainAPIAdapter`  
+  - `QRCodeGeneratorService`  
+  - `WalletDatabaseProvider`  
+
+---
 ### 5.4.5 Bounded Context Software Architecture Component Level Diagrams
 ### 5.4.6 Bounded Context Software Architecture Code Level Diagrams
 ### 5.4.6.1 Bounded Context Domain Layer Class Diagram
