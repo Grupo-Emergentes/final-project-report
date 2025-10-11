@@ -176,58 +176,90 @@ MISION: Facilitar el acceso de los ciudadanos peruanos a servicios y documentos 
 
 Siguiendo la estructura propuesta
 
--   **What?**
+### **What?**
+
 El problema es la *fragmentación, lentitud y complejidad* de los trámites públicos en el Perú.  
-- Obtener un DNI demora alrededor de *15 días hábiles* (El Comercio, 2024).  
-- Perú es el *4º país de LAC con más trámites: un ciudadano tarda en promedio **8.6 horas por trámite* y hasta *11.8 h* en sectores de salud o educación.  
+
+- Obtener un DNI demora alrededor de *15 días hábiles* (El Comercio, 2024).
+  
+- Perú es el *4º país de LAC con más trámites: un ciudadano tarda en promedio **8.6 horas por trámite* y hasta *11.8 h* en sectores de salud o educación.
+  
 - Solo el *29% de trámites se resolvía en una sola interacción, mientras que el **41% requería tres o más* (ComexPerú, 2018).  
 
 
--   **When?**
+### **When?**
+
     ¿Cuando estamos viendo el problema?¿En que momento del día y/o del proceso en cuestión?
+	
 El problema se presenta cada vez que un ciudadano necesita realizar un trámite o acceder a un documento oficial.
+
 Para los funcionarios, ocurre durante la atención al público, revisión de expedientes o emisión de documentos, a lo largo de toda su jornada laboral.
 
--   **Where?**
+### **Where?**
+
     ¿Donde estamos viendo los problemas?¿En que parte/lugar del producto/proceso estamos viendo el problema?
+	
 En *múltiples plataformas estatales aisladas*, oficinas físicas y procesos aún en papel.  
-- En los sistemas internos, donde se duplican datos por falta de integración.  
-- Aunque existen avances como la *Plataforma de Interoperabilidad del Estado (PIDE)*, aún muchos procesos no se encuentran conectados (Gobierno del Perú, 2024).  
+
+- En los sistemas internos, donde se duplican datos por falta de integración.
+
+- Aunque existen avances como la *Plataforma de Interoperabilidad del Estado (PIDE)*, aún muchos procesos no se encuentran conectados (Gobierno del Perú, 2024).
 
 
--   **Who?**
+
+### **Who?**
+
     ¿A quien le sucede? ¿El problema está relacionado con las habilitades de las personas?
+	
 Afecta a dos segmentos principales:
-- *Ciudadanos peruanos*, especialmente quienes no tienen acceso a internet, viven en zonas rurales o tienen baja alfabetización digital.  
+
+- *Ciudadanos peruanos*, especialmente quienes no tienen acceso a internet, viven en zonas rurales o tienen baja alfabetización digital.
+
 - *Funcionarios públicos*, afectados por sistemas desactualizados, falta de presupuesto, resistencia al cambio y sobrecarga de tareas.  
 (Gobierno del Perú, 2024; UCV, 2023) 
 
 
--  **Why?**
+### **Why?**
+  
   ¿Por qué sucede el problema? ¿Cual es la causa?
-- *Burocracia* y falta de una infraestructura digital unificada.  
-- *Bajo presupuesto, resistencia al cambio, y la **brecha digital*.  
-- Solo el *15% de trámites se pueden iniciar en línea* y apenas el *4% finalizarse totalmente online* (ComexPerú, 2019).  <img width="461" height="189" alt="image" src="https://github.com/user-attachments/assets/e2ebf892-6fcd-418b-8abf-ea29ba2e5636" />
+
+- *Burocracia* y falta de una infraestructura digital unificada.
+  
+- *Bajo presupuesto, resistencia al cambio, y la **brecha digital*.
+  
+- Solo el *15% de trámites se pueden iniciar en línea* y apenas el *4% finalizarse totalmente online* (ComexPerú, 2019).  
 
 
--   **How?**
+### **How?**
+
     ¿Como se diferencia el problema del estado normal(optimo)? ¿La tendencia en la que aparece el problema es aleatoria o sigue un patrón?
+    
 A diferencia de un sistema ideal, el actual proceso es disperso, lento y poco transparente.
+
 Tanto ciudadanos como funcionarios siguen un patrón de frustración: repiten trámites, no tienen seguimiento claro, y deben hacer trabajo manual innecesario.
+
 La plataforma propuesta permitirá a ambos segmentos gestionar y verificar trámites desde un solo lugar, con autenticación segura y trazabilidad.
+
     ¿Como se utilizará el producto?
+
 El producto se utilizará por el ciudadano, cuando quiera recurrir a identificaciones digitales o necesite de realizar tramites. En ese caso, accederá a la plataforma, donde tendra acceso rapido a toda esta información.
-- Experiencias internacionales (Estonia, Ucrania, Chile) muestran que una plataforma unificada puede reducir trámites de *26 días a solo 10 minutos* (Harvard CID, 2023; BBC, 2023).
+
+Experiencias internacionales (Estonia, Ucrania, Chile) muestran que una plataforma unificada puede reducir trámites de *26 días a solo 10 minutos* (Harvard CID, 2023; BBC, 2023).
 
 
--   **How much?**
+### **How much?**
+
     ¿Cuantos problemas se dan en un dia? ¿En una semana? ¿En un mes?
+	
  *Tiempo perdido:* millones de horas al año (8.6 h por trámite × millones de trámites).  
-- *Ejemplo comparativo:* crear una empresa demora *26 días en Perú vs. 4 días en Chile* (ICLV, 2024).  
-- En Chile, el *89% de trámites gubernamentales están digitalizados* para ciudadanos, aunque el *43% aún no está totalmente digitalizado a nivel interno* (Gerencia.cl, 2023).
+ *Ejemplo comparativo:* crear una empresa demora *26 días en Perú vs. 4 días en Chile* (ICLV, 2024).
+  
+En Chile, el *89% de trámites gubernamentales están digitalizados* para ciudadanos, aunque el *43% aún no está totalmente digitalizado a nivel interno* (Gerencia.cl, 2023).
 
     ¿Cuanto dinero están implicando?
+	
 Los procesos actuales son elevados en logística, personal y materiales. Para el Estado, la duplicación de procesos y errores administrativos también implican pérdidas económicas y de confianza ciudadana.
+
 ### 1.2.2. Lean UX Process
 
 #### 1.2.2.1. Lean UX Problem Statements
