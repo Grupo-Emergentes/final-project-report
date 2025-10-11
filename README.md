@@ -1211,24 +1211,421 @@ Model.
 ### 5.4.6.2 Bounded Context Database Design Diagram
 
 ## 5.5. Bounded Context: Procedure Management
+
+| **Nombre** | Procedure |
+|-------------|------------|
+| **Relaciones** | Citizen, Payment, Funcionario |
+| **Descripción** | Esta entidad representa un trámite o procedimiento solicitado por un ciudadano dentro del sistema. Contiene información sobre su estado, fechas, validaciones requeridas, y la relación con pagos y funcionarios responsables. |
+
+### Atributos
+| **Nombre** | **Tipo de Dato** | **Visibilidad** |
+|-------------|------------------|-----------------|
+| id | int | Privado |
+| citizenId | int | Privado |
+| type | Enum | Privado |
+| state | Enum | Privado |
+| startDate | timestamp | Privado |
+| endDate | timestamp | Privado |
+| procedureNoSql | UUID | Privado |
+| category | Enum | Privado |
+| paymentId | UUID | Privado |
+| requiredAmount | int | Privado |
+| paymentState | string | Privado |
+| requireValidation | bool | Privado |
+| funcionarioId | UUID | Privado |
+| comments | string | Privado |
+
+### Métodos
+| **Método** | **Descripción** |
+|-------------|----------------------------|
+| Procedure() | Constructor por defecto |
+| Procedure(int citizenId, Enum type, Enum category, UUID funcionarioId) | Constructor con parámetros principales |
+| updateState(Enum newState) | Actualiza el estado del procedimiento |
+| assignPayment(UUID paymentId, int amount) | Asocia un pago al trámite y define el monto requerido |
+| validateProcedure(bool validationStatus) | Marca si el trámite requiere validación adicional |
+| addComment(String comment) | Agrega comentarios de seguimiento o revisión |
+| completeProcedure(timestamp endDate) | Finaliza el trámite y registra su fecha de cierre |
+| getProcedureInfo() | Retorna la información completa del trámite |
+
+
+| **Nombre** | Payment |
+|-------------|----------|
+| **Relaciones** | Procedure |
+| **Descripción** | Esta entidad representa el registro de pago asociado a un trámite o procedimiento. Contiene información sobre el monto, el estado del pago, el método utilizado y la fecha de creación. |
+
+### Atributos
+| **Nombre** | **Tipo de Dato** | **Visibilidad** |
+|-------------|------------------|-----------------|
+| id | UUID | Privado |
+| amount | Decimal | Privado |
+| status | Enum | Privado |
+| paymentMethod | String | Privado |
+| created_At | DateTime | Privado |
+
+### Métodos
+| **Método** | **Descripción** |
+|-------------|----------------------------|
+| Payment() | Constructor por defecto |
+| Payment(Decimal amount, String paymentMethod) | Constructor con parámetros principales |
+| updateStatus(Enum newStatus) | Actualiza el estado del pago |
+| getPaymentInfo() | Retorna los detalles del pago |
+| markAsCompleted() | Cambia el estado del pago a completado |
+| isPending() | Verifica si el pago se encuentra pendiente |
+
+
 ### 5.5.1 Domain Layer
+
+| Aggregate | **Procedure** |
+|--------------------|----------------|
+| **Atributos** | id: int <br> citizenId: int <br> type: Enum <br> state: Enum <br> startDate: timestamp <br> endDate: timestamp <br> procedureNoSql: UUID <br> category: Enum <br> paymentId: UUID <br> requiredAmount: int <br> paymentState: string <br> requireValidation: bool <br> funcionarioId: UUID <br> comments: string |
+| **Métodos** | startProcedure() <br> validateProcedure() <br> updateState(Enum newState) <br> assignFuncionario(UUID funcionarioId) <br> attachPayment(UUID paymentId, int amount) <br> finalizeProcedure() <br> addComment(String comment) |
+
+| Entity | **Payment** |
+|-----------------|-------------|
+| **Atributos** | id: UUID <br> amount: Decimal <br> status: Enum <br> paymentMethod: String <br> created_At: DateTime |
+| **Métodos** | createPayment(Decimal amount, String paymentMethod) <br> updateStatus(Enum newStatus) <br> markAsCompleted() <br> isPending(): bool <br> getPaymentDetails(): String |
+
+
+| Value Object | **ProcedureType** |
+|------------------------|------------------|
+| **Valores (Enum)** | BirthCertificate <br> DNI Renewal <br> MarriageRegistration <br> AddressChange <br> RUC Request <br> TaxStatusInquiry |
+| **Métodos** | fromString(String type): ProcedureType <br> toString(): String |
+
+
 ### 5.5.2 Interface Layer
+
+| Controller | **ProcedureController** |
+|--------------------|--------------------------|
+| **Servicios** | - procedureQueryService: ProcedureQueryService <br> - procedureCommandService: ProcedureCommandService |
+| **Métodos** | + ProcedureController() <br> + createProcedure(createProcedureResource: CreateProcedureResource): ResponseEntity <br> + getProcedureById(procedureId: Long): ResponseEntity <br> + getProceduresByCitizenId(citizenId: Long): ResponseEntity <br> + updateProcedureState(procedureId: Long, updateProcedureResource: UpdateProcedureResource): ResponseEntity <br> + assignFuncionario(procedureId: Long, assignFuncionarioResource: AssignFuncionarioResource): ResponseEntity <br> + attachPayment(procedureId: Long, attachPaymentResource: AttachPaymentResource): ResponseEntity <br> + deleteProcedure(procedureId: Long): ResponseEntity |
+
+| Controller | **PaymentController** |
+|--------------------|------------------------|
+| **Servicios** | - paymentQueryService: PaymentQueryService <br> - paymentCommandService: PaymentCommandService |
+| **Métodos** | + PaymentController() <br> + createPayment(createPaymentResource: CreatePaymentResource): ResponseEntity <br> + getPaymentById(paymentId: UUID): ResponseEntity <br> + getPaymentsByStatus(status: Enum): ResponseEntity <br> + updatePaymentStatus(paymentId: UUID, updatePaymentResource: UpdatePaymentResource): ResponseEntity <br> + deletePayment(paymentId: UUID): ResponseEntity |
+
+
 ### 5.5.3 Application Layer
+
+| CommandServiceHandler | **ProcedureCommandServiceImpl** |
+|-------------------------------|----------------------------------|
+| **Dependencias** | - procedureRepository: ProcedureRepository <br> - paymentRepository: PaymentRepository <br> - funcionarioRepository: FuncionarioRepository |
+| **Métodos** | + handle(command: CreateProcedureCommand): Optional<Procedure> <br> + handle(command: UpdateProcedureStateCommand): Optional<Procedure> <br> + handle(command: AssignFuncionarioCommand): Optional<Procedure> <br> + handle(command: AttachPaymentCommand): Optional<Procedure> <br> + handle(command: DeleteProcedureCommand): void |
+
+| QueryServiceHandler | **ProcedureQueryServiceImpl** |
+|------------------------------|-------------------------------|
+| **Dependencias** | - procedureRepository: ProcedureRepository |
+| **Métodos** | + handle(query: GetProcedureByIdQuery): Optional<Procedure> <br> + handle(query: GetProceduresByCitizenIdQuery): List<Procedure> <br> + handle(query: GetAllProceduresQuery): List<Procedure> |
+
+
+| CommandServiceHandler | **PaymentCommandServiceImpl** |
+|-------------------------------|-------------------------------|
+| **Dependencias** | - paymentRepository: PaymentRepository <br> - procedureRepository: ProcedureRepository |
+| **Métodos** | + handle(command: CreatePaymentCommand): Optional<Payment> <br> + handle(command: UpdatePaymentStatusCommand): Optional<Payment> <br> + handle(command: DeletePaymentCommand): void |
+
+| QueryServiceHandler | **PaymentQueryServiceImpl** |
+|------------------------------|-----------------------------|
+| **Dependencias** | - paymentRepository: PaymentRepository |
+| **Métodos** | + handle(query: GetPaymentByIdQuery): Optional<Payment> <br> + handle(query: GetPaymentsByStatusQuery): List<Payment> <br> + handle(query: GetAllPaymentsQuery): List<Payment> |
+
+
 ### 5.5.4 Infrastructure Layer
+
+| Repository | **ProcedureRepository** |
+|----------------------|------------------------|
+| **Métodos** | + findById(id: Long): Optional<Procedure> <br> + findByCitizenId(citizenId: Long): List<Procedure> <br> + findByState(state: ProcedureState): List<Procedure> <br> + findByFuncionarioId(funcionarioId: UUID): List<Procedure> <br> + findByCategory(category: ProcedureCategory): List<Procedure> <br> + findAll(): List<Procedure> |
+
+| Repository | **FuncionarioRepository** |
+|----------------------|--------------------------|
+| **Métodos** | + findById(funcionarioId: UUID): Optional<Funcionario> <br> + findByDni(dni: String): Optional<Funcionario> <br> + findAllByRole(role: String): List<Funcionario> |
+
+| Repository | **PaymentRepository** |
+|----------------------|----------------------|
+| **Métodos** | + findById(paymentId: UUID): Optional<Payment> <br> + findByStatus(status: PaymentStatus): List<Payment> <br> + findByProcedureId(procedureId: Long): Optional<Payment> <br> + findAll(): List<Payment> |
+
+| Component | **BlockchainAdapter** |
+|---------------------|----------------------|
+| **Dependencias** | - blockchainClient: BlockchainClient |
+| **Métodos** | + recordProcedureOnLedger(procedure: Procedure): String <br> + verifyProcedureHash(hash: String): Boolean <br> + getTransactionDetails(txHash: String): BlockchainTransaction |
+
+| Model | **ProcedureSmartContract** |
+|------------------|-------------------------|
+| **Constantes / Funciones** | + BINARY: static String <br> + FUNC_REGISTER_PROCEDURE: static String <br> + FUNC_GET_PROCEDURE: static String <br> + FUNC_VERIFY_PROCEDURE: static String <br> + ProcedureSmartContract() <br> + deploy(web3j: Web3j, credentials: Credentials, gasProvider: ContractGasProvider): ProcedureSmartContract <br> + load(contractAddress: String, web3j: Web3j, credentials: Credentials): ProcedureSmartContract <br> + getProcedure(procedureId: Long): Tuple <br> + registerProcedure(procedure: Tuple): String <br> + verifyProcedure(hash: String): Boolean |
+
+| Service | **EthereumProcedureContractService** |
+|-------------------|-------------------------------------|
+| **Dependencias** | - ethereumRpcUrl: String <br> - web3j: Web3j <br> - privateKey: String <br> - credentials: Credentials |
+| **Métodos** | + EthereumProcedureContractService() <br> + deployContract(procedureTuple: Tuple): String <br> + load(contractAddress: String): ProcedureSmartContract <br> + registerProcedure(procedure: Tuple): String <br> + getProcedure(procedureId: Long): Tuple <br> + verifyProcedure(hash: String): Boolean |
+
+| Mapper | **ProcedureContractMapper** |
+|------------------|-----------------------------|
+| **Métodos** | + toProcedureContract(procedure: Procedure, hash: String): ProcedureSmartContract <br> + toProcedureTuple(procedure: Procedure): Tuple <br> + fromProcedureTuple(tuple: Tuple): Procedure |
+
+| Repository | **ProcedureNoSqlRepository** |
+|----------------------|------------------------------|
+| **Dependencias** | - mongoTemplate: MongoTemplate <br> - collectionName: String = "procedure_nosql" |
+| **Métodos** | + findById(id: UUID): Optional<ProcedureDocument> <br> + findByProcedureId(procedureId: Long): Optional<ProcedureDocument> <br> + save(document: ProcedureDocument): ProcedureDocument <br> + updateFields(procedureId: Long, updates: Map<String, Object>): ProcedureDocument <br> + deleteByProcedureId(procedureId: Long): void <br> + findAllByCitizenId(citizenId: Int): List<ProcedureDocument> |
+
+
 ### 5.5.5 Bounded Context Software Architecture Component Level Diagrams
+
+<img width="1087" height="844" alt="image" src="https://github.com/user-attachments/assets/780b27af-fa51-4471-a80a-0605a23a6681" />
+
 ### 5.5.6 Bounded Context Software Architecture Code Level Diagrams
+
 ### 5.5.6.1 Bounded Context Domain Layer Class Diagram
+<img width="1290" height="688" alt="image" src="https://github.com/user-attachments/assets/7a3646d4-5244-4839-ac41-003d5d393a6b" />
+
 ### 5.5.6.2 Bounded Context Database Design Diagram
 
 ## 5.6. Bounded Context: Analytics
 ### 5.6.1 Domain Layer
+#### **Entidad: Analytics**
+
+| **Nombre** | Report |
+|-------------|------------|
+| **Relaciones** | Funcionario |
+| **Descripción** | Representa una configuración analítica creada por un funcionario para procesar, monitorear o visualizar datos relevantes del sistema. |
+
+##### **Atributos**
+| **Nombre** | **Tipo de Dato** | **Visibilidad** |
+|-------------|------------------|-----------------|
+| id | UUID | Privado |
+| name | String | Privado |
+| description | String | Privado |
+| configuration | Object | Privado |
+| funcionarioId | UUID | Privado |
+| createdAt | Date | Privado |
+
+##### **Métodos**
+| **Método** | **Descripción (opcional)** |
+|-------------|----------------------------|
+| Analytics() | Constructor por defecto |
+| Analytics(UUID, String, String, Object, UUID, Date) | Constructor con parámetros |
+| updateConfiguration(Object) | Actualiza la configuración del análisis |
+| getConfiguration() | Retorna la configuración actual |
+| getName() | Retorna el nombre del análisis |
+| getDescription() | Retorna la descripción del análisis |
+| getCreatedAt() | Retorna la fecha de creación |
+
 ### 5.6.2 Interface Layer
+
+#### Controller ReportController**
+- reportQueryService: ReportQueryService  
+- reportCommandService: ReportCommandService  
+
++ ReportController()  
++ createReports(createAnalyticsResource: CreateAnalyticsResource): ResponseEntity  
++ getReportById(analyticsId: UUID): ResponseEntity  
++ getAllReports(): ResponseEntity  
++ updateReports(analyticsId: UUID, updateReportResource: UpdateReportsResource): ResponseEntity  
++ deleteReports(analyticsId: UUID): ResponseEntity  
++ getReportsByFuncionarioId(funcionarioId: UUID): ResponseEntity  
+
 ### 5.6.3 Application Layer
+
+#### **CommandServiceHandler ReportCommandServiceImpl**
+- reportRepository: ReportRepository  
+- reportQueryServiceImpl: ReportQueryServiceImpl  
+
++ handle(command: CreateReportCommand): Optional<Report>  
++ handle(command: UpdateReportCommand): Optional<Report>  
++ handle(command: DeleteReportCommand): void  
+
+---
+
+#### **QueryServiceHandler ReportQueryServiceImpl**
+- reportRepository: ReportRepository  
+- funcionarioRepository: FuncionarioRepository  
+
++ handle(query: GetAllReportsQuery): List<Report>  
++ handle(query: GetReportByIdQuery): Optional<Report>  
++ handle(query: GetReportsByFuncionarioIdQuery): List<Report>  
+
+---
+
 ### 5.6.4 Infrastructure Layer
+
+#### **Repository ReportRepository**
++ findById(id: UUID): Optional<Report>  
++ findByName(name: String): Optional<Report>  
++ findByFuncionarioId(funcionarioId: UUID): List<Report>  
++ findAll(): List<Report>  
++ findByCreatedAt(createdAt: Date): List<Report>  
+
+---
+
+#### **Repository FuncionarioRepository**
++ findById(id: UUID): Optional<Funcionario>  
++ findByEntity(entity: String): List<Funcionario>  
++ findAll(): List<Funcionario>  
+
+---
+
+#### **Mapper ReportMapper**
++ toEntity(createReportResource: CreateReportResource): Report  
++ toResource(report: Report): ReportResource  
++ toListResource(reportList: List<Report>): List<ReportResource>  
+
+---
+
+#### **Component ReportAdapter**
+- reportDataProcessorClient: ReportDataProcessorClient  
++ processConfiguration(configuration: Object): ProcessedReportResult  
++ validateConfiguration(configuration: Object): Boolean  
 ### 5.6.5 Bounded Context Software Architecture Component Level Diagrams
+
+<img width="837" height="891" alt="image" src="https://github.com/user-attachments/assets/b19ff508-ded3-4277-8b07-f4062ddf2263" />
+
 ### 5.6.6 Bounded Context Software Architecture Code Level Diagrams
 ### 5.6.6.1 Bounded Context Domain Layer Class Diagram
+
+<img width="1033" height="488" alt="image" src="https://github.com/user-attachments/assets/0b63ccd5-e930-49f7-9f8f-09eed8c82c7f" />
+
 ### 5.6.6.2 Bounded Context Database Design Diagram
+
+
+## 5.7. Bounded Context: ChatBot
+### 5.7.1 Domain Layer
+#### **Entidad: ChatMessage**
+
+| **Nombre** | ChatMessage |
+|-------------|-------------|
+| **Relaciones** | Citizen |
+| **Descripción** | Representa un mensaje enviado o recibido por el ciudadano a través del chatbot, el cual forma parte del historial de interacción con el sistema. |
+
+##### **Atributos**
+| **Nombre** | **Tipo de Dato** | **Visibilidad** |
+|-------------|------------------|-----------------|
+| id | UUID | Privado |
+| citizenId | UUID | Privado |
+| message | String | Privado |
+| createdAt | Date | Privado |
+
+##### **Métodos**
+| **Método** | **Descripción (opcional)** |
+|-------------|----------------------------|
+| ChatMessage() | Constructor por defecto |
+| ChatMessage(UUID, UUID, String, Date) | Constructor con parámetros |
+| getMessage() | Retorna el contenido del mensaje |
+| getCitizenId() | Retorna el identificador del ciudadano |
+| getCreatedAt() | Retorna la fecha del mensaje |
+
+#### **Aggregate ChatSession**
+
+| **Nombre** | ChatSession |
+|-------------|-------------|
+| **Relaciones** | ChatMessage, Citizen |
+| **Descripción** | Representa una sesión de chat activa o histórica entre un ciudadano y el chatbot, gestionando los mensajes enviados y recibidos durante la interacción. |
+
+##### **Atributos**
+| **Nombre** | **Tipo de Dato** | **Visibilidad** |
+|-------------|------------------|-----------------|
+| id | UUID | Privado |
+| citizenId | UUID | Privado |
+| messages | ChatMessage[] | Privado |
+| startedAt | Date | Privado |
+| endedAt | Date | Privado |
+| status | ChatSessionStatus (Enum) | Privado |
+
+##### **Métodos**
+| **Método** | **Descripción (opcional)** |
+|-------------|----------------------------|
+| ChatSession() | Constructor por defecto |
+| ChatSession(UUID, UUID) | Constructor con parámetros |
+| addMessage(chatMessage: ChatMessage) | Agrega un nuevo mensaje a la sesión |
+| closeSession() | Cierra la sesión actual |
+| getMessages() | Retorna el historial de mensajes |
+| getStatus() | Retorna el estado de la sesión |
+
+
+### 5.7.2 Interface Layer
+
+#### **Aggregate ChatSession**
+
+| **Nombre** | ChatSession |
+|-------------|-------------|
+| **Relaciones** | ChatMessage, Citizen |
+| **Descripción** | Representa una sesión de chat activa o histórica entre un ciudadano y el chatbot, gestionando los mensajes enviados y recibidos durante la interacción. |
+
+##### **Atributos**
+| **Nombre** | **Tipo de Dato** | **Visibilidad** |
+|-------------|------------------|-----------------|
+| id | UUID | Privado |
+| citizenId | UUID | Privado |
+| messages | ChatMessage[] | Privado |
+| startedAt | Date | Privado |
+| endedAt | Date | Privado |
+| status | ChatSessionStatus (Enum) | Privado |
+
+##### **Métodos**
+| **Método** | **Descripción (opcional)** |
+|-------------|----------------------------|
+| ChatSession() | Constructor por defecto |
+| ChatSession(UUID, UUID) | Constructor con parámetros |
+| addMessage(chatMessage: ChatMessage) | Agrega un nuevo mensaje a la sesión |
+| closeSession() | Cierra la sesión actual |
+| getMessages() | Retorna el historial de mensajes |
+| getStatus() | Retorna el estado de la sesión |
+
+
+### 5.7.3 Application Layer
+
+#### **CommandServiceHandler ChatSessionCommandServiceImpl**
+- chatSessionRepository: ChatSessionRepository  
+- chatMessageRepository: ChatMessageRepository  
+
++ handle(command: CreateChatSessionCommand): Optional<ChatSession>  
++ handle(command: CloseChatSessionCommand): Optional<ChatSession>  
++ handle(command: AddMessageToSessionCommand): Optional<ChatMessage>  
++ handle(command: DeleteChatSessionCommand): void  
+
+---
+
+#### **QueryServiceHandler ChatSessionQueryServiceImpl**
+- chatSessionRepository: ChatSessionRepository  
+
++ handle(query: GetChatSessionByIdQuery): Optional<ChatSession>  
++ handle(query: GetChatSessionsByCitizenIdQuery): List<ChatSession>  
++ handle(query: GetAllChatSessionsQuery): List<ChatSession>  
+
+---
+
+#### **CommandServiceHandler ChatMessageCommandServiceImpl**
+- chatMessageRepository: ChatMessageRepository  
+- chatSessionRepository: ChatSessionRepository  
+
++ handle(command: CreateChatMessageCommand): Optional<ChatMessage>  
++ handle(command: DeleteChatMessageCommand): void  
+
+---
+
+#### **QueryServiceHandler ChatMessageQueryServiceImpl**
+- chatMessageRepository: ChatMessageRepository  
+
++ handle(query: GetMessagesBySessionIdQuery): List<ChatMessage>  
++ handle(query: GetMessagesByCitizenIdQuery): List<ChatMessage>  
++ handle(query: GetMessageByIdQuery): Optional<ChatMessage>  
+
+### 5.7.4 Infrastructure Layer
+
+Repository ChatMessageRepository
++save(message: ChatMessage): void  
++findById(id: UUID): Optional<ChatMessage>  
++findByCitizenId(citizenId: UUID): List<ChatMessage>  
++findAll(): List<ChatMessage>
+
+### 5.7.5 Bounded Context Software Architecture Component Level Diagrams
+
+<img width="848" height="723" alt="image" src="https://github.com/user-attachments/assets/b6a7bddd-d001-40af-adfe-b859372f923e" />
+
+### 5.7.6 Bounded Context Software Architecture Code Level Diagrams
+### 5.7.6.1 Bounded Context Domain Layer Class Diagram
+
+<img width="691" height="288" alt="image" src="https://github.com/user-attachments/assets/74537fba-778f-47e1-9b59-795307535a43" />
+
+### 5.7.6.2 Bounded Context Database Design Diagram
+
 
 # Capítulo VI: Solution UX Design
 
