@@ -1359,6 +1359,28 @@ Con el objetivo de mejorar la visibilidad de Perú Digital en los motores de bú
 ### 6.4.1 Applications Wireframes
 ### 6.4.2 Applications Wireflow Diagrams
 
+1. El ciudadano inica sesión en la plataforma
+<img width="1279" height="780" alt="image" src="https://github.com/user-attachments/assets/34847839-5152-44b3-8b0f-c0487b1d9c3f" />
+
+2. El ciudadano selecciona y completa un trámite
+<img width="1497" height="615" alt="image" src="https://github.com/user-attachments/assets/3c36cde9-2611-4287-9b35-c5b8bfd9b04b" />
+
+3. El ciudadano visualiza uno de sus documentos
+<img width="1240" height="738" alt="image" src="https://github.com/user-attachments/assets/68167fca-143a-4d98-9794-5efb7eae2d9e" />
+
+4. El ciudadano visualiza su perfil
+<img width="939" height="683" alt="image" src="https://github.com/user-attachments/assets/113d17c3-bc37-4ef0-ad36-3b1913c2d4e0" />
+
+5. El funcionario crea un reporte
+<img width="1232" height="470" alt="image" src="https://github.com/user-attachments/assets/95524607-0352-4afc-b87c-4f10a715e23d" />
+
+6. El funcionario visualiza un tramite realizado
+<img width="1257" height="479" alt="image" src="https://github.com/user-attachments/assets/88185ef1-9942-42a4-9f0f-4d55f989ce90" />
+
+7. El ciudadano consulta información con el chatbot
+   <img width="1084" height="708" alt="image" src="https://github.com/user-attachments/assets/733d3628-5219-4008-ac72-94a4fcf982d4" />
+
+
 
 
 
