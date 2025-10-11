@@ -1252,16 +1252,6 @@ Model.
 
 # Capítulo V: Tactital-Level Software Design
 
-## 5.1. Bounded Context: IAM
-### 5.1.1 Domain Layer
-### 5.1.2 Interface Layer
-### 5.1.3 Application Layer
-### 5.1.4 Infrastructure Layer
-### 5.1.5 Bounded Context Software Architecture Component Level Diagrams
-### 5.1.6 Bounded Context Software Architecture Code Level Diagrams
-### 5.1.6.1 Bounded Context Domain Layer Class Diagram
-### 5.1.6.2 Bounded Context Database Design Diagram
-
 ## 5.2. Bounded Context: Profiles
 ### 5.2.1 Domain Layer
 ### 5.2.2 Interface Layer
@@ -1270,7 +1260,11 @@ Model.
 ### 5.2.5 Bounded Context Software Architecture Component Level Diagrams
 ### 5.2.6 Bounded Context Software Architecture Code Level Diagrams
 ### 5.2.6.1 Bounded Context Domain Layer Class Diagram
+<img width="874" height="525" alt="image" src="https://github.com/user-attachments/assets/bc5ce9c8-02e7-42d2-a56d-0d77be453223" />
+
 ### 5.2.6.2 Bounded Context Database Design Diagram
+<img width="698" height="366" alt="image" src="https://github.com/user-attachments/assets/5bc1ed19-58ce-432c-83f6-dfd20344e5bb" />
+
 
 ## 5.3. Bounded Context: Notification
 ### 5.3.1 Domain Layer
@@ -1280,7 +1274,10 @@ Model.
 ### 5.3.5 Bounded Context Software Architecture Component Level Diagrams
 ### 5.3.6 Bounded Context Software Architecture Code Level Diagrams
 ### 5.3.6.1 Bounded Context Domain Layer Class Diagram
+<img width="782" height="430" alt="image" src="https://github.com/user-attachments/assets/4d50df68-60c9-4370-add9-9a950a9c881a" />
+
 ### 5.3.6.2 Bounded Context Database Design Diagram
+<img width="461" height="329" alt="image" src="https://github.com/user-attachments/assets/cb1e7098-b13e-4f31-8f42-ad98472f77e2" />
 
 ## 5.4. Bounded Context: Wallet
 ### 5.4.1 Domain Layer
@@ -1290,7 +1287,11 @@ Model.
 ### 5.4.5 Bounded Context Software Architecture Component Level Diagrams
 ### 5.4.6 Bounded Context Software Architecture Code Level Diagrams
 ### 5.4.6.1 Bounded Context Domain Layer Class Diagram
+<img width="900" height="442" alt="image" src="https://github.com/user-attachments/assets/d5fba539-d400-4b45-83b6-847294747495" />
+
 ### 5.4.6.2 Bounded Context Database Design Diagram
+<img width="742" height="265" alt="image" src="https://github.com/user-attachments/assets/46cb03b7-7817-48c1-9cd6-9beb38de71eb" />
+
 
 ## 5.5. Bounded Context: Procedure Management
 
@@ -1459,6 +1460,9 @@ Model.
 <img width="1290" height="688" alt="image" src="https://github.com/user-attachments/assets/7a3646d4-5244-4839-ac41-003d5d393a6b" />
 
 ### 5.5.6.2 Bounded Context Database Design Diagram
+<img width="1052" height="570" alt="image" src="https://github.com/user-attachments/assets/c29fb952-c488-410e-bf46-0f3b49c12d84" />
+
+
 
 ## 5.6. Bounded Context: Analytics
 ### 5.6.1 Domain Layer
@@ -1565,6 +1569,7 @@ Model.
 <img width="1033" height="488" alt="image" src="https://github.com/user-attachments/assets/0b63ccd5-e930-49f7-9f8f-09eed8c82c7f" />
 
 ### 5.6.6.2 Bounded Context Database Design Diagram
+<img width="428" height="561" alt="image" src="https://github.com/user-attachments/assets/d95b6e52-ef86-4581-8d6e-f57c5e935798" />
 
 
 ## 5.7. Bounded Context: ChatBot
@@ -1707,6 +1712,7 @@ Repository ChatMessageRepository
 <img width="691" height="288" alt="image" src="https://github.com/user-attachments/assets/74537fba-778f-47e1-9b59-795307535a43" />
 
 ### 5.7.6.2 Bounded Context Database Design Diagram
+<img width="693" height="392" alt="image" src="https://github.com/user-attachments/assets/d8846742-40e1-4e21-9936-dae1ad90f244" />
 
 
 # Capítulo VI: Solution UX Design
