@@ -1236,7 +1236,7 @@ Model.
 | comments | string | Privado |
 
 ### Métodos
-| **Método** | **Descripción (opcional)** |
+| **Método** | **Descripción** |
 |-------------|----------------------------|
 | Procedure() | Constructor por defecto |
 | Procedure(int citizenId, Enum type, Enum category, UUID funcionarioId) | Constructor con parámetros principales |
@@ -1263,7 +1263,7 @@ Model.
 | created_At | DateTime | Privado |
 
 ### Métodos
-| **Método** | **Descripción (opcional)** |
+| **Método** | **Descripción** |
 |-------------|----------------------------|
 | Payment() | Constructor por defecto |
 | Payment(Decimal amount, String paymentMethod) | Constructor con parámetros principales |
@@ -1374,21 +1374,115 @@ Model.
 ### 5.5.6 Bounded Context Software Architecture Code Level Diagrams
 
 ### 5.5.6.1 Bounded Context Domain Layer Class Diagram
-
-
 <img width="1290" height="688" alt="image" src="https://github.com/user-attachments/assets/7a3646d4-5244-4839-ac41-003d5d393a6b" />
-
 
 ### 5.5.6.2 Bounded Context Database Design Diagram
 
 ## 5.6. Bounded Context: Analytics
 ### 5.6.1 Domain Layer
+#### **Entidad: Analytics**
+
+| **Nombre** | Analytics |
+|-------------|------------|
+| **Relaciones** | Funcionario |
+| **Descripción** | Representa una configuración analítica creada por un funcionario para procesar, monitorear o visualizar datos relevantes del sistema. |
+
+##### **Atributos**
+| **Nombre** | **Tipo de Dato** | **Visibilidad** |
+|-------------|------------------|-----------------|
+| id | UUID | Privado |
+| name | String | Privado |
+| description | String | Privado |
+| configuration | Object | Privado |
+| funcionarioId | UUID | Privado |
+| createdAt | Date | Privado |
+
+##### **Métodos**
+| **Método** | **Descripción (opcional)** |
+|-------------|----------------------------|
+| Analytics() | Constructor por defecto |
+| Analytics(UUID, String, String, Object, UUID, Date) | Constructor con parámetros |
+| updateConfiguration(Object) | Actualiza la configuración del análisis |
+| getConfiguration() | Retorna la configuración actual |
+| getName() | Retorna el nombre del análisis |
+| getDescription() | Retorna la descripción del análisis |
+| getCreatedAt() | Retorna la fecha de creación |
+
 ### 5.6.2 Interface Layer
+
+#### Controller AnalyticsController**
+- analyticsQueryService: AnalyticsQueryService  
+- analyticsCommandService: AnalyticsCommandService  
+
++ AnalyticsController()  
++ createAnalytics(createAnalyticsResource: CreateAnalyticsResource): ResponseEntity  
++ getAnalyticsById(analyticsId: UUID): ResponseEntity  
++ getAllAnalytics(): ResponseEntity  
++ updateAnalytics(analyticsId: UUID, updateAnalyticsResource: UpdateAnalyticsResource): ResponseEntity  
++ deleteAnalytics(analyticsId: UUID): ResponseEntity  
++ getAnalyticsByFuncionarioId(funcionarioId: UUID): ResponseEntity  
+
 ### 5.6.3 Application Layer
+
+#### **<<CommandServiceHandler>> AnalyticsCommandServiceImpl**
+- analyticsRepository: AnalyticsRepository  
+- funcionarioRepository: FuncionarioRepository  
+- analyticsQueryServiceImpl: AnalyticsQueryServiceImpl  
+
++ handle(command: CreateAnalyticsCommand): Optional<Analytics>  
++ handle(command: UpdateAnalyticsCommand): Optional<Analytics>  
++ handle(command: DeleteAnalyticsCommand): void  
+
+---
+
+#### **<<QueryServiceHandler>> AnalyticsQueryServiceImpl**
+- analyticsRepository: AnalyticsRepository  
+- funcionarioRepository: FuncionarioRepository  
+
++ handle(query: GetAllAnalyticsQuery): List<Analytics>  
++ handle(query: GetAnalyticsByIdQuery): Optional<Analytics>  
++ handle(query: GetAnalyticsByFuncionarioIdQuery): List<Analytics>  
+
 ### 5.6.4 Infrastructure Layer
+
+#### **<<Repository>> AnalyticsRepository**
++ findById(id: UUID): Optional<Analytics>  
++ findByName(name: String): Optional<Analytics>  
++ findByFuncionarioId(funcionarioId: UUID): List<Analytics>  
++ findAll(): List<Analytics>  
++ findByCreatedAt(createdAt: Date): List<Analytics>  
+
+---
+
+#### **<<Repository>> FuncionarioRepository**
++ findById(id: UUID): Optional<Funcionario>  
++ findByEntity(entity: String): List<Funcionario>  
++ findAll(): List<Funcionario>  
+
+---
+
+#### **<<Mapper>> AnalyticsMapper**
++ toEntity(createAnalyticsResource: CreateAnalyticsResource): Analytics  
++ toResource(analytics: Analytics): AnalyticsResource  
++ toListResource(analyticsList: List<Analytics>): List<AnalyticsResource>  
+
+---
+
+#### **<<Component>> AnalyticsAdapter**
+- analyticsDataProcessorClient: AnalyticsDataProcessorClient  
++ processConfiguration(configuration: Object): ProcessedAnalyticsResult  
++ validateConfiguration(configuration: Object): Boolean  
+
 ### 5.6.5 Bounded Context Software Architecture Component Level Diagrams
+
+<img width="837" height="891" alt="image" src="https://github.com/user-attachments/assets/b19ff508-ded3-4277-8b07-f4062ddf2263" />
+
 ### 5.6.6 Bounded Context Software Architecture Code Level Diagrams
 ### 5.6.6.1 Bounded Context Domain Layer Class Diagram
+
+<img width="1033" height="488" alt="image" src="https://github.com/user-attachments/assets/0b63ccd5-e930-49f7-9f8f-09eed8c82c7f" />
+
+
 ### 5.6.6.2 Bounded Context Database Design Diagram
 
 # Capítulo VI: Solution UX Design
