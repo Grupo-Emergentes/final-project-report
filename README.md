@@ -1260,7 +1260,11 @@ Model.
 ### 5.2.5 Bounded Context Software Architecture Component Level Diagrams
 ### 5.2.6 Bounded Context Software Architecture Code Level Diagrams
 ### 5.2.6.1 Bounded Context Domain Layer Class Diagram
+<img width="874" height="525" alt="image" src="https://github.com/user-attachments/assets/bc5ce9c8-02e7-42d2-a56d-0d77be453223" />
+
 ### 5.2.6.2 Bounded Context Database Design Diagram
+<img width="698" height="366" alt="image" src="https://github.com/user-attachments/assets/5bc1ed19-58ce-432c-83f6-dfd20344e5bb" />
+
 
 ## 5.3. Bounded Context: Notification
 ### 5.3.1 Domain Layer
@@ -1270,7 +1274,10 @@ Model.
 ### 5.3.5 Bounded Context Software Architecture Component Level Diagrams
 ### 5.3.6 Bounded Context Software Architecture Code Level Diagrams
 ### 5.3.6.1 Bounded Context Domain Layer Class Diagram
+<img width="782" height="430" alt="image" src="https://github.com/user-attachments/assets/4d50df68-60c9-4370-add9-9a950a9c881a" />
+
 ### 5.3.6.2 Bounded Context Database Design Diagram
+<img width="461" height="329" alt="image" src="https://github.com/user-attachments/assets/cb1e7098-b13e-4f31-8f42-ad98472f77e2" />
 
 ## 5.4. Bounded Context: Wallet
 ### 5.4.1 Domain Layer
@@ -1280,7 +1287,11 @@ Model.
 ### 5.4.5 Bounded Context Software Architecture Component Level Diagrams
 ### 5.4.6 Bounded Context Software Architecture Code Level Diagrams
 ### 5.4.6.1 Bounded Context Domain Layer Class Diagram
+<img width="900" height="442" alt="image" src="https://github.com/user-attachments/assets/d5fba539-d400-4b45-83b6-847294747495" />
+
 ### 5.4.6.2 Bounded Context Database Design Diagram
+<img width="742" height="265" alt="image" src="https://github.com/user-attachments/assets/46cb03b7-7817-48c1-9cd6-9beb38de71eb" />
+
 
 ## 5.5. Bounded Context: Procedure Management
 
