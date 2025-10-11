@@ -1382,7 +1382,7 @@ Model.
 ### 5.6.1 Domain Layer
 #### **Entidad: Analytics**
 
-| **Nombre** | Analytics |
+| **Nombre** | Report |
 |-------------|------------|
 | **Relaciones** | Funcionario |
 | **Descripción** | Representa una configuración analítica creada por un funcionario para procesar, monitorear o visualizar datos relevantes del sistema. |
@@ -1410,69 +1410,69 @@ Model.
 
 ### 5.6.2 Interface Layer
 
-#### Controller AnalyticsController**
-- analyticsQueryService: AnalyticsQueryService  
-- analyticsCommandService: AnalyticsCommandService  
+#### Controller ReportController**
+- reportQueryService: ReportQueryService  
+- reportCommandService: ReportCommandService  
 
-+ AnalyticsController()  
-+ createAnalytics(createAnalyticsResource: CreateAnalyticsResource): ResponseEntity  
-+ getAnalyticsById(analyticsId: UUID): ResponseEntity  
-+ getAllAnalytics(): ResponseEntity  
-+ updateAnalytics(analyticsId: UUID, updateAnalyticsResource: UpdateAnalyticsResource): ResponseEntity  
-+ deleteAnalytics(analyticsId: UUID): ResponseEntity  
-+ getAnalyticsByFuncionarioId(funcionarioId: UUID): ResponseEntity  
++ ReportController()  
++ createReports(createAnalyticsResource: CreateAnalyticsResource): ResponseEntity  
++ getReportById(analyticsId: UUID): ResponseEntity  
++ getAllReports(): ResponseEntity  
++ updateReports(analyticsId: UUID, updateReportResource: UpdateReportsResource): ResponseEntity  
++ deleteReports(analyticsId: UUID): ResponseEntity  
++ getReportsByFuncionarioId(funcionarioId: UUID): ResponseEntity  
 
 ### 5.6.3 Application Layer
 
-#### **<<CommandServiceHandler>> AnalyticsCommandServiceImpl**
-- analyticsRepository: AnalyticsRepository  
-- funcionarioRepository: FuncionarioRepository  
-- analyticsQueryServiceImpl: AnalyticsQueryServiceImpl  
+#### **CommandServiceHandler ReportCommandServiceImpl**
+- reportRepository: ReportRepository  
+- reportQueryServiceImpl: ReportQueryServiceImpl  
 
-+ handle(command: CreateAnalyticsCommand): Optional<Analytics>  
-+ handle(command: UpdateAnalyticsCommand): Optional<Analytics>  
-+ handle(command: DeleteAnalyticsCommand): void  
++ handle(command: CreateReportCommand): Optional<Report>  
++ handle(command: UpdateReportCommand): Optional<Report>  
++ handle(command: DeleteReportCommand): void  
 
 ---
 
-#### **<<QueryServiceHandler>> AnalyticsQueryServiceImpl**
-- analyticsRepository: AnalyticsRepository  
+#### **QueryServiceHandler ReportQueryServiceImpl**
+- reportRepository: ReportRepository  
 - funcionarioRepository: FuncionarioRepository  
 
-+ handle(query: GetAllAnalyticsQuery): List<Analytics>  
-+ handle(query: GetAnalyticsByIdQuery): Optional<Analytics>  
-+ handle(query: GetAnalyticsByFuncionarioIdQuery): List<Analytics>  
++ handle(query: GetAllReportsQuery): List<Report>  
++ handle(query: GetReportByIdQuery): Optional<Report>  
++ handle(query: GetReportsByFuncionarioIdQuery): List<Report>  
+
+---
 
 ### 5.6.4 Infrastructure Layer
 
-#### **<<Repository>> AnalyticsRepository**
-+ findById(id: UUID): Optional<Analytics>  
-+ findByName(name: String): Optional<Analytics>  
-+ findByFuncionarioId(funcionarioId: UUID): List<Analytics>  
-+ findAll(): List<Analytics>  
-+ findByCreatedAt(createdAt: Date): List<Analytics>  
+#### **Repository ReportRepository**
++ findById(id: UUID): Optional<Report>  
++ findByName(name: String): Optional<Report>  
++ findByFuncionarioId(funcionarioId: UUID): List<Report>  
++ findAll(): List<Report>  
++ findByCreatedAt(createdAt: Date): List<Report>  
 
 ---
 
-#### **<<Repository>> FuncionarioRepository**
+#### **Repository FuncionarioRepository**
 + findById(id: UUID): Optional<Funcionario>  
 + findByEntity(entity: String): List<Funcionario>  
 + findAll(): List<Funcionario>  
 
 ---
 
-#### **<<Mapper>> AnalyticsMapper**
-+ toEntity(createAnalyticsResource: CreateAnalyticsResource): Analytics  
-+ toResource(analytics: Analytics): AnalyticsResource  
-+ toListResource(analyticsList: List<Analytics>): List<AnalyticsResource>  
+#### **Mapper ReportMapper**
++ toEntity(createReportResource: CreateReportResource): Report  
++ toResource(report: Report): ReportResource  
++ toListResource(reportList: List<Report>): List<ReportResource>  
 
 ---
 
-#### **<<Component>> AnalyticsAdapter**
-- analyticsDataProcessorClient: AnalyticsDataProcessorClient  
-+ processConfiguration(configuration: Object): ProcessedAnalyticsResult  
+#### **Component ReportAdapter**
+- reportDataProcessorClient: ReportDataProcessorClient  
++ processConfiguration(configuration: Object): ProcessedReportResult  
 + validateConfiguration(configuration: Object): Boolean  
-
 ### 5.6.5 Bounded Context Software Architecture Component Level Diagrams
 
 <img width="837" height="891" alt="image" src="https://github.com/user-attachments/assets/b19ff508-ded3-4277-8b07-f4062ddf2263" />
@@ -1485,8 +1485,8 @@ Model.
 ### 5.6.6.2 Bounded Context Database Design Diagram
 
 
-## 5.6. Bounded Context: ChatBot
-### 5.6.1 Domain Layer
+## 5.7. Bounded Context: ChatBot
+### 5.7.1 Domain Layer
 #### **Entidad: ChatMessage**
 
 | **Nombre** | ChatMessage |
@@ -1511,7 +1511,7 @@ Model.
 | getCitizenId() | Retorna el identificador del ciudadano |
 | getCreatedAt() | Retorna la fecha del mensaje |
 
-#### **<<Aggregate>> ChatSession**
+#### **Aggregate ChatSession**
 
 | **Nombre** | ChatSession |
 |-------------|-------------|
@@ -1539,9 +1539,9 @@ Model.
 | getStatus() | Retorna el estado de la sesión |
 
 
-### 5.6.2 Interface Layer
+### 5.7.2 Interface Layer
 
-#### **<<Aggregate>> ChatSession**
+#### **Aggregate ChatSession**
 
 | **Nombre** | ChatSession |
 |-------------|-------------|
@@ -1569,9 +1569,9 @@ Model.
 | getStatus() | Retorna el estado de la sesión |
 
 
-### 5.6.3 Application Layer
+### 5.7.3 Application Layer
 
-#### **<<CommandServiceHandler>> ChatSessionCommandServiceImpl**
+#### **CommandServiceHandler ChatSessionCommandServiceImpl**
 - chatSessionRepository: ChatSessionRepository  
 - chatMessageRepository: ChatMessageRepository  
 
@@ -1582,7 +1582,7 @@ Model.
 
 ---
 
-#### **<<QueryServiceHandler>> ChatSessionQueryServiceImpl**
+#### **QueryServiceHandler ChatSessionQueryServiceImpl**
 - chatSessionRepository: ChatSessionRepository  
 
 + handle(query: GetChatSessionByIdQuery): Optional<ChatSession>  
@@ -1591,7 +1591,7 @@ Model.
 
 ---
 
-#### **<<CommandServiceHandler>> ChatMessageCommandServiceImpl**
+#### **CommandServiceHandler ChatMessageCommandServiceImpl**
 - chatMessageRepository: ChatMessageRepository  
 - chatSessionRepository: ChatSessionRepository  
 
@@ -1600,34 +1600,31 @@ Model.
 
 ---
 
-#### **<<QueryServiceHandler>> ChatMessageQueryServiceImpl**
+#### **QueryServiceHandler ChatMessageQueryServiceImpl**
 - chatMessageRepository: ChatMessageRepository  
 
 + handle(query: GetMessagesBySessionIdQuery): List<ChatMessage>  
 + handle(query: GetMessagesByCitizenIdQuery): List<ChatMessage>  
 + handle(query: GetMessageByIdQuery): Optional<ChatMessage>  
 
-### 5.6.4 Infrastructure Layer
+### 5.7.4 Infrastructure Layer
 
-<<Repository>> ChatMessageRepository
+Repository ChatMessageRepository
 +save(message: ChatMessage): void  
 +findById(id: UUID): Optional<ChatMessage>  
 +findByCitizenId(citizenId: UUID): List<ChatMessage>  
 +findAll(): List<ChatMessage>
 
-### 5.6.5 Bounded Context Software Architecture Component Level Diagrams
+### 5.7.5 Bounded Context Software Architecture Component Level Diagrams
 
 <img width="848" height="723" alt="image" src="https://github.com/user-attachments/assets/b6a7bddd-d001-40af-adfe-b859372f923e" />
 
-### 5.6.6 Bounded Context Software Architecture Code Level Diagrams
-
-### 5.6.6.1 Bounded Context Domain Layer Class Diagram
+### 5.7.6 Bounded Context Software Architecture Code Level Diagrams
+### 5.7.6.1 Bounded Context Domain Layer Class Diagram
 
 <img width="691" height="288" alt="image" src="https://github.com/user-attachments/assets/74537fba-778f-47e1-9b59-795307535a43" />
 
-### 5.6.6.2 Bounded Context Database Design Diagram
-
-
+### 5.7.6.2 Bounded Context Database Design Diagram
 
 
 # Capítulo VI: Solution UX Design
