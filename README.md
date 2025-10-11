@@ -44,7 +44,7 @@
   <tbody>
     <tr>
       <td rowspan="4">TB1</td>
-      <td rowspan="4">29/03/2024</td>
+      <td rowspan="4">29/03/2025</td>
       <td>Mathias Tsuneo Kunimoto Watanabe</td>
       <td>
         User Persona <br>
@@ -80,6 +80,40 @@
       </td>
     </tr>
   </tbody>
+  <tbody>
+    <tr>
+      <td rowspan="4">TP1</td>
+      <td rowspan="4">11/10/2025</td>
+      <td>Mathias Tsuneo Kunimoto Watanabe</td>
+      <td>
+        Impact Mapping <br>
+        Wireframes & Wireflows<br>
+      </td>
+    </tr>
+    <tr>
+      <td>Giacomo Zoppi Rodriguez</td>
+      <td>
+        Organization Systems<br>
+        Labelling Systems <br>
+        Wireframes & Wireflows <br>
+      </td>
+    </tr>
+    <tr>
+      <td>Janiel Franz Escalante</td>
+      <td>
+        Quality Attributes <br>
+        Scenario Atributes <br>
+        Bounded Context Definition
+      </td>
+    </tr>
+    <tr>
+      <td>Valentino Sebastian Cervantes Erequita</td>
+      <td>
+        Bounded Context Definition <br>
+        Architecture Corrections <br>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 # Project Report Collaboration Insights
@@ -93,6 +127,12 @@ Se redactaron y estructuraron los contenidos asignados a cada miembro utilizando
 
 <img width="1354" height="714" alt="image" src="https://github.com/user-attachments/assets/e5c74e8c-ff2b-469a-9bfd-4e7f3288ee8e" />
 
+TP1: 
+La entrega TP1 se  finalizó con éxito y están documentadas en el siguiente repositorio de Github perteneciente a la organización del equipo. Durante el desarrollo del informe se tuvieron en cuenta los siguientes aspectos:
+
+Se redactó en su completitud el capitulo V, incluida la definición de las capas Application, Domain, Infrastructure e Interfaces de cada Bounded Context, incluido sus diagramas de clases, de datos y de componentes. Aparte, se elaboraron los wireframes y wireflows de la Landing Page y la aplicación web. Se llevaron a cabo reuniones semanales para hacer una revisión de lo elaborado por el grupo.
+
+<img width="1106" height="584" alt="image" src="https://github.com/user-attachments/assets/85ced65a-3271-43e4-8b43-ee4622ea966f" />
 
 # Student Outcome
 
@@ -120,9 +160,15 @@ En el siguiente cuadro se describen las acciones realizadas por cada integrante 
       <p><b>Giacomo Zoppi:</b> Contribuí eficazmente al trabajo en equipo, guiando dinámicas grupales como el Event Storming y apoyando en la asignación de tareas y la organización en el tablero Kanban.</p>
       <p><b>Mathias Kunimoto:</b> Aporté ideas de manera constante y fui proactivo en el desarrollo de las secciones del informe que me correspondían, comunicando avances, dudas y opiniones a mis compañeros.</p>
       <p><b>Janiel Escalante:</b> Favorecí un ambiente de confianza en el equipo, promoviendo la comunicación y el apoyo mutuo, y ayudando a resolver dudas de algunos integrantes respecto a sus tareas.</p>
+      <p><b>TP1:</b></p>
+      <p><b>Valentino Cervantes:</b> En las reuniones, compartí mi opinión con el grupo y compartimos ideas sobre la arquitectura del proyecto con efectividad.</p>
+      <p><b>Giacomo Zoppi:</b> Contribuí eficazmente en el dialogo con mi equpo. Nos pusimos de acuerdo para la elaboración del Event Storming.</p>
+      <p><b>Mathias Kunimoto:</b> Favorecí un ambiente de confianza en el equipo, promoviendo la comunicación y el apoyo mutuo, y ayudando a resolver dudas de algunos integrantes respecto a sus tareas.</p>
+      <p><b>Janiel Escalante:</b> Colaboré con el equipo oralmente, al compartir mis ideas y conocimientos. Logré aportar con mi especialidad en el desarrollo de backend. </p>
     </td>
     <td>
       <p><b>TB1:</b> En esta entrega logramos consolidar la comunicación oral como herramienta clave para la coordinación del equipo. La disposición para expresar ideas, aclarar dudas y apoyar a los compañeros permitió que cada integrante cumpliera con sus responsabilidades y que el informe avanzara de manera ordenada. El ambiente de confianza y las dinámicas grupales favorecieron la participación de todos y fortalecieron la colaboración en el proyecto.</p>
+      <p><b>TP1:</b>En esta entrega, la comunicación grupal fue clave para definir puntos como la estructura, arquitectura, bounded contexts y tecnologías a utilizar en el proyecto. Permitió al grupo que todos estuviesemos en la misma página y favorecieron el desempeño y dinamica genera del equipo. </p>
     </td>
   </tr>
   <tr>
@@ -135,9 +181,15 @@ En el siguiente cuadro se describen las acciones realizadas por cada integrante 
       <p><b>Giacomo Zoppi:</b> Aporté transmitiendo por escrito las tareas y objetivos en el tablero Kanban, lo que permitió al grupo tener un seguimiento ordenado y transparente de los avances.</p>
       <p><b>Mathias Kunimoto:</b> Redacté y documenté entregables técnicos como escenarios As-Is y To-Be, task matrix y user personas, asegurando claridad y precisión en los resultados.</p>
       <p><b>Janiel Escalante:</b> Me encargué de plasmar por escrito entrevistas, los atributos de calidad y segmentos objetivos, comunicando los resultados de manera comprensible y alineada con los objetivos del proyecto.</p>
+      <p><b>TP1:</b></p>
+      <p><b>Valentino Cervantes:</b> Aporté transmitiendo mis opiniones y mis objetivos a la hora de elaborar y diseñar la arquitectura efectivaente. Logré comunicarme claramente y llegar a consensos con el equipo. </p>
+      <p><b>Giacomo Zoppi:</b> Aporté transmitiendo por escrito las nuevas tareas en el tablero Kanban, así como gestionar su uso y su actualización constante.</p>
+      <p><b>Mathias Kunimoto:</b> De forma escrita colaboré con mi grupo para la creación de los wireframes y wireflows..</p>
+      <p><b>Janiel Escalante:</b>Colaboré con mi equipo para definir las funcionalidades, requisitos y la arquitectura del software, en especial en lo respecto a la IA. </p>
     </td>
     <td>
       <p><b>TB1:</b> En esta entrega reforzamos nuestra capacidad de comunicar ideas y resultados de manera escrita con claridad y objetividad, adaptándonos a diferentes públicos del ámbito de la ingeniería. La documentación generada (User Stories, escenarios, diagramas, etc.) permitió dejar evidencia del trabajo realizado y asegurar que todos los integrantes compartieran una misma visión del proyecto. Asimismo, el uso del tablero Kanban fue clave para estructurar la información, dar seguimiento a las tareas y mantener la transparencia en cada fase del entregable.</p>
+      <p><b>TP1:</b> En esta entrega pudimos comunicar nuestras ideas de forma escrita con efectividad. Pudimos documentar la definición de los Bounded Context en cada una de sus capas, ademas de añadir capturas de los wireframes y wireflows elaborados en figma que permiten tener un prototipado del diseño. </p>
     </td>
   </tr>
 </table>
