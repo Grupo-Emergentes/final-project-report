@@ -1,5 +1,3 @@
-![wireframe-13](https://github.com/user-attachments/assets/cc744863-3a25-450e-8b21-f0f9695643fc)<hr>
-
 # <center>Informe del Trabajo Final</center>
 
 <p align="center">
