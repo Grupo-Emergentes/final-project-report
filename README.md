@@ -1253,6 +1253,19 @@ Model.
 # Capítulo V: Tactital-Level Software Design
 
 ## 5.2. Bounded Context: Profiles
+| Nombre | Profiles | | | | --- | --- | | | --- | --- | | Relaciones | Citizen, Funcionario, Institution | | | | --- | --- | | | --- | --- | | Descripción | Esta clase representa el perfil de un ciudadano o funcionario dentro del sistema. Contiene información básica de identificación y permite la actualización y verificación de datos por parte de las instituciones registradas (RENIEC, SUNARP, SUNAT). | | | | --- | --- | | | --- | --- | | Atributos | | | Métodos | | --- | | | --- | --- | --- |
+
+Nombre	Tipo de Dato	Visibilidad	updateProfile()
+id	UUID	público	
+---	---	---	---
+firstName	String	público	
+---	---	---	---
+lastName	String	público	
+---	---	---	---
+createdAt	Date	privado	
+---	---	---	---
+updatedAt	Date	privado	
+---	---	---	---
 ### 5.2.1 Domain Layer
 ### 5.2.2 Interface Layer
 ### 5.2.3 Application Layer
@@ -1267,6 +1280,21 @@ Model.
 
 
 ## 5.3. Bounded Context: Notification
+| Nombre | Notification | | | | --- | --- | | | --- | --- | | Relaciones | Procedure, Wallet, IAM | | | | --- | --- | | | --- | --- | | Descripción | Esta clase representa las notificaciones generadas dentro del sistema, las cuales informan a los usuarios sobre eventos relevantes, como transacciones, actualizaciones de perfil o verificaciones. Permite registrar, enviar y marcar como leídas las notificaciones. | | | | --- | --- | | | --- | --- | | Atributos | | | Métodos | | --- | | | --- | --- | --- |
+
+Nombre	Tipo de Dato	Visibilidad	pushNotification()
+id	UUID	público	
+---	---	---	---
+userId	UUID	público	
+---	---	---	---
+title	String	privado	
+---	---	---	---
+message	String	privado	
+---	---	---	---
+read	Bool	privado	
+---	---	---	---
+createdAt	Date	privado	
+---	---	---	---
 ### 5.3.1 Domain Layer
 ### 5.3.2 Interface Layer
 ### 5.3.3 Application Layer
@@ -1280,6 +1308,15 @@ Model.
 <img width="461" height="329" alt="image" src="https://github.com/user-attachments/assets/cb1e7098-b13e-4f31-8f42-ad98472f77e2" />
 
 ## 5.4. Bounded Context: Wallet
+| Nombre | Transaction | | | | --- | --- | | | --- | --- | | Relaciones | Procedure, Blockchain Information, Citizen | | | | --- | --- | | | --- | --- | | Descripción | Esta clase representa las transacciones registradas en la cadena de bloques dentro del sistema Wallet BC. Cada transacción contiene información sobre el proceso, código QR y datos de validación en blockchain. Permite generar, validar y almacenar transacciones de manera segura y trazable. | | | | --- | --- | | | --- | --- | | Atributos | | | Métodos | | --- | | | --- | --- | --- |
+
+Nombre	Tipo de Dato	Visibilidad	validateTransaction()generateQRCode()storeTransaction()
+id	UUID	público	
+---	---	---	---
+QRCode	String	público	
+---	---	---	---
+blockchainInformation	BlockchainInformation	privado	
+---	---	---	---
 ### 5.4.1 Domain Layer
 ### 5.4.2 Interface Layer
 ### 5.4.3 Application Layer
