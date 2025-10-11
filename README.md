@@ -1,4 +1,4 @@
-<hr>
+![wireframe-13](https://github.com/user-attachments/assets/cc744863-3a25-450e-8b21-f0f9695643fc)<hr>
 
 # <center>Informe del Trabajo Final</center>
 
@@ -1754,6 +1754,22 @@ Con el objetivo de mejorar la visibilidad de Perú Digital en los motores de bú
 
 ## 6.4. Application UX/UI Design
 ### 6.4.1 Applications Wireframes
+
+![wireframe-1](https://github.com/user-attachments/assets/db9fcce4-68a1-415a-bd06-7cdccf3eef83)
+![wireframe-1-2](https://github.com/user-attachments/assets/eb475941-f08f-45cd-b7f5-299a81b2740f)
+<img width="1536" height="3120" alt="wireframe-2" src="https://github.com/user-attachments/assets/dd0bd30e-6f68-41d1-b6af-6ec44fc35b48" />
+<img width="1536" height="973" alt="wireframe-3" src="https://github.com/user-attachments/assets/32e83006-8ba7-4ef0-bba1-84f41f072df7" />
+<img width="1101" height="1528" alt="wireframe-3-2" src="https://github.com/user-attachments/assets/e9971f4b-2fc8-42a7-ad4e-eec4e9180205" />
+<img width="1536" height="1312" alt="wireframe-4" src="https://github.com/user-attachments/assets/582bfebe-2187-4bb8-8c6f-49db18ab5ba9" />
+<img width="1536" height="1568" alt="wireframe-5" src="https://github.com/user-attachments/assets/64d5a706-6d8a-414a-9396-292f75e888e0" />
+<img width="472" height="378" alt="wireframe-6" src="https://github.com/user-attachments/assets/8b6ff468-704e-4e68-ae38-d3e8c7031d5f" />
+![wireframe-7](https://github.com/user-attachments/assets/788b1f4e-841a-4d0a-ac1d-bce65b0c1cc6)
+<img width="2054" height="1149" alt="wireframe-8" src="https://github.com/user-attachments/assets/0cf12d14-50e6-425f-ac1f-46bd79557d43" />
+![wireframe-10](https://github.com/user-attachments/assets/667fdc0a-a3d3-4d86-b419-f4c370f8dc2c)
+<img width="1536" height="1628" alt="wireframe-11" src="https://github.com/user-attachments/assets/ee7f3a69-c90f-4582-95fd-45fa18a6903e" />
+<img width="1101" height="1076" alt="wireframe-12" src="https://github.com/user-attachments/assets/e74682ee-a5ea-43d9-b1fd-46fedaf77218" />
+![wireframe-13](https://github.com/user-attachments/assets/0e15c1b8-305f-49e6-96c7-a7f471625706)
+
 ### 6.4.2 Applications Wireflow Diagrams
 
 1. El ciudadano inica sesión en la plataforma
