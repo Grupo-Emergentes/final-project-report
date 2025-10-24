@@ -2034,7 +2034,270 @@ Con el objetivo de mejorar la visibilidad de Perú Digital en los motores de bú
 7. El ciudadano consulta información con el chatbot
    <img width="1084" height="708" alt="image" src="https://github.com/user-attachments/assets/733d3628-5219-4008-ac72-94a4fcf982d4" />
 
+## 5.5. Applications Prototyping.
+Mediante la herramienta de Figma, se elaboró el prototipado correspondiente a la aplicación para que pueda servir de guía en la programación de este. De la misma manera, funciona para reconocer los paths que pueden llegar a mantener los diferentes usuarios basado en sus diferentes roles.
 
+Link directo hacia el prototyping: https://www.figma.com/proto/N0Oc3Y6SzhUWzSGF9yDLty/Apps-Mobiles---mauwiwi?node-id=5334-2915&p=f&t=rU4tRCifwjIBviUS-1&scaling=contain&content-scaling=fixed&page-id=4171%3A2345&starting-point-node-id=5334%3A2915&show-proto-sidebar=1
+
+Asimismo, se realizó un video demostrativo para explicar los diferentes flujos que mantendrá nuesta aplicación. Este video se encuentra disponible en el siguiente link: https://n9.cl/7p1d2g
+
+
+<img src="./assets/img/application-prototyping/webapp.PNG" alt="Web App Prototyping" width="100%" />
+
+Link directo hacia el mobile prototyping: https://www.figma.com/proto/N0Oc3Y6SzhUWzSGF9yDLty/Apps-Mobiles---mauwiwi?node-id=3846-1527&t=yxfxPIeSPfCG5IaX-0&scaling=min-zoom&content-scaling=fixed&page-id=110%3A1227&starting-point-node-id=3846%3A1527
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/YQ0OANa.png" alt="Mobile Prototyping" width="80%" />
+</div><br>
+
+# Capítulo VI: Product Implementation, Validation & Deployment
+## 6.1. Software Configuration Management.
+### 6.1.1. Software Development Environment Configuration.
+
+Para Perú Digital, planteamos los siguientes productos: 
+- Landing Page: Tiene como propósito presentar la propuesta de nuestro proyecto, incluido beneficios y descripción de los servicios. 
+- Web Application:  La aplicación web permite a ciudadanos realizar tramites publicos y gestionar sus documentos personales en una misma plataforma. Además, permite a funcionarios publicos poder gestionar solicitudes de aprobación y tramites aprobados en su entidad. 
+- Web Services: El servicio API proporciona endpoints para la integración de estos con la Web Application. 
+
+### 6.1.2. Source Code Management
+Para la gestión y el control de los diferentes aspectos de nuestro proyecto, hemos adoptado una metodología de desarrollo basada en Gitflow.
+Nuestra estrategia de ramificación se centra en el uso de Feature Branches. Cada nueva funcionalidad se desarrolla en una rama separada que, una vez completada y revisada, se integra a la rama develop mediante Pull Requests. Posteriormente, los cambios se promueven a la rama main para el despliegue final.
+
+Estándares de Nomenclatura
+
+Para mantener la claridad y la trazabilidad, hemos implementado convenciones estrictas de nomenclatura:
+
+Para los release: release-*
+
+Par los hotfix: hotfix-*
+
+y Semantic Versioning para la numeración de los release. 
+
+Adjuntamos los enlaces para visualizar los repositorios de la organización:
+
+- Repositorio de Landing Page:
+
+Enlace: https://github.com/Grupo-Emergentes/landing-page.git
+
+Elaborado con ReactJS.
+
+- Repositorio de Web Applications
+  
+Enlace: https://github.com/Grupo-Emergentes/web-application.git
+
+Elaborado con ReactJS.
+
+- Repositorio de Web Services
+
+https://github.com/Grupo-Emergentes/web-services.git
+
+Elaborado con Spring Boot y Eureka 
+
+- Repositorio del Documento
+
+https://github.com/Grupo-Emergentes/final-project-report.git
+
+Elaborado en Markdown.
+
+### 6.1.3. Source Code Style Guide & Conventions.
+
+**ReactJS**
+| Referencias Adoptadas | Explicación y Convenciones |
+|-----------|-----------|
+| Google HTML/ CSS Style Guide: https://google.github.io/styleguide/htmlcssguide.html | Consideramos guiarnos con la documentación de Google para tener una lista de recomendaciones que nos ayude a mejorar la estructura de nuestras páginas. 
+
+**Java/Spring Boot**
+
+
+
+**Lenguaje Gherkin**
+
+| Referencias Adoptadas | Explicación y Convenciones|
+|-----------|-----------|
+| Gherkin Conventions for Readable Specifications: https://specflow.org/gherkin/gherkin-conventions-for-readable-specifications/ | Consideramos guiarnos y aprender de la documentación situada en la referencia indicada, porque necesitamos tener ideas de cómo trabajar bajo ese lenguaje y poder usar de manera adecuada las herramientas.| 
+
+**Lenguaje Md**
+
+| Referencias Adoptadas| Explicación y Convenciones |
+|-----------|-----------|
+| The Markdown Guide: https://www.markdownguide.org/ | |
+
+
+### 6.1.4. Software Deployment Configuration.
+
+**Landing Page**
+
+Para el despliegue de la Landing Page, se utilizará Vercel por su simplicidad y automatización de despliegue.
+
+**Web Application**
+
+Para el despliegue de la Aplicación Web, se empleará Vercel, debido a su integración sencilla con los repositorios de GitHub, lo que resulta en un despliegue ágil, rápido y automatizado.
+
+**Web Services**
+
+Los servicios web serán empaquetados y desplegados como contenedores a través de Docker. Esta decisión asegura la portabilidad, la escalabilidad y una uniformidad en la configuración del ambiente de ejecución.
+
+## 7.2. Solutions Implementation
+### 7.2.1. Sprint 1
+#### 7.2.1.1. Sprint Planning 1
+
+| **Sprint #** | Sprint 1 |
+|--------------|----------|
+| **Sprint Planning Background** | |
+| **Date** | 2025-10-23 |
+| **Time** | 09:00 PM |
+| **Location** | Virtual, mediante una llamada de Discord |
+| **Prepared By** | Zoppi Rodriguez, Giacomo |
+| **Attendees (to planning meeting)** | Cervantes, Valentino - Kunimoto, Mathias - Escalante, Janiel |
+| **Sprint Goal & User Stories** | |
+| **Sprint n Goal** | Nuestro foco está en completar las vistas del Frontend y la landing page. Creemos que ofrece un progreso tangible e incrementa la confianza a los stakeholders al proporcionarles una interfaz de usuario funcional. Esto será confirmado cuando todas las vistas sean completamente usables, navegables y demostrables en un ambiente local y aun sin una integración con servicios. 
+| **Sprint 1 Velocity** | |
+| **Sum of Story Points** | XXXXXXXXXXXXXXXX story points |
+
+#### 7.2.1.2. Sprint Backlog 1
+
+A continuación el cuadro en el que exponemos cada una de estas tareas junto a su descripción: 
+
+
+| User Story |            | Work-Item / Task |         |             |               |                |
+|------------|------------|------------------|---------|-------------|---------------|----------------|
+| **Id**     | **Title**  | **Id**           | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** (To-do / In-Process / To-Review / Done) |
+
+
+#### 7.2.1.3. Development Evidence for Sprint Review.
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Message Body</th>
+      <th>Committed on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+		<td>
+			
+		</td>
+	</tr>
+  </tbody>
+</table>
+
+
+#### 7.2.1.4. Testing Suite Evidence for Sprint Review.
+
+## Bounded Context
+
+su gherkin
+
+## Bounded Context
+
+su gherkin
+
+## Bounded Context
+
+su gherkin
+
+## Bounded Context
+
+su gherkin
+
+#### 7.2.1.5. Execution Evidence for Sprint Review.
+
+- El link de la landing page es el siguiente: https://los-angelitos.github.io/landing-page/
+
+**Imagen 1:** 
+
+</br>
+
+**Imagen 2:** 
+
+</br>
+
+**Imagen 3:** 
+
+</br></br>
+
+- El link de la Web application: https://sweet-manager-web-application.vercel.app
+
+**Imagen 1:** Vista de Login
+
+</br>
+
+**Imagen 2:** Vista Home Page
+
+</br>
+
+**Imagen 3:** Vista de chatbot
+
+</br>
+
+**Imagen 4:** Vista de Billetera
+
+</br>
+
+**Imagen 5:** Vista de documento individual
+
+</br>
+
+**Imagen 6:** Vista de formulario de tramite
+
+</br>
+
+**Imagen 7:** Vista principal del administrador
+
+</br>
+
+**Imagen 8:** Vista de Analiticas y Reporte
+
+</br>
+
+**Imagen 9:** Vista de Notificaciones
+
+</br>
+
+**Imagen 10:** Vista de Perfil
+
+</br>
+
+#### 7.2.1.6. Services Documentation Evidence for Sprint Review.
+
+En este sprint se cumplió el objetivo de desarrollar la Landing Page y el Web Application, por ello no requerimos de documentación relacionada a Web Services.
+
+#### 7.2.1.7. Software Deployment Evidence for Sprint Review.
+En este sprint, se completó el desarrollo de la landing page y el Web Application, a continuación, se detallan el conjunto de herramientas utilizadas para su despliegue:
+
+- Git: Utilizado como sistema de control de versiones para facilitar el trabajo en equipo durante el desarrollo de los artefactos.
+- GitFlow: Implementado como flujo de trabajo para gestionar el progreso individual de cada miembro del equipo en el desarrollo del los artefactos.
+- GitHub: Empleado como plataforma colaborativa para almacenar las versiones del proyceto y facilitar el desarrollo conjunto del equipo.
+- Vercel? Railway? etc
+
+**Evidencias Landing Page**
+(Captura)
+
+**Evidencias Web Application**
+(Captura)
+
+#### 7.2.1.8. Team Collaboration Insights during Sprint.
+En este Sprint 1, todos hemos colaborado en conjunto para el desarrollo de los artefactos: Landing Page y Web Application.
+
+A continuación se muestran las colaboraciones individuales por cada artefacto terminado durante este sprint.
+
+**Web Application**
+
+
+**Landing Page**
+
+
+## 7.3. Validation Interviews
+### 7.3.1. Diseño de Entrevistas
+### 7.3.1. Registro de Entrevistas
+### 7.3.1. Evaluación según heurísticas
+
+### 7.4 Video About the Product
 
 
 
