@@ -2297,6 +2297,63 @@ A continuación se muestran las colaboraciones individuales por cada artefacto t
 ### 7.3.1. Registro de Entrevistas
 ### 7.3.1. Evaluación según heurísticas
 
+### SITE o APP A EVALUAR:
+Perú Digital Web Application
+
+#### TAREAS A EVALUAR:
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Registro de trámite
+2. Registro de Documento
+3. Visualización de servicios
+4. Visualización de documentos en la billetera
+5. Inicio de Sesión
+6. Visualización de Analíticas
+7. Visualización de solicitudes de aprobación de trámites
+8. Conversación con Chatbot
+9. Visualización del Perfil
+
+
+No estan incluidos en esta evaluación las siguientes tareas:
+1. Notificaciones
+
+#### ESCALA DE SEVERIDAD Y TABLA RESUMEN DE PROBLEMAS
+
+| Nivel | Descripción |
+|-------|-------------|
+| 1     | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2     | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolviéndolo de cara al siguiente release. |
+| 3     | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| 4     | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+| #  | Problema                                                                 | Escala de severidad | Heurística/Principio violado(a)                                |
+|----|--------------------------------------------------------------------------|----------------------|-----------------------------------------------------------------|
+| 1  | No hay acceso a FAQ o tutoriales dentro de la web | 1| Usability: Ayuda y documentación |
+| 2  | No existen atajos de teclado que permitan una aprobación de trámites en masa | 2  |Usability:  Flexibilidad y eficiencia de uso |
+
+
+#### DESCRIPCIÓN DE PROBLEMAS:
+
+##### PROBLEMA #1:  No hay acceso a FAQ o tutoriales dentro de la web 
+**Severidad:** 1  
+**Heurística violada:** Usability: Ayuda y documentación
+
+**Problema:**  
+Dentro de la realización de trámites o documentos, no existe ningun tutorial o indicativo visual que permita al usuario ser guiado en todo momento.  
+
+**Recomendación:**  
+Crear una sección de FAQ o walkthroughts y tooltips que permitan al usuario guiarse en cada procesos de su trámite.   
+
+##### PROBLEMA #2: No existen atajos de teclado que permitan una aprobación de trámites en masa  
+**Severidad:** 1  
+**Heurística violada:** Usability:  Flexibilidad y eficiencia de uso
+
+**Problema:**  
+Dentro de la sección de aprobación de solicitudes para los funcionarios, no existe algun atajo o sistema que les permite visualizar y aprobar los tramites con facilidad y rapidez. 
+
+**Recomendación:**  
+Crear un botón "Aprobar y Siguiente", que permita saltar directamente a la siguiente solicitud en la lista. 
+
 ### 7.4 Video About the Product
 
 
