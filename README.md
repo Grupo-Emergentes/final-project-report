@@ -2207,17 +2207,21 @@ su gherkin
 
 #### 7.2.1.5. Execution Evidence for Sprint Review.
 
-- El link de la landing page es el siguiente: https://los-angelitos.github.io/landing-page/
+- El link de la landing page es el siguiente: https://landing-page-emergentes.vercel.app/
 
-**Imagen 1:** 
+![1](https://github.com/user-attachments/assets/2b60e4e5-812f-4432-be95-5ab9d350551f)
 
 </br>
 
 **Imagen 2:** 
 
+![2](https://github.com/user-attachments/assets/c2515e19-ab67-4235-a1d0-1abc46425b3b)
+
 </br>
 
 **Imagen 3:** 
+
+![3](https://github.com/user-attachments/assets/cf45db3f-d514-42f8-959c-d19f04530201)
 
 </br></br>
 
