@@ -2273,10 +2273,10 @@ En este sprint, se completó el desarrollo de la landing page y el Web Applicati
 - Git: Utilizado como sistema de control de versiones para facilitar el trabajo en equipo durante el desarrollo de los artefactos.
 - GitFlow: Implementado como flujo de trabajo para gestionar el progreso individual de cada miembro del equipo en el desarrollo del los artefactos.
 - GitHub: Empleado como plataforma colaborativa para almacenar las versiones del proyceto y facilitar el desarrollo conjunto del equipo.
-- Vercel? Railway? etc
+- Vercel: Creación de experiencias web rápidas y personalizadas, automatizando el proceso de despliegue y manejo de la escalabilidad. 
 
 **Evidencias Landing Page**
-(Captura)
+![vercel](https://github.com/user-attachments/assets/b7338d81-c653-48b2-87c1-ba3f9b81a25a)
 
 **Evidencias Web Application**
 (Captura)
