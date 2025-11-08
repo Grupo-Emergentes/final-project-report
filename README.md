@@ -2034,7 +2034,32 @@ Con el objetivo de mejorar la visibilidad de Perú Digital en los motores de bú
 7. El ciudadano consulta información con el chatbot
    <img width="1084" height="708" alt="image" src="https://github.com/user-attachments/assets/733d3628-5219-4008-ac72-94a4fcf982d4" />
 
-## 5.5. Applications Prototyping.
+### 6.4.3 Applications Mockups
+
+<img width="1421" height="3831" alt="1" src="https://github.com/user-attachments/assets/035752fc-b76a-4a8d-8362-bf7e967d524e" />
+<img width="1239" height="1041" alt="2" src="https://github.com/user-attachments/assets/596e2c4a-c559-424b-a4ee-330b04598f0d" />
+<img width="1239" height="1629" alt="3" src="https://github.com/user-attachments/assets/16da0b2c-9797-4b3a-818b-af4679dc7b34" />
+<img width="1239" height="1077" alt="4" src="https://github.com/user-attachments/assets/bac99d75-75d1-4377-8037-baafe6d5736a" />
+<img width="1239" height="1529" alt="5" src="https://github.com/user-attachments/assets/331b8b79-a9ca-4e6e-b957-af89839ee5d3" />
+<img width="1239" height="1743" alt="6" src="https://github.com/user-attachments/assets/a43c33ab-db87-46c2-9f91-9dc78aa060ab" />
+<img width="1229" height="1720" alt="7" src="https://github.com/user-attachments/assets/ac846ad3-d1ac-4d40-9b2b-e896326c16b9" />
+<img width="1239" height="884" alt="8" src="https://github.com/user-attachments/assets/012886c2-d224-42bb-9cfd-70c7bc657f6d" />
+<img width="1239" height="920" alt="9" src="https://github.com/user-attachments/assets/6e6240cc-b3bf-4f2b-a97d-e9f5f90d8302" />
+<img width="1239" height="884" alt="10" src="https://github.com/user-attachments/assets/451fdc34-328c-4da0-ae19-45833755a3af" />
+<img width="1239" height="1121" alt="11" src="https://github.com/user-attachments/assets/59a83c35-177a-4d31-bc70-80de818985f5" />
+<img width="1239" height="847" alt="12" src="https://github.com/user-attachments/assets/b1f11198-d457-4992-be08-07c135753863" />
+<img width="1239" height="847" alt="13" src="https://github.com/user-attachments/assets/d67411f1-b4e6-43ab-95df-b38f95486712" />
+<img width="1239" height="846" alt="14" src="https://github.com/user-attachments/assets/e37765a8-89b0-4488-b9e7-9bc097fd9ccc" />
+<img width="1239" height="847" alt="15" src="https://github.com/user-attachments/assets/cf5e9122-23ba-4885-9e6f-074f4b91aa66" />
+<img width="1239" height="901" alt="16" src="https://github.com/user-attachments/assets/2a49e2c4-ff54-46ce-bb02-40b13a39133b" />
+<img width="1254" height="847" alt="17" src="https://github.com/user-attachments/assets/714b67ed-0768-4b2f-86cc-85b0f35c0901" />
+<img width="1239" height="1441" alt="18" src="https://github.com/user-attachments/assets/2579f406-36ea-4a1e-9d87-349e40b914e5" />
+<img width="1239" height="847" alt="19" src="https://github.com/user-attachments/assets/4cc52e4d-479c-410a-b3f6-bb973247f657" />
+<img width="1239" height="913" alt="20" src="https://github.com/user-attachments/assets/7cf8ef9d-da3f-4597-9aed-f0b56954fcb6" />
+<img width="1239" height="893" alt="21" src="https://github.com/user-attachments/assets/9d406a08-6a56-4367-91f6-a93bb1d7ec63" />
+<img width="1239" height="1133" alt="22" src="https://github.com/user-attachments/assets/86bcb0af-6616-41fa-866b-06cf34867f02" />
+
+## 6.5. Applications Prototyping.
 Mediante la herramienta de Figma, se elaboró el prototipado correspondiente a la aplicación para que pueda servir de guía en la programación de este. De la misma manera, funciona para reconocer los paths que pueden llegar a mantener los diferentes usuarios basado en sus diferentes roles.
 
 Link directo hacia el prototyping: https://www.figma.com/proto/N0Oc3Y6SzhUWzSGF9yDLty/Apps-Mobiles---mauwiwi?node-id=5334-2915&p=f&t=rU4tRCifwjIBviUS-1&scaling=contain&content-scaling=fixed&page-id=4171%3A2345&starting-point-node-id=5334%3A2915&show-proto-sidebar=1
