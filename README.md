@@ -2062,18 +2062,10 @@ Con el objetivo de mejorar la visibilidad de Perú Digital en los motores de bú
 ## 6.5. Applications Prototyping.
 Mediante la herramienta de Figma, se elaboró el prototipado correspondiente a la aplicación para que pueda servir de guía en la programación de este. De la misma manera, funciona para reconocer los paths que pueden llegar a mantener los diferentes usuarios basado en sus diferentes roles.
 
-Link directo hacia el prototyping: https://www.figma.com/proto/N0Oc3Y6SzhUWzSGF9yDLty/Apps-Mobiles---mauwiwi?node-id=5334-2915&p=f&t=rU4tRCifwjIBviUS-1&scaling=contain&content-scaling=fixed&page-id=4171%3A2345&starting-point-node-id=5334%3A2915&show-proto-sidebar=1
-
-Asimismo, se realizó un video demostrativo para explicar los diferentes flujos que mantendrá nuesta aplicación. Este video se encuentra disponible en el siguiente link: https://n9.cl/7p1d2g
+<img width="927" height="699" alt="image" src="https://github.com/user-attachments/assets/7d8f57b0-ac74-46bc-a545-1f2524cf17a3" />
 
 
-<img src="./assets/img/application-prototyping/webapp.PNG" alt="Web App Prototyping" width="100%" />
-
-Link directo hacia el mobile prototyping: https://www.figma.com/proto/N0Oc3Y6SzhUWzSGF9yDLty/Apps-Mobiles---mauwiwi?node-id=3846-1527&t=yxfxPIeSPfCG5IaX-0&scaling=min-zoom&content-scaling=fixed&page-id=110%3A1227&starting-point-node-id=3846%3A1527
-
-<div style="text-align: center;">
-  <img src="https://i.imgur.com/YQ0OANa.png" alt="Mobile Prototyping" width="80%" />
-</div><br>
+Link directo hacia el prototyping: https://www.figma.com/proto/iJcPPxbZ1bqdNslkNJVjRt/Application-Wireframes---Mockups?node-id=91-4072&p=f&t=Vif9t7Q6ptxsBgpT-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=90%3A2&show-proto-sidebar=1
 
 # Capítulo VI: Product Implementation, Validation & Deployment
 ## 6.1. Software Configuration Management.
@@ -2323,6 +2315,52 @@ A continuación se muestran las colaboraciones individuales por cada artefacto t
 
 ## 7.3. Validation Interviews
 ### 7.3.1. Diseño de Entrevistas
+#### Preguntas de Validación – Segmento 1: Huéspedes
+Estas preguntas buscan validar la utilidad, usabilidad y valor percibido de las interfaces (Web App y Landing Page): 
+
+- Landing Page
+
+¿La información en la landing page fue suficiente para entender los beneficios del sistema?
+
+¿Te resultó confiable el diseño y contenido del sitio para decidir registrarte?
+
+¿Te sentiste identificado/a con los problemas que la plataforma promete solucionar?
+
+- Web Application
+
+¿Te resultarían utiles las funcionalidades que visualizaste en la web?
+
+¿Encontraste rápido la información que buscabas? ¿Te sentiste perdido en la plataforma en algún momento?
+
+¿Pudiste realizar un tramite en la plataforma? ¿Que opinas del proceso?
+
+¿Pudiste visualizar tus documentos en la billetera?
+
+¿Cómo crees que la Inteligencia Artificial puede acelerar la realización de trámites?
+
+#### Preguntas de Validación – Segmento 2: Funcionarios Públicos
+
+- Landing Page
+
+¿La información en la landing page fue suficiente para entender los beneficios del sistema?
+
+¿Te resultó confiable el diseño y contenido del sitio para decidir registrarte?
+
+¿La landing page te ayudó a comprender cómo esta plataforma te facilitaría el trabajo diario?
+
+¿Te sentiste identificado/a con los problemas que la plataforma promete solucionar?
+
+- Web Application
+
+¿Te resultarían utiles las funcionalidades que visualizaste en la web?
+
+¿Encontraste rápido la información que buscabas? ¿Te sentiste perdido en la plataforma en algún momento?
+
+¿Pudisste aprobar un trámite en la plataforma?
+
+¿Cómo crees que la Inteligencia Artificial puede acelerar la realización o aprobación de trámites?
+
+
 ### 7.3.1. Registro de Entrevistas
 ### 7.3.1. Evaluación según heurísticas
 
