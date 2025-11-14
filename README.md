@@ -2118,26 +2118,15 @@ Elaborado en Markdown.
 
 ### 6.1.3. Source Code Style Guide & Conventions.
 
-**ReactJS**
 | Referencias Adoptadas | Explicación y Convenciones |
 |-----------|-----------|
-| Google HTML/ CSS Style Guide: https://google.github.io/styleguide/htmlcssguide.html | Consideramos guiarnos con la documentación de Google para tener una lista de recomendaciones que nos ayude a mejorar la estructura de nuestras páginas. 
-
-**Java/Spring Boot**
-
-
-
-**Lenguaje Gherkin**
-
-| Referencias Adoptadas | Explicación y Convenciones|
-|-----------|-----------|
+| Google HTML/ CSS Style Guide: https://google.github.io/styleguide/htmlcssguide.html | Nos guiamos de la documentación de Google para tener un orden y estructura adecuados en el frontend. |
+| React Rules: https://react.dev/reference/rules | Seguimos las convenciones de React para la elaboración de la web applications |
+| The Markdown Guide: https://www.markdownguide.org/ | Consideramos usar la guia de Markdown para una correcta documentación del informe. |
+| Python Enhancement Proposals hecho por The Python Software Foundation: https://peps.python.org/pep-0008/ | Utilizamos las convenciones y nomenclaturas en Python para la elaboración del servicio de IA. |
+| Spirng Boot Coding Conventions: https://docs.spring.io/spring-boot/reference/using/structuring-your-code.html | Usamos las convenciones y buenas practicas de Spring Boot para tener un codigo estructurado. |
+| NodeJS: https://www.lodely.com/blog/nodejs-coding-standards-and-best-practices | Para Node js, utilizamos algunas guias no oficiales, pues no ofrecen una guia; sin embargo, nos resultaron bastantes utiles para la organización | 
 | Gherkin Conventions for Readable Specifications: https://specflow.org/gherkin/gherkin-conventions-for-readable-specifications/ | Consideramos guiarnos y aprender de la documentación situada en la referencia indicada, porque necesitamos tener ideas de cómo trabajar bajo ese lenguaje y poder usar de manera adecuada las herramientas.| 
-
-**Lenguaje Md**
-
-| Referencias Adoptadas| Explicación y Convenciones |
-|-----------|-----------|
-| The Markdown Guide: https://www.markdownguide.org/ | |
 
 
 ### 6.1.4. Software Deployment Configuration.
@@ -2311,6 +2300,7 @@ A continuación se muestran las colaboraciones individuales por cada artefacto t
 
 
 **Landing Page**
+<img width="786" height="397" alt="image" src="https://github.com/user-attachments/assets/a51da2b8-d1b0-4a46-80a5-2fc550d0a4dc" />
 
 
 ## 7.3. Validation Interviews
