@@ -114,6 +114,38 @@
       </td>
     </tr>
   </tbody>
+  <tbody>
+    <tr>
+      <td rowspan="4">TB2</td>
+      <td rowspan="4">15/11/2025</td>
+      <td>Mathias Tsuneo Kunimoto Watanabe</td>
+      <td>
+        Sprint 1 <br>
+        Frontend Web Applications <br>
+      </td>
+    </tr>
+    <tr>
+      <td>Giacomo Zoppi Rodriguez</td>
+      <td>
+        Sprint 1 <br>
+        Frontend Web Applications <br>
+      </td>
+    </tr>
+    <tr>
+      <td>Janiel Franz Escalante</td>
+      <td>
+       Sprint 1 <br>
+        Frontend Web Applications <br>
+      </td>
+    </tr>
+    <tr>
+      <td>Valentino Sebastian Cervantes Erequita</td>
+      <td>
+        Sprint 1 <br>
+        Frontend Web Applications <br>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 # Project Report Collaboration Insights
@@ -133,6 +165,12 @@ La entrega TP1 se  finalizó con éxito y están documentadas en el siguiente re
 Se redactó en su completitud el capitulo V, incluida la definición de las capas Application, Domain, Infrastructure e Interfaces de cada Bounded Context, incluido sus diagramas de clases, de datos y de componentes. Aparte, se elaboraron los wireframes y wireflows de la Landing Page y la aplicación web. Se llevaron a cabo reuniones semanales para hacer una revisión de lo elaborado por el grupo.
 
 <img width="1106" height="584" alt="image" src="https://github.com/user-attachments/assets/85ced65a-3271-43e4-8b43-ee4622ea966f" />
+
+TB2: 
+La entrega TB2 finalizó con éxito y están documentadas en el siguiente repositorio de Github perteneciente a la organización del equipo. Durante el desarrollo del informe se tuvieron en cuenta los siguientes aspectos:
+
+Se redactaron y estructuraron los contenidos asignados a cada miembro utilizando el formato Markdown. Se completaron los siguientes puntos: capitulos V, VI y VII  en colaboración del equipo. Así como el sprint 1, con el desarrollo de la Landing Page y la Web Applications. Se llevaron a cabo reuniones semanales para hacer una revisión de lo elaborado por el grupo.
+
 
 # Student Outcome
 
@@ -165,10 +203,16 @@ En el siguiente cuadro se describen las acciones realizadas por cada integrante 
       <p><b>Giacomo Zoppi:</b> Contribuí eficazmente en el dialogo con mi equpo. Nos pusimos de acuerdo para la elaboración del Event Storming.</p>
       <p><b>Mathias Kunimoto:</b> Favorecí un ambiente de confianza en el equipo, promoviendo la comunicación y el apoyo mutuo, y ayudando a resolver dudas de algunos integrantes respecto a sus tareas.</p>
       <p><b>Janiel Escalante:</b> Colaboré con el equipo oralmente, al compartir mis ideas y conocimientos. Logré aportar con mi especialidad en el desarrollo de backend. </p>
+      <p><b>TB2:</b></p>
+      <p><b>Valentino Cervantes:</b> Favorecí un ambiente de confianza en el equipo, promoviendo la comunicación y el apoyo mutuo, y ayudando a resolver dudas de algunos integrantes respecto a sus tareas.</p>
+      <p><b>Giacomo Zoppi:</b> Contribuí eficazmente en el dialogo con mi equpo. En especial, en coordinar que cada Bounded Context pudiese integrarse entre si</p>
+      <p><b>Mathias Kunimoto:</b> Contribuí y me comuniqué eficazmente con mi grupo durante todo el desarrollo del proyecto. </p>
+      <p><b>Janiel Escalante:</b> Colaboré con el equipo oralmente, al compartir mis ideas y conocimientos. Logré aportar con mis conocimientos en frontend. </p>
     </td>
     <td>
       <p><b>TB1:</b> En esta entrega logramos consolidar la comunicación oral como herramienta clave para la coordinación del equipo. La disposición para expresar ideas, aclarar dudas y apoyar a los compañeros permitió que cada integrante cumpliera con sus responsabilidades y que el informe avanzara de manera ordenada. El ambiente de confianza y las dinámicas grupales favorecieron la participación de todos y fortalecieron la colaboración en el proyecto.</p>
       <p><b>TP1:</b>En esta entrega, la comunicación grupal fue clave para definir puntos como la estructura, arquitectura, bounded contexts y tecnologías a utilizar en el proyecto. Permitió al grupo que todos estuviesemos en la misma página y favorecieron el desempeño y dinamica genera del equipo. </p>
+      <p><b>TB2:</b>En esta entrega, la comunicación grupal resultó esencial para el desarrollo de unas soluciones coordinadas y que se integren correctamente. Fue importante que todos estuviesemos en la misma página y mantuviesemos una comunicación constante y clara.</p>
     </td>
   </tr>
   <tr>
@@ -186,10 +230,16 @@ En el siguiente cuadro se describen las acciones realizadas por cada integrante 
       <p><b>Giacomo Zoppi:</b> Aporté transmitiendo por escrito las nuevas tareas en el tablero Kanban, así como gestionar su uso y su actualización constante.</p>
       <p><b>Mathias Kunimoto:</b> De forma escrita colaboré con mi grupo para la creación de los wireframes y wireflows..</p>
       <p><b>Janiel Escalante:</b>Colaboré con mi equipo para definir las funcionalidades, requisitos y la arquitectura del software, en especial en lo respecto a la IA. </p>
+      <p><b>TB2:</b></p>
+      <p><b>Valentino Cervantes:</b>  Aporté transmitiendo por escrito las nuevas tareas en el tablero Kanban, así como gestionar su uso y su actualización constante. </p>
+      <p><b>Giacomo Zoppi:</b>Colaboré en la redacción del documento, así transmití ideas correctamente y pudimos concretar decisiones de mejor forma. </p>
+      <p><b>Mathias Kunimoto:</b> De forma escrita colaboré en la definición de tareas en el spring backlog.</p>
+      <p><b>Janiel Escalante:</b>Aporté transmitiendo mis opiniones y mis objetivos a la hora de elaborar y diseñar la arquitectura efectivaente. Logré comunicarme claramente y llegar a consensos con el equipo.</p>
     </td>
     <td>
       <p><b>TB1:</b> En esta entrega reforzamos nuestra capacidad de comunicar ideas y resultados de manera escrita con claridad y objetividad, adaptándonos a diferentes públicos del ámbito de la ingeniería. La documentación generada (User Stories, escenarios, diagramas, etc.) permitió dejar evidencia del trabajo realizado y asegurar que todos los integrantes compartieran una misma visión del proyecto. Asimismo, el uso del tablero Kanban fue clave para estructurar la información, dar seguimiento a las tareas y mantener la transparencia en cada fase del entregable.</p>
       <p><b>TP1:</b> En esta entrega pudimos comunicar nuestras ideas de forma escrita con efectividad. Pudimos documentar la definición de los Bounded Context en cada una de sus capas, ademas de añadir capturas de los wireframes y wireflows elaborados en figma que permiten tener un prototipado del diseño. </p>
+      <p><b>TB2:</b> En esta entrega, era esencial pudimos comunicar nuestras ideas de forma escrita con efectividad. Pudimos documentar toda la información necesaria para empezar el desarrollo lo mas coordinado y perfecto posible.  </p>
     </td>
   </tr>
 </table>
@@ -2165,9 +2215,36 @@ Los servicios web serán empaquetados y desplegados como contenedores a través 
 A continuación el cuadro en el que exponemos cada una de estas tareas junto a su descripción: 
 
 
-| User Story |            | Work-Item / Task |         |             |               |                |
-|------------|------------|------------------|---------|-------------|---------------|----------------|
-| **Id**     | **Title**  | **Id**           | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** (To-do / In-Process / To-Review / Done) |
+| **User Story Id** | **User Story Title** | **Task Id** | **Task Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+|-------------------|----------------------|--------------|----------------|-----------------|------------------------|-----------------|-------------|
+| HU01 | Obtener información de la empresa | HU0101 | Diseñar sección “Nosotros” | Crear estructura visual y textual con historia, misión y visión de la empresa. | 4 | Giacomo Zoppi | Done |
+| HU01 | Obtener información de la empresa | HU0102 | Implementar redirección a la app | Añadir enlace que lleve a la aplicación web/móvil desde la sección “Nosotros”. | 2 | Mathias Kunimoto | To-do |
+| HU02 | Informarse sobre los beneficios del producto | HU0201 | Maquetar sección de beneficios | Crear cards con íconos y descripciones breves de los beneficios. | 5 | Valentino Cervantes | Done |
+| HU02 | Informarse sobre los beneficios del producto | HU0202 | Programar redirección a app | Configurar botón de acción con enlace a registro/descarga de app. | 2 | Janiel Escalante | Done |
+| HU03 | Conocer los testimonios de clientes | HU0301 | Diseñar componente de testimonios | Maquetar carrusel con opiniones reales. | 4 | Giacomo Zoppi | Done |
+| HU04 | Visualizar planes de subscripción | HU0401 | Diseñar sección de planes | Crear layout con 3 planes (básico, estándar, premium). | 4 | Valentino Cervantes | Done |
+| HU05 | Visualizar documentos | HU0501 | Desarrollar vista de documento | Mostrar detalles, hash, red y QR asociado. | 5 | Giacomo Zoppi | In Process |
+| HU05 | Visualizar documentos | HU0502 | Implementar visualizador PDF | Permitir abrir el documento en visor integrado. | 3 | Mathias Kunimoto | Done |
+| HU07 | Solicitar ingreso de documento | HU0701 | Implementar formulario de carga | Campos: tipo, entidad, imágenes, validador de formato. | 5 | Mathias Kunimoto | Done |
+| HU07 | Solicitar ingreso de documento | HU0702 | Crear endpoint de registro | API para subir datos y almacenar en MongoDB. | 3 | Giacomo Zoppi | In-Process |
+| HU10 | Cambio de domicilio | HU1001 | Crear formulario de actualización | Captura de dirección nueva con validación RENIEC. | 4 | Valentino Cervantes | In-Process |
+| HU11 | Inscripción de nacimiento | HU1101 | Diseñar formulario digital | Campos de padres, lugar, fecha de nacimiento. | 5 | Giacomo Zoppi | Done |
+| HU13 | Solicitud de RUC | HU1301 | Crear formulario de solicitud | Datos de identidad y dirección fiscal. | 4 | Giacomo Zoppi | Done |
+| HU13 | Solicitud de RUC | HU1302 | Generar comprobante digital | PDF con datos del RUC solicitado. | 3 | Mathias Kunimoto | To-do |
+| HU14 | Registro de matrimonio | HU1401 | Crear flujo de registro digital | Captura de datos de contrayentes. | 5 | Valentino Cervantes | Done |
+| HU14 | Registro de matrimonio | HU1402 | Generar acta PDF | Documento legal firmado digitalmente. | 3 | Giacomo Zoppi | To-do |
+| HU15 | Buscar y filtrar servicios | HU1501 | Implementar barra de búsqueda | Filtros por entidad, palabra clave y estado. | 4 | Mathias Kunimoto | Done |
+| HU15 | Buscar y filtrar servicios | HU1502 | Optimizar resultados dinámicos | Mostrar coincidencias en tiempo real. | 3 | Janiel Escalante | Done |
+| HU21 | Revisar trámite | HU2101 | Crear bandeja de trámites | Tabla con estado y tipo de trámite. | 5 | Giacomo Zoppi | In-Process |
+| HU21 | Revisar trámite | HU2102 | Implementar detalle de trámite | Mostrar datos, documentos y observaciones. | 3 | Valentino Cervantes | To-do |
+| HU23 | Validar documentos adjuntos | HU2301 | Agregar validación visual | Check de validez y observaciones. | 4 | Mathias Kunimoto | In-Process |
+| HU23 | Validar documentos adjuntos | HU2302 | Guardar validación en base de datos | Endpoint para marcar documento como válido/observado. | 3 | Janiel Escalante | To-do |
+| HU24 | Cambiar estado de trámite | HU2401 | Crear botón de cambio de estado | Permitir aprobar/rechazar trámite. | 3 | Valentino Cervantes | Done |
+| HU25 | Notificación de cambio de estado | HU2502 | Diseñar alerta visual | Modal o toast con nuevo estado. | 2 | Janiel Escalante | To-do |
+| HU27 | Ingreso como ciudadano | HU2701 | Crear flujo de login por DNI y código | Validar campos, gestionar reenvío de código. | 5 | Mathias Kunimoto | In-Process |
+| HU28 | Ingreso como funcionario | HU2801 | Crear formulario de login con credenciales | Validar usuario, contraseña y rol. | 4 | Valentino Cervantes | Done |
+| HU29 | Actualización de datos | HU2901 | Diseñar vista de perfil editable | Campos: correo, teléfono, dirección. | 4 | Mathias Kunimoto | Done |
+| HU30 | Visualización del perfil | HU3001 | Crear vista de perfil con documentos | Mostrar datos oficiales y documentos vinculados. | 5 | Valentino Cervantes | Done |
 
 
 #### 7.2.1.3. Development Evidence for Sprint Review.
@@ -2353,6 +2430,63 @@ Estas preguntas buscan validar la utilidad, usabilidad y valor percibido de las 
 
 ### 7.3.1. Registro de Entrevistas
 ### 7.3.1. Evaluación según heurísticas
+
+### SITE o APP A EVALUAR:
+Perú Digital Web Application
+
+#### TAREAS A EVALUAR:
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+
+1. Registro de trámite
+2. Registro de Documento
+3. Visualización de servicios
+4. Visualización de documentos en la billetera
+5. Inicio de Sesión
+6. Visualización de Analíticas
+7. Visualización de solicitudes de aprobación de trámites
+8. Conversación con Chatbot
+9. Visualización del Perfil
+
+
+No estan incluidos en esta evaluación las siguientes tareas:
+1. Notificaciones
+
+#### ESCALA DE SEVERIDAD Y TABLA RESUMEN DE PROBLEMAS
+
+| Nivel | Descripción |
+|-------|-------------|
+| 1     | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2     | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolviéndolo de cara al siguiente release. |
+| 3     | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| 4     | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+| #  | Problema                                                                 | Escala de severidad | Heurística/Principio violado(a)                                |
+|----|--------------------------------------------------------------------------|----------------------|-----------------------------------------------------------------|
+| 1  | No hay acceso a FAQ o tutoriales dentro de la web | 1| Usability: Ayuda y documentación |
+| 2  | No existen atajos de teclado que permitan una aprobación de trámites en masa | 2  |Usability:  Flexibilidad y eficiencia de uso |
+
+
+#### DESCRIPCIÓN DE PROBLEMAS:
+
+##### PROBLEMA #1:  No hay acceso a FAQ o tutoriales dentro de la web 
+**Severidad:** 1  
+**Heurística violada:** Usability: Ayuda y documentación
+
+**Problema:**  
+Dentro de la realización de trámites o documentos, no existe ningun tutorial o indicativo visual que permita al usuario ser guiado en todo momento.  
+
+**Recomendación:**  
+Crear una sección de FAQ o walkthroughts y tooltips que permitan al usuario guiarse en cada procesos de su trámite.   
+
+##### PROBLEMA #2: No existen atajos de teclado que permitan una aprobación de trámites en masa  
+**Severidad:** 1  
+**Heurística violada:** Usability:  Flexibilidad y eficiencia de uso
+
+**Problema:**  
+Dentro de la sección de aprobación de solicitudes para los funcionarios, no existe algun atajo o sistema que les permite visualizar y aprobar los tramites con facilidad y rapidez. 
+
+**Recomendación:**  
+Crear un botón "Aprobar y Siguiente", que permita saltar directamente a la siguiente solicitud en la lista. 
 
 ### 7.4 Video About the Product
 
