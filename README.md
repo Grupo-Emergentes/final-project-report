@@ -2308,38 +2308,38 @@ su gherkin
 
 </br></br>
 
-- El link de la Web application: https://sweet-manager-web-application.vercel.app
+- El link de la Web application: https://web-application-xh23.vercel.app/
 
 **Imagen 1:** Vista de Login
-
+![web-login](https://github.com/user-attachments/assets/cfbb246a-3912-44f1-a650-f80e44414ed8)
 </br>
 
 **Imagen 2:** Vista Home Page
-
+![web-home-page](https://github.com/user-attachments/assets/a930b66c-7291-4b31-bf16-3ed1676d741f)
 </br>
 
 **Imagen 3:** Vista de chatbot
-
+![web-chatbot](https://github.com/user-attachments/assets/52d4106c-02bf-4a86-827a-18f2776a4337)
 </br>
 
 **Imagen 4:** Vista de Billetera
-
+![web-billetera](https://github.com/user-attachments/assets/bfaf6c13-bd57-40fb-acf0-9739af32cffd)
 </br>
 
 **Imagen 5:** Vista de documento individual
-
+![web-documento](https://github.com/user-attachments/assets/a7e2dd8d-885b-4012-82b7-d7bfd4c34907)
 </br>
 
 **Imagen 6:** Vista de formulario de tramite
-
+![web-tramite](https://github.com/user-attachments/assets/929a90a5-6601-443f-9777-e610c25aa4d6)
 </br>
 
 **Imagen 7:** Vista principal del administrador
-
+![web-admin](https://github.com/user-attachments/assets/7f6d0456-64b1-46d0-90ce-d702b784ee98)
 </br>
 
 **Imagen 8:** Vista de Analiticas y Reporte
-
+![web-analytics](https://github.com/user-attachments/assets/7ff200a5-4d6e-4934-977d-f2be0c30d7e5)
 </br>
 
 **Imagen 9:** Vista de Notificaciones
