@@ -2366,7 +2366,8 @@ En este sprint, se completó el desarrollo de la landing page y el Web Applicati
 ![vercel](https://github.com/user-attachments/assets/b7338d81-c653-48b2-87c1-ba3f9b81a25a)
 
 **Evidencias Web Application**
-(Captura)
+![web-app](https://github.com/user-attachments/assets/4f748a38-e0d6-479d-b13b-f59080a00fe4)
+
 
 #### 7.2.1.8. Team Collaboration Insights during Sprint.
 En este Sprint 1, todos hemos colaborado en conjunto para el desarrollo de los artefactos: Landing Page y Web Application.
