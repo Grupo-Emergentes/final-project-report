@@ -169,6 +169,9 @@ La entrega TB2 finalizó con éxito y están documentadas en el siguiente reposi
 
 Se redactaron y estructuraron los contenidos asignados a cada miembro utilizando el formato Markdown. Se completaron los siguientes puntos: capitulos V, VI y VII  en colaboración del equipo. Así como el sprint 1, con el desarrollo de la Landing Page y la Web Applications. Se llevaron a cabo reuniones semanales para hacer una revisión de lo elaborado por el grupo.
 
+<img width="1091" height="571" alt="image" src="https://github.com/user-attachments/assets/9aa74a30-6a85-4fb5-b90e-8321b2d2afd1" />
+
+
 
 # Student Outcome
 
