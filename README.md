@@ -1,5 +1,3 @@
-<img width="238" height="259" alt="image" src="https://github.com/user-attachments/assets/bbd7b82e-2314-4d5b-a1bb-92768c6e5e05" /># <center>Informe del Trabajo Final</center>
-
 <p align="center">
     <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"></img><br>
