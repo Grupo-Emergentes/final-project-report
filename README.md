@@ -255,7 +255,7 @@ En el siguiente cuadro se describen las acciones realizadas por cada integrante 
 
 La startup consiste en el desarrollo de una plataforma web integral que permite a los ciudadanos peruanos mayores de 18 años acceder, gestionar y almacenar sus documentos personales digitales, así como realizar trámites con entidades públicas desde un único espacio digital. Inspirada en el modelo ucraniano Diia, esta solución busca centralizar y simplificar la interacción del ciudadano con el Estado, promoviendo la digitalización, la transparencia y la eficiencia en los servicios públicos del Perú.
 
-La plataforma está pensada también para ser utilizada por funcionarios publicos de las distintas entidades del Estado, para que accedan a información, KPIs, dashboards y auditorias. Con estas funcionalidaes en conjunto, nuestra propuesta es un ecosistema seguro, accesible y fácil de usar, que funcione como puente entre los ciudadanos y diferentes organismos gubernamentales, facilitando desde la descarga de documentos oficiales hasta la solicitud de servicios en línea. A mediano y largo plazo, se proyecta como una herramienta clave para la transformación digital del Estado peruano.
+La plataforma está pensada también para ser utilizada por funcionarios publicos de las distintas entidades del Estado, para que accedan a información, KPIs, dashboards y auditorias. Con estas funcionalidaes en conjunto, nuestra propuesta es un ecosistema seguro, accesible y fácil de usar, que funcione como puente entre los ciudadanos y diferentes organismos gubernamentales, facilitando desde la descarga de documentos oficiales hasta la solicitud de servicios en línea. A mediano y largo plazo, se proyecta como una herramienta clave para la transformación digital del Estado peruano. Aparte, como un añadido, hemos decidido implementar procesos notariales dentro de nuestra plataforma, mediante convenios con notarías o con el Colegio de Notarios para garantizar la aceptación de modelos digitales de firma e identidad.
 
 VISION: Ser la plataforma digital líder en Perú que revolucione la forma en ciudadanos y Estado interactuan, promoviendo una gestión pública eficiente, transparente y centrada en las personas a través de la tecnología.
 
@@ -419,6 +419,8 @@ Solicitud de RUC: alta del RUC para persona natural con formulario guiado, emisi
 Matrimonio: agendamiento, validación de identidad por videollamada, lectura del acta, firma digital, emisión de constancia digital enviada a la billetera.
 
 DNI digital: acceso al documento desde la billetera con estado, metadatos y QR verificable.
+
+Procesos notariales: Arrendamiento de bienes y transferencia vehicular. 
 
 Notificaciones: alertas de vencimientos, cambios de estado, recordatorios de trámites pendientes, confirmaciones de emisión.
 
@@ -2418,6 +2420,7 @@ En este Sprint 1, todos hemos colaborado en conjunto para el desarrollo de los a
 A continuación se muestran las colaboraciones individuales por cada artefacto terminado durante este sprint.
 
 **Web Application**
+<img width="781" height="420" alt="image" src="https://github.com/user-attachments/assets/719ae82b-7d00-445b-ac31-e2e518da61c1" />
 
 
 **Landing Page**
