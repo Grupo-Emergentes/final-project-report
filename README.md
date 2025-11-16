@@ -2466,29 +2466,25 @@ A continuación, se registraron todas las entrevistas de validación para nuestr
 
 **Entrevista 01 (Ciudadano)**
 
-URL del Vídeo: 
+URL del Vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210029_upc_edu_pe/IQB3DNip0X8_Sp2zXzDjbWqWAfHZ4kTBz5eow2-biGDRebY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=ra4GBD
 
-Nombres: 
+Nombres: Harold
 
-Apellidos: 
+Apellidos: Mayta Lopez
 
-Edad: 
+Edad: 21
 
-Sexo: 
+Sexo: Masculino
 
-Ocupación:
+Ocupación: Ingeniero
 
-Lugar donde vive: 
+Lugar donde vive: Lince
 
-Duración de la entrevista: 00:00 - 
+Duración de la entrevista: 08:06 - 
 
-Personalidad: 
+![entrevista-harold](https://github.com/user-attachments/assets/5cea5b44-3b41-4efd-9377-2a7cf08da8b7)
 
-<div style="text-align: center;">
-  <img src="./assets/img/validation-interviews/carlo_rebagliati.jpg" alt="Owner Carlo Rebagliati" width="100%" />
-</div><br>
-
-EN RESUMEN BLA BLA BLA
+El entrevistado Harold señaló que la landing page comunica claramente los beneficios del sistema y genera suficiente confianza para registrarse, además de sentirse identificado con los problemas que la plataforma busca resolver. Sobre la Web App, indicó que las funcionalidades le resultan útiles, que la navegación es intuitiva y no genera pérdida, y que pudo completar un trámite y visualizar sus documentos sin dificultades. Finalmente, mencionó que la IA puede agilizar los trámites mediante validaciones automáticas y recomendaciones que reducen tiempos y errores.
 
 <br><br>
 ### 7.3.2. Evaluación según heurísticas
