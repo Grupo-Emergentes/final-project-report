@@ -1,4 +1,4 @@
-# <center>Informe del Trabajo Final</center>
+<img width="238" height="259" alt="image" src="https://github.com/user-attachments/assets/bbd7b82e-2314-4d5b-a1bb-92768c6e5e05" /># <center>Informe del Trabajo Final</center>
 
 <p align="center">
     <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
@@ -2465,6 +2465,11 @@ No estan incluidos en esta evaluación las siguientes tareas:
 |----|--------------------------------------------------------------------------|----------------------|-----------------------------------------------------------------|
 | 1  | No hay acceso a FAQ o tutoriales dentro de la web | 1| Usability: Ayuda y documentación |
 | 2  | No existen atajos de teclado que permitan una aprobación de trámites en masa | 2  |Usability:  Flexibilidad y eficiencia de uso |
+| 3  | La aplicación no está disponible en todas las lenguas peruanas: quechua o aimara | 2  |Usability: Correspondencia entre el sistema y el mundo real |
+| 4  | Usamos una paleta de colores bastante colorida inspirada por la bandera de Cusco | 1  |Usability:  Diseño estético y minimalista |
+| 5  | No proporcionamos información detallada sobre la utilidad y funcionamiento de cada trámite | 1  |Usability:  Flexibilidad y eficiencia de uso |
+| 6  | No proporcionamos información detallada sobre el pago y su estado | 3  | Usability:  Visibilidad del estado del sistema |
+| 7  | Se carecen de iconos, alerts o notificaciones que indiquen error. | 2  |Usability: Ayudar a los usuarios a reconocer, diagnosticar y corregir los errores |
 
 
 #### DESCRIPCIÓN DE PROBLEMAS:
@@ -2489,16 +2494,79 @@ Dentro de la sección de aprobación de solicitudes para los funcionarios, no ex
 **Recomendación:**  
 Crear un botón "Aprobar y Siguiente", que permita saltar directamente a la siguiente solicitud en la lista. 
 
+##### PROBLEMA #3: La aplicación no está disponible en todas las lenguas peruanas: quechua o aimara
+**Severidad:** 1  
+**Heurística violada:** Usability: Correspondencia entre el sistema y el mundo real
+
+**Problema:**  
+Dentro de la plataforma, no existe la posibilidad de cambiar el idioma a quechua o aimara. En este caso, es relevante, pues al tratar con una plataforma destinada a todos los peruanos, debe poder integrar y digirirse a todos ellos, sin excluir ningun grupo, por muy pequeño que sea. 
+
+**Recomendación:**  
+Crear un botón en el header o un select en el perfil para configurar el idioma de la plataforma rapidamente, e incluir Quechua y Aimara como opciones. 
+
+##### PROBLEMA #4: Usamos una paleta de colores bastante colorida inspirada por la bandera del Tahuantinsuyo
+**Severidad:** 1  
+**Heurística violada:** Usability:  Diseño estético y minimalista
+
+**Problema:**  
+Dentro de la plataforma, utilizamos en botones, secciones, titulos y cards, una combinación de los colores de la bandera del Tahuantinsuyo. Aunque con un proposito patriotico, la combinación de muchos colores diferentes acaba por abrumar al usuario.
+
+**Recomendación:**  
+Mantener una paleta de colores significativa pero que resulte mas minimalista y menos disruptiva. Por ejemplo, colores rojo y blanco en honor a la bandera peruana. 
+
+##### PROBLEMA #4: Usamos una paleta de colores bastante colorida inspirada por la bandera del Tahuantinsuyo
+**Severidad:** 1  
+**Heurística violada:** Usability:  Diseño estético y minimalista
+
+**Problema:**  
+Dentro de la plataforma, utilizamos en botones, secciones, titulos y cards, una combinación de los colores de la bandera del Tahuantinsuyo. Aunque con un proposito patriotico, la combinación de muchos colores diferentes acaba por abrumar al usuario.
+
+**Recomendación:**  
+Mantener una paleta de colores significativa pero que resulte mas minimalista y menos disruptiva. Por ejemplo, colores rojo y blanco en honor a la bandera peruana. 
+
+##### PROBLEMA #5: No proporcionamos información detallada sobre la utilidad y funcionamiento de cada trámite
+**Severidad:** 1  
+**Heurística violada:** Usability: Flexibilidad y eficiencia de uso
+
+**Problema:**  
+Dentro de la plataforma, no se dan definición ni funcionalidad de cada trámite. 
+
+**Recomendación:**  
+Realizar resumenes sobre la funcionalidad, proposito y pasos de cada trámite antes o durante la realización del mismo, esto para garantizar que el usuario sepa que trámite necesita o si el que esta completando es el correcto para aquello que quiere lograr. 
+
+##### PROBLEMA #6: No proporcionamos información detallada sobre el pago y su estado
+**Severidad:** 3  
+**Heurística violada:** Usability:  Visibilidad del estado del sistema
+
+**Problema:**  
+Dentro de la plataforma, no existen iconos, textos o secciones que indiquen en todo momento el proceso de pago, así como su estado actual, 
+
+**Recomendación:**  
+Mediante iconos, pantallas de carga, notificaciones, alertas o mensajes, se deberá dejar claro al usuario en todo momento, el proceso o estado que se encuentra su pago. 
+
+##### PROBLEMA #7: Se carecen de iconos, alerts o notificaciones que indiquen errores durante el registro de datos
+**Severidad:** 3  
+**Heurística violada:** Usability:  Visibilidad del estado del sistema
+
+**Problema:**  
+Dentro de la plataforma, no existen iconos, textos o secciones que indiquen durante la carga de documentos o realización de trámites si es que ha ocurrido algun error en la página. 
+
+**Recomendación:**  
+Mediante iconos, pantallas de carga, notificaciones, alertas o mensajes, se deberá dejar claro al usuario en todo momento si ha ocurrido algun error en la plataforma o en los datos registrados. 
+
 ### 7.4 Video About the Product
 
 
 
-### Conclusiones
 
-1. La gestión de trámites en el Perú sigue siendo lenta, fragmentada y poco integrada, lo que genera sobrecarga para los funcionarios y pérdida de tiempo y dinero para los ciudadanos.  
 
-2. La digitalización y unificación de procesos —mediante identidad digital, interoperabilidad y plataformas únicas— no solo reduciría costos y tiempos, sino que también fortalecería la confianza y la relación entre Estado y ciudadanía.
+### Conclusiones 
 
+1. La gestión de trámites en el Perú sigue siendo lenta, fragmentada y poco integrada, lo que genera sobrecarga para los funcionarios y pérdida de tiempo y dinero para los ciudadanos. A diferencia de paises como Chile o Ucrania, que durante la ultima decada han impulsado y aprovechado el surgimiento de la Inteligencia Artificial o smartphones para mantener actualizados y digitalizados la mayor cantidad de procesos estatales. Mantienen largos proyectos e inclusive equipos enteros como ministerios, dedicados netamente a la transformación digital del Estado. Esto no solo ha reducido costos y tiempo, sino que tambien ha mejorado la calidad de vida de muchos ciudadanos, quienes acceden a servicios médicos o emergencias rapidamente y confían y tienen una mejor relación con el Estado.  
+
+2. Para el proyecto, hemos establecido un sistema bastante simple, que no toma en consideración la utilización de sistemas heredados del Estado, así como integraciones necesarias con sistemas externos estatales ni la utilización de APIs para cada ministerio. Hemos mantenido una arquitectura simple y con un alcance reducido, que abarque lo necesario y de tal forma que pueda ser realizado en un trabajo universitario. Creemos que este es un punto de mejora y también una limitante para poder determinar que el proyecto sería plasmable y efectivo si fuese puesto en práctica.
+
+3. Para la parte final del proyecto, realizamos algunas reconfiguraciones como el diseño de una arquitectura Medallion que permite la realización apropiada del Bounded Context de Analiticas, así como el añadido de trámites notariales al alcance del proyecto. De este modo le damos una propuesta mas interesante y podemos generar ingresos no solo mediante la venta del sistema al Estado Peruano sino que con convenios con notarias, para que la plataforma sea utilizada y conectada con ellos. 
    
 ### Bibliografía
 
