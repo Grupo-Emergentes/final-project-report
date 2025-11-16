@@ -2348,7 +2348,19 @@ En este sprint, se completó el desarrollo de la landing page y el Web Applicati
 - Git: Utilizado como sistema de control de versiones para facilitar el trabajo en equipo durante el desarrollo de los artefactos.
 - GitFlow: Implementado como flujo de trabajo para gestionar el progreso individual de cada miembro del equipo en el desarrollo del los artefactos.
 - GitHub: Empleado como plataforma colaborativa para almacenar las versiones del proyceto y facilitar el desarrollo conjunto del equipo.
-- Vercel: Creación de experiencias web rápidas y personalizadas, automatizando el proceso de despliegue y manejo de la escalabilidad. 
+- Vercel: Creación de experiencias web rápidas y personalizadas, automatizando el proceso de despliegue y manejo de la escalabilidad.
+- AWS: Despliegue de servicios web y servicios en la nube.
+**Evidencias Cognito**
+<img width="919" height="319" alt="img1" src="https://github.com/user-attachments/assets/c0d4c0ab-2a58-49fb-91aa-90e10a025fff" />
+<img width="919" height="319" alt="img2" src="https://github.com/user-attachments/assets/183955ab-f392-4276-8eca-08b1d8cef5bb" />
+<img width="941" height="317" alt="img3" src="https://github.com/user-attachments/assets/d1ae42d4-854b-498c-9ff4-a2e4b7eacdd7" />
+
+**Evidencias API GATEWAY**
+<img width="920" height="316" alt="img4" src="https://github.com/user-attachments/assets/12dcaaa3-2d3c-4666-96fa-c53cf148c5c1" />
+<img width="920" height="316" alt="img5" src="https://github.com/user-attachments/assets/29ebe4e2-e108-4948-a15b-ee5cc5b8837f" />
+
+**Evidencias IAM**
+<img width="1883" height="689" alt="image" src="https://github.com/user-attachments/assets/523343d7-2f99-43fa-9588-c2b4af0add3c" />
 
 **Evidencias Landing Page**
 ![vercel](https://github.com/user-attachments/assets/b7338d81-c653-48b2-87c1-ba3f9b81a25a)
