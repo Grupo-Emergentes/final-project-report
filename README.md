@@ -1635,19 +1635,6 @@ Gestiona el almacenamiento seguro y auditable de las transacciones.
 | **Dependencias** | - blockchainClient: BlockchainClient |
 | **Métodos** | + recordProcedureOnLedger(procedure: Procedure): String <br> + verifyProcedureHash(hash: String): Boolean <br> + getTransactionDetails(txHash: String): BlockchainTransaction |
 
-| Model | **ProcedureSmartContract** |
-|------------------|-------------------------|
-| **Constantes / Funciones** | + BINARY: static String <br> + FUNC_REGISTER_PROCEDURE: static String <br> + FUNC_GET_PROCEDURE: static String <br> + FUNC_VERIFY_PROCEDURE: static String <br> + ProcedureSmartContract() <br> + deploy(web3j: Web3j, credentials: Credentials, gasProvider: ContractGasProvider): ProcedureSmartContract <br> + load(contractAddress: String, web3j: Web3j, credentials: Credentials): ProcedureSmartContract <br> + getProcedure(procedureId: Long): Tuple <br> + registerProcedure(procedure: Tuple): String <br> + verifyProcedure(hash: String): Boolean |
-
-| Service | **EthereumProcedureContractService** |
-|-------------------|-------------------------------------|
-| **Dependencias** | - ethereumRpcUrl: String <br> - web3j: Web3j <br> - privateKey: String <br> - credentials: Credentials |
-| **Métodos** | + EthereumProcedureContractService() <br> + deployContract(procedureTuple: Tuple): String <br> + load(contractAddress: String): ProcedureSmartContract <br> + registerProcedure(procedure: Tuple): String <br> + getProcedure(procedureId: Long): Tuple <br> + verifyProcedure(hash: String): Boolean |
-
-| Mapper | **ProcedureContractMapper** |
-|------------------|-----------------------------|
-| **Métodos** | + toProcedureContract(procedure: Procedure, hash: String): ProcedureSmartContract <br> + toProcedureTuple(procedure: Procedure): Tuple <br> + fromProcedureTuple(tuple: Tuple): Procedure |
-
 | Repository | **ProcedureNoSqlRepository** |
 |----------------------|------------------------------|
 | **Dependencias** | - mongoTemplate: MongoTemplate <br> - collectionName: String = "procedure_nosql" |
