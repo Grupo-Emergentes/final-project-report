@@ -2260,21 +2260,53 @@ A continuación el cuadro en el que exponemos cada una de estas tareas junto a s
 
 #### 7.2.1.4. Testing Suite Evidence for Sprint Review.
 
-## Bounded Context
+| Repository | Branch | Commit ID | Commit Message | Committed On |
+|------------|--------|-----------|----------------|--------------|
+| procedure-service | main   | 3d17d4b   | test: add unit tests for procedure creation, update, deletion, and status handling | 2025-11-16 |
+| walllet-service | test    | c02a2f5 | chore: initial commit    | 2025-11-15 |
 
-su gherkin
 
-## Bounded Context
 
-su gherkin
+## Procedure Bounded Context
 
-## Bounded Context
+En esta seccion se presentan los test relacionados al command se rvice del servicio de Procedure. Estos tienen como objetivo asegurar la creacion de un procedure en la base de datos relacional, no relacional y la correcta subida de archivos en el servicio externo de documentos en cloud.
 
-su gherkin
+Test de creacion de un procedure:
 
-## Bounded Context
+![Imagen de WhatsApp 2025-11-16 a las 12 44 15_6173af1b](https://github.com/user-attachments/assets/4c034f2e-cce5-4bf5-ae6a-c976c348bf2a)
 
-su gherkin
+Test de update de un procedure :
+
+![Imagen de WhatsApp 2025-11-16 a las 12 44 42_aae1bc54](https://github.com/user-attachments/assets/a7f23b74-cd42-4c39-aba9-ea683e3e33f8)
+
+Test de delete d eun procedure en todas las db y servicios: 
+
+![Imagen de WhatsApp 2025-11-16 a las 12 45 01_f652b542](https://github.com/user-attachments/assets/49d48bc1-736a-48d6-bf7d-c809c2298eaf)
+
+
+Test de verificacion del status actual de un procedure y su oficialId:
+
+![Imagen de WhatsApp 2025-11-16 a las 12 45 19_03305b9a](https://github.com/user-attachments/assets/4f0fdff4-4328-497b-9310-b6b0bc765794)
+
+
+## Wallet Bounded Context
+
+Esta seccion hace refrencia a un servicio con features de blockchain para subir y verificar dacoumentos en lugar d eusar una base de datos
+
+
+Test de creacion de dniTransactrion:
+
+![Imagen de WhatsApp 2025-11-16 a las 14 25 29_dd62ffae](https://github.com/user-attachments/assets/96afc642-be59-4438-95f8-f83281fd6e7b)
+
+Test del happy path de  eliminacion de dniTransactrion:
+
+![Imagen de WhatsApp 2025-11-16 a las 14 25 41_ba2c6200](https://github.com/user-attachments/assets/72b236d8-b1be-4ba4-a695-755531f2e96e)
+
+
+Test del unhappy path de  eliminacion de dniTransactrion:
+
+![Imagen de WhatsApp 2025-11-16 a las 14 25 53_6624b1ca](https://github.com/user-attachments/assets/548c56bf-228b-4b5e-8199-93c1a8f2436c)
+
 
 #### 7.2.1.5. Execution Evidence for Sprint Review.
 
