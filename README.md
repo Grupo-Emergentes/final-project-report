@@ -2418,7 +2418,36 @@ Estas preguntas buscan validar la utilidad, usabilidad y valor percibido de las 
 
 
 ### 7.3.1. Registro de Entrevistas
-### 7.3.1. Evaluación según heurísticas
+A continuación, se registraron todas las entrevistas de validación para nuestra solución, categorizadas según su segmento objetivo, y con un resumen que destaca las características y críticas realizadas sobre nuestro proyecto.
+
+**Entrevista 01 (Ciudadano)**
+
+URL del Vídeo: 
+
+Nombres: 
+
+Apellidos: 
+
+Edad: 
+
+Sexo: 
+
+Ocupación:
+
+Lugar donde vive: 
+
+Duración de la entrevista: 00:00 - 
+
+Personalidad: 
+
+<div style="text-align: center;">
+  <img src="./assets/img/validation-interviews/carlo_rebagliati.jpg" alt="Owner Carlo Rebagliati" width="100%" />
+</div><br>
+
+EN RESUMEN BLA BLA BLA
+
+<br><br>
+### 7.3.2. Evaluación según heurísticas
 
 ### SITE o APP A EVALUAR:
 Perú Digital Web Application
