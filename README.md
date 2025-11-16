@@ -2543,10 +2543,7 @@ Dentro de la plataforma, no existen iconos, textos o secciones que indiquen dura
 Mediante iconos, pantallas de carga, notificaciones, alertas o mensajes, se deberá dejar claro al usuario en todo momento si ha ocurrido algun error en la plataforma o en los datos registrados. 
 
 ### 7.4 Video About the Product
-
-
-
-
+https://acortar.link/g314kN
 
 ### Conclusiones 
 
