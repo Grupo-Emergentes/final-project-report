@@ -2237,25 +2237,36 @@ A continuación el cuadro en el que exponemos cada una de estas tareas junto a s
 
 #### 7.2.1.3. Development Evidence for Sprint Review.
 
-<table border="1">
-  <thead>
-    <tr>
-      <th>Repository</th>
-      <th>Branch</th>
-      <th>Commit Id</th>
-      <th>Commit Message</th>
-      <th>Commit Message Body</th>
-      <th>Committed on (Date)</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-		<td>
-			
-		</td>
-	</tr>
-  </tbody>
-</table>
+En esta seccion se documentara las evidencias del desarrollo de la solucion. Esto incluye los servicos de Wallet, procedure, la web application y la landing page
+
+| Repository | Branch | Commit ID | Commit Message | Committed On |
+|------------|--------|-----------|----------------|--------------|
+| web-application | giacomo   | 265c742   | feat: initial commit | 2025-10-24 |
+| web-application | main    | f56047   | feat: add Chatbot component and integrate it into the main App     | 2025-11-09 |
+| web-application | main | 0b6b56 | Remove unused UI components and related hooks    | 2025-11-09 |
+| web-application | main | 482267 | feat(iam): integrate AuthProvider with Cognito configuration   | 2025-11-10 |
+| web-application | feature/iam | 165010 | feat(iam): sign in and sign out buttons added   | 2025-11-10 |
+| web-application | feature/iam | 56a3c6 | feat(iam): update redirect URI for local development   | 2025-11-10 |
+| web-application | feature/iam | ceaac7 | feat: add SignInButton and SignOutButton components   | 2025-11-11 |
+| web-application | feature/iam | afd11e | feat(auth): implement authentication and authorization routes with Cognito integration   | 2025-11-13 |
+| web-application | feature/experimental | afd11e | feat(auth): implement authentication and authorization routes with Cognito integration   | 2025-11-13 |
+| web-application | feature/iam | c25cc4 | feat: add loading screen with animations  | 2025-11-13 |
+| web-application | giacomo | ca7afa | feat: Changed Colors and Organization  | 2025-11-13 |
+| web-application | giacomo | 7eba56 | fix: Fixed services & added colors  | 2025-11-13 |
+| web-application | giacomo | 644369 | fix: Fixed details  | 2025-11-13 |
+| web-application | giacomo | f88494 | Merge branch 'main' into giacomo  | 2025-11-13 |
+| web-application | giacomo | 94da69 | feat: First draft of dynamic forms done  | 2025-11-13 |
+| web-application | giacomo | 0f967a | fix: Fixed select  | 2025-11-13 |
+| web-application | feature/experimental | 78c9c3 | Merge branch 'feature/iam' of github.com:Grupo-Emergentes/web-application into feature/experimental  | 2025-11-14 |
+| web-application | feature/experimental | 07510a | feat: refactor authentication flow and routing, add Login page and role management  | 2025-11-14 |
+| web-application | giacomo | 390299 | fix: Fixed services | 2025-11-16 |
+| procedure-service | main | dd802a | chore: initial commit | 2025-11-14 |
+| procedure-service | main | f05615 | chore: update docker-compose.yml for database naming and port configuration | 2025-11-16 |
+| procedure-service | main | 3d17d4 | test: add unit tests for procedure creation, update, deletion, and status handling | 2025-11-16 |
+| wallet-service | main | 275030 | chore: initial commit | 2025-11-14 |
+| wallet-service | test | c02a2f | chore: initial commit | 2025-11-16 |
+| landing-page | main | 46d6b1 | chore: initial commit | 2025-10-17 |
+| landing-page | main | ea8ddc | refactor: remove unused UI components and hooks | 2025-10-30 |
 
 
 #### 7.2.1.4. Testing Suite Evidence for Sprint Review.
