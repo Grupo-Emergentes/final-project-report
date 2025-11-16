@@ -2501,6 +2501,30 @@ Duración de la entrevista: 08:06 -
 El entrevistado Harold señaló que la landing page comunica claramente los beneficios del sistema y genera suficiente confianza para registrarse, además de sentirse identificado con los problemas que la plataforma busca resolver. Sobre la Web App, indicó que las funcionalidades le resultan útiles, que la navegación es intuitiva y no genera pérdida, y que pudo completar un trámite y visualizar sus documentos sin dificultades. Finalmente, mencionó que la IA puede agilizar los trámites mediante validaciones automáticas y recomendaciones que reducen tiempos y errores.
 
 <br><br>
+
+**Entrevista 02 (Funcionario)**
+
+URL del Vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202210029_upc_edu_pe/IQDTSO5xDx1XQL0N4XocalvDAQdjeolMHkMYTDPt2Dh2uMo?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Ce32eN
+
+Nombres: Sergio
+
+Apellidos: Cadillo Nuñez
+
+Edad: 23
+
+Sexo: Masculino
+
+Ocupación: Empleado de RENIEC
+
+Lugar donde vive: San Miguel
+
+Duración de la entrevista: 08:06 - 13:24
+
+<img width="852" height="395" alt="image" src="https://github.com/user-attachments/assets/22c448ce-a244-48b0-be73-9c6eee1c1897" />
+
+Sergio señaló que la landing page comunica claramente los beneficios del sistema y se sintió identificado con la lentitud y burocracia presente en su trabajo, tal y como planteamos en el proyecto.  Sobre la Web App, indicó que las funcionalidades le resultan útiles, que el diseño tan colorido y llamativo lo hacen destacar frente a cualquier plataforma estatal. Aparte, considera que las funciones de validación, aprobación de solicitudes e Inteligencia Artificial son bastante utiles y agilizan su trabajo diario. 
+
+<br><br>
 ### 7.3.2. Evaluación según heurísticas
 
 ### SITE o APP A EVALUAR:
