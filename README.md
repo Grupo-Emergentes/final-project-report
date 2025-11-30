@@ -1,33 +1,37 @@
 <p align="center">
-    <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"></img><br>
-    <strong>Ingeniería de Software</strong><br>
-    <strong>Arquitectura de Software Emergentes - 2520</strong><br>
-    <strong>Profesor: Christian Luis De Los Rios Fernandez  </strong><br>
-    <br>INFORME
+  <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" width="180"/>
 </p>
 
-<center>
+<p align="center">
+  <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
+	</br>
+  <strong>Ingeniería de Software</strong><br>
+  </br>
+  <strong>1ASI0728 Arquitecturas de Software Emergentes</strong><br>
+  <strong>202520</strong><br>
+  <strong>NRC: 7322</strong><br>
+  </br>
+  <strong>Profesor: Christian Luis De Los Rios Fernandez</strong><br><br>
+  <strong>Informe del Trabajo Final</strong>
+</p>
 
-#### Startup: **Digital**
+### <p align="center">Nombre del Producto: <strong>Perú Digital</strong></p>
 
-#### Product: **Peru Digital**
+<div align="center">Integrantes:</div>
 
-</center>
-
-## Team  Members:
-
-<div align="center">
-
-|               Member                |    Code    |
-| :---------------------------------: | :--------: |
-| Giacomo Zoppi Rodriguez | U202210029 |
-| Mathias Tsuneo Kunimoto Watanabe   | U202210148 |
-| Janiel Franz Escalante Baygorrea   | u20221a322 |
-| Valentino Sebastian Cervantes Erequita   | u201912668 |
-
-
+<div align="center"; line-height: 1.8;">
+  Giacomo Zoppi Rodriguez<br>
+  Mathias Tsuneo Kunimoto Watanabe<br>
+  Janiel Franz Escalante Baygorrea<br>
+  Valentino Sebastian Cervantes Erequita
 </div>
+<br/>
+<div align="center">
+Diciembre de 2025
+</div>
+
+</p>
+
 
 # Registro de Versiones del Informe 
 <table>
@@ -2657,8 +2661,15 @@ https://acortar.link/g314kN
 
 2. Para el proyecto, hemos establecido un sistema bastante simple, que no toma en consideración la utilización de sistemas heredados del Estado, así como integraciones necesarias con sistemas externos estatales ni la utilización de APIs para cada ministerio. Hemos mantenido una arquitectura simple y con un alcance reducido, que abarque lo necesario y de tal forma que pueda ser realizado en un trabajo universitario. Creemos que este es un punto de mejora y también una limitante para poder determinar que el proyecto sería plasmable y efectivo si fuese puesto en práctica.
 
-3. Para la parte final del proyecto, realizamos algunas reconfiguraciones como el diseño de una arquitectura Medallion que permite la realización apropiada del Bounded Context de Analiticas, así como el añadido de trámites notariales al alcance del proyecto. De este modo le damos una propuesta mas interesante y podemos generar ingresos no solo mediante la venta del sistema al Estado Peruano sino que con convenios con notarias, para que la plataforma sea utilizada y conectada con ellos. 
+3. Para la parte final del proyecto, realizamos algunas reconfiguraciones como el diseño de una arquitectura Medallion que permite la realización apropiada del Bounded Context de Analiticas, así como el añadido de trámites notariales al alcance del proyecto. De este modo le damos una propuesta mas interesante y podemos generar ingresos no solo mediante la venta del sistema al Estado Peruano sino que con convenios con notarias, para que la plataforma sea utilizada y conectada con ellos.
    
+**4. ¿Por que hemos escogido Blockchain e IA como tecnologías emergentes y como solucionan el problema?**
+El principal problema que intenta solucionar Perú Digital es la poca integración, la fragmentación y lentitud en los procesos del estado, donde la falta de integración entre instituciones obliga al ciudadano a navegar múltiples plataformas, repetir información y perder horas de su tiempo, lo que a su vez, acaba afectando los gastos del estado y su relación con la ciudadania. Para ello, implementamos el Servicio de Procedure Management y el Chatbot. En conjunto guían al usuario para una eficaz y simple tramitación. ¿Pero que tan relevante es el Chatbot? El chatbot permite al usuario, una comunicación mas efectiva y directa que un correo o un telefono, según An, en 2025 los canales con chatbots obtienen una tasa de satisfacción del 87.6 %, superior a soporte por correo (61 %) o teléfono (44 %). La experiencia reciente en Chile, documentada por la OCDE (2025), confirma esta tendencia: Los chatbots han empezado a penetrar en las instituciones públicos para responder a las consultas de la ciudadanía sobre los servicios públicos, lo que demuestra el potencial de prestar asistencia personalizada y reducir los tiempos de respuesta a través de millones de solicitudes (Organización para la Cooperación y el Desarrollo Económicos, 2025). Es así, que el chatbot no solo agiliza la tramitación, sino que reduce la fragmentación del sistema, disminuye las consultas derivadas de errores por falta de información y restablece una comunicación más fluida, directa y efectiva entre el Estado y la ciudadanía.
+
+Por otro lado, el Blockchain cubre otra de las necesidades del Estado: La seguridad y la transparencia de los datos, la cual ejemplificaremos mediante el caso de Estonia. Este nación baltica posee la infrastructura gubernamental digital mas avanzada de todo el mundo. Entre sus servicios, existe la solución de blockchain llamada KSI (Keyless Signature Infrastructure) que protege información gubernamental y toda la información sensible de sus ciudadanos. Cada interacción con las bases de datos del estado, genera un registro inmutable, aumentando la trasparencia y haciendo que cada minimo cambio o manipulación de datos sea detectada, ni siquiera el Estado mismo puede manipular esa información tan facilmente. La experiencia estonia demuestra que un e-government respaldado por blockchain reduce drásticamente los puntos de vulnerabilidad de arquitecturas centralizadas, aumenta la confianza institucional y fortalece la trazabilidad y auditoría de procesos (Santos, 2025). En el contexto de un sistema como Perú Digital, esta tecnología permitiría proteger documentos de identidad, historiales de trámites y transacciones administrativas, asegurando que los ciudadanos conserven el control sobre sus datos y que el Estado opere con mayores garantías de transparencia, resiliencia y legitimidad.
+
+Finalmente, la elección conjunta de IA y Blockchain responde a necesidades estructurales del ecosistema público peruano y regional. En América Latina, más del 30 % de los retrasos administrativos proviene de errores humanos, duplicidad de información y falta de interoperabilidad mientras que en Perú los servicios públicos registran uno de los niveles de confianza más bajos de la región (BID, 2025). La IA reduce esta fricción al guiar al ciudadano, anticipar requisitos y disminuir la carga operativa, mientras que la Blockchain garantiza integridad, trazabilidad y protección de los datos en procesos especialmente sensibles como identidad, certificaciones y registros notariales. Ambos componentes están alineados con las recomendaciones de organismos internacionales como la OCDE y el BID, que impulsan arquitecturas de gobierno digital seguras e interoperables. Así, la IA mejora la experiencia del usuario y la eficiencia institucional, mientras que la Blockchain restaura la confianza y la transparencia, convirtiendo a Perú Digital en un sistema unificado, seguro y preparado para sostener operaciones críticas con niveles modernos de integridad y resiliencia.
+
 ### Bibliografía
 
 Redacción EC. (2023, August 16). ¿Cuánto tiempo puede demorar el trámite de mi DNI? El Comercio Perú. https://elcomercio.pe/respuestas/tramites/cuanto-puede-demorar-el-tramite-de-mi-dni-via-reniec-cetdnipi-tdpe-noticia/
@@ -2678,6 +2689,12 @@ ComexPerú. (2018). El TRÁMITE DIGITAL: UNA ALTERNATIVA MODERNA. COMEXPERU - So
 Gobierno del Perú. (2025). Más de 3.4 millones de peruanos acceden a trámites desde casa con la estrategia “Mi Muni en Línea” de la PCM. Www.gob.pe. https://www.gob.pe/institucion/pcm/noticias/1213764-mas-de-3-4-millones-de-peruanos-acceden-a-tramites-desde-casa-con-la-estrategia-mi-muni-en-linea-de-la-pcm
 
 ‌UCV. (2023). La digitalización de los servicios públicos en el Perú: avances y desafíos. Universidad César Vallejo. https://www.ucv.edu.pe/noticias/la-digitalizacion-de-los-servicios-publicos-en-el-peru-avances-y-desafios
+
+An, F. (2025). 50 Essential Chatbot Statistics for Customer Service in 2025. Sobot Blog. https://www.sobot.io/article/chatbot-use-cases-customer-service-2025
+
+Organización para la Cooperación y el Desarrollo Económicos. (2025). IA en el diseño e implementación de servicios públicos: Gobernar con la inteligencia artificial. https://www.oecd.org/es/publications/gobernar-con-la-inteligencia-artificial_dc00e56a-es/full-report/ai-in-public-service-design-and-delivery_09704c1a.html
+
+‌Santos, T. (2025). Blockchain’s Impact on Public Administration - avintory. https://avintory.com/2703/blockchains-impact-on-public-administration/?utm_source=chatgpt.com
 
 ‌
 ### Anexos
