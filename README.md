@@ -2430,6 +2430,28 @@ A continuación se muestran las colaboraciones individuales por cada artefacto t
 <img width="786" height="397" alt="image" src="https://github.com/user-attachments/assets/a51da2b8-d1b0-4a46-80a5-2fc550d0a4dc" />
 
 
+
+
+
+#### 7.2.1.3 (poner el numero correcto) Development Evidence for Sprint Review.
+
+| Repository        | Branch       | Commit ID | Commit Message                                                                 | Committed On      |
+|-------------------|--------------|-----------|----------------------------------------------------------------------------------|-------------------|
+| web-application   | main         | c5039b8  | feat(iam): admin register form added                                             | 2025-12-01        |
+| web-application   | main         | 7b8986f  | feat(iam): aws amplify lib added                                                 | 2025-12-01        |
+| web-application   | develop      | 04d8adb  | Merge pull request #2 from Grupo-Emergentes/develop                              | 2025-12-01        |
+| web-application   | main         | 76acffc  | feat: remove commented-out dniData structure for cleaner code                    | 2025-12-01        |
+| web-application   | main         | 897b27f  | Refactor code structure for improved readability and maintainability             | 2025-12-01        |
+| web-application   | main         | ad0ccb2  | feat: enhance NotFoundPage with improved styling and user-friendly messaging     | 2025-11-30        |
+| web-application   | main         | c1d8161  | feat: improve form submission handling with error alerts and callback execution  | 2025-11-30        |
+| web-application   | main         | f48928f  | feat: enhance Header component with user authentication and dropdown menu        | 2025-11-30        |
+| web-application   | main         | 89adf58  | feat: update terminology in AdminSuperAdminPanel for consistency                 | 2025-11-30        |
+| web-application   | giacomo      | 0f967af  | fix: Fixed select                                                                | 2025-11-13        |
+| web-application   | giacomo      | 94da69a  | feat: First draft of dynamic forms done                                          | 2025-11-13        |
+| web-application   | giacomo      | f88494a  | Merge branch 'main' into giacomo                                                 | 2025-11-13        |
+| web-application   | giacomo      | 6443692  | fix: Fixed details                                                               | 2025-11-13        |
+
+
 ## 7.3. Validation Interviews
 ### 7.3.1. Diseño de Entrevistas
 #### Preguntas de Validación – Segmento 1: Huéspedes
