@@ -1,4 +1,4 @@
-<p align="center">
+<img width="841" height="720" alt="image" src="https://github.com/user-attachments/assets/9c83b6c4-0cec-4dee-a35b-a6316692c85e" /><p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" width="180"/>
 </p>
 
@@ -914,28 +914,24 @@ Entre sus principales frustraciones se encuentran la lentitud de los sistemas y 
 **As-is Scenario Mapping ![img-as-is](https://github.com/user-attachments/assets/1bfcddcb-8d2c-4670-9f17-72307e38f19a)**
 ## 2.4. Ubiquitous Language
 
-| Término Inglés              | Término Español          | Definición                                                                                                                                       |
-|-----------------------------|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
-| Citizen                     | Ciudadano                | Persona natural, mayor de 18 años, que interactúa con la plataforma para gestionar sus documentos oficiales y realizar trámites con entidades del Estado. |
-| Public Official             | Funcionario Público      | Empleado del Estado (RENIEC, SUNAT, municipalidad, etc.) encargado de validar, aprobar, rechazar o auditar trámites y documentos dentro de la plataforma. |
-| Digital Wallet              | Billetera Digital        | Espacio personal y seguro dentro de la plataforma donde el ciudadano almacena, visualiza y comparte sus documentos oficiales digitales (DNI, RUC, partidas, etc.). |
-| Digital Document            | Documento Digital        | Representación electrónica de un documento oficial emitido por una entidad del Estado, que incluye metadatos, estado de vigencia y un código QR para su verificación. |
-| Procedure / Service          | Trámite / Servicio       | Proceso formal que el ciudadano inicia en la plataforma para obtener un documento o servicio del Estado (ej: renovar DNI, inscribir nacimiento, solicitar RUC). |
-| Procedure Catalog            | Catálogo de Trámites     | Listado unificado y filtrable de todos los trámites disponibles en la plataforma, agrupados por entidad (RENIEC, SUNAT, MTC, etc.). |
-| Procedure Status             | Estado del Trámite       | Condición actual en la que se encuentra un trámite iniciado por el ciudadano (Pendiente, En Revisión, Aprobado, Rechazado, Observado). |
-| Notification                 | Notificación             | Alerta automática enviada al ciudadano (vía app, email o SMS) sobre cambios de estado, vencimientos o recordatorios relacionados con sus trámites o documentos. |
-| Work Inbox (Official)        | Bandeja de Trámites      | Espacio de trabajo del funcionario público donde visualiza, filtra y gestiona los trámites asignados o pendientes de su entidad. |
-| Validate Document            | Validar Documento        | Acción que realiza el funcionario público para confirmar que un documento adjuntado por el ciudadano cumple con los requisitos y es auténtico. |
-| Approve/Reject Procedure     | Aprobar/Rechazar Trámite | Acción final del funcionario público que cierra el ciclo de un trámite, generando el documento digital correspondiente o solicitando correcciones al ciudadano. |
-| Dashboard (Official)         | Panel de Control         | Interfaz visual para funcionarios públicos que muestra KPIs, métricas de desempeño, actividad en tiempo real y herramientas de reporte/auditoría. |
-| QR Code                      | Código QR                | Código de barras bidimensional generado para cada documento digital, que permite su verificación rápida y segura mediante escaneo. |
-| Blockchain Verification      | Verificación Blockchain  | Mecanismo de seguridad que utiliza tecnología blockchain para garantizar la integridad, inmutabilidad y autenticidad de los documentos digitales emitidos. |
-| SLA (Service Level Agreement)| SLA (Acuerdo de Nivel de Servicio) | Compromiso medible sobre el tiempo máximo de respuesta o resolución de un trámite, utilizado para medir la eficiencia de los funcionarios y entidades. |
-| Audit Trail                  | Trazabilidad / Auditoría | Registro cronológico e inmutable de todas las acciones realizadas por ciudadanos y funcionarios dentro de la plataforma, para garantizar transparencia y rendición de cuentas. |
-| Role-Based Access Control    | Control de Acceso por Rol| Mecanismo que limita las funciones y datos que un funcionario puede ver o modificar en la plataforma, según su cargo o entidad (Principio de Mínimo Privilegio). |
-| Real-Time Tracking           | Seguimiento en Tiempo Real | Funcionalidad que permite al ciudadano ver el estado actual de su trámite en cualquier momento, sin necesidad de llamar o acudir a una oficina. |
-| Pre-filled Form              | Formulario Precargado    | Plantilla de trámite que se llena automáticamente con los datos del ciudadano almacenados en el sistema, reduciendo errores y tiempo de llenado. |
-| Video Call Verification      | Validación por Videollamada | Proceso de verificación de identidad en tiempo real mediante videollamada, utilizado en trámites como el registro de matrimonio. |
+| Término          | Definición                                                                                                                                       |
+--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Arquitectura de Software** | Conjunto de decisiones estructurales que definen cómo se organizan los componentes de un sistema, cómo interactúan y qué principios guían su evolución. |
+| **Diagrama de contexto** | Diagrama de alto nivel que muestra el sistema como una sola caja y todas las entidades externas con las que interactúa, junto a los flujos de información. |
+| **Diagrama de contenedores** | Diagrama del modelo C4 que muestra los contenedores (servicios, aplicaciones, bases de datos) que componen un sistema y sus relaciones. |
+| **Diagrama de componentes** | Diagrama del modelo C4 que descompone cada contenedor en componentes internos y define sus responsabilidades y relaciones. |
+| **Microservices** | Estilo arquitectónico basado en servicios pequeños, independientes y desplegables de forma autónoma, que cooperan entre sí mediante APIs. |
+| **API Gateway** | Punto de entrada único que gestiona, enruta y controla todas las solicitudes hacia los microservicios, aplicando seguridad, rate limiting y transformaciones. |
+| **Message Broker** | Sistema intermediario que recibe, almacena y entrega mensajes entre servicios, permitiendo comunicación asíncrona y desacoplada. |
+| **Backend for Frontend (BFF)** | Patrón arquitectónico donde se crea un backend específico para cada tipo de frontend (web, mobile, etc.), optimizando la comunicación, payloads y lógica. |
+| **Change Data Capture (CDC)** | Técnica para detectar y capturar cambios en datos a medida que ocurren, generalmente para replicación o integración en tiempo real. |
+| **Arquitectura Medallion** | Enfoque de diseño de Data Lake dividido en capas: Bronze (datos crudos), Silver (datos refinados/limpios) y Gold (datos listos para analítica o negocio). |
+| **Identity and Access Management (IAM)** | Conjunto de procesos y tecnologías para gestionar identidades digitales, controlar accesos y garantizar seguridad en sistemas. |
+| **Core System** | Sistema central y crítico de una organización, responsable de la lógica principal del negocio y operaciones clave. |
+| **Data Lake** | Repositorio de almacenamiento masivo que permite guardar datos estructurados, semiestructurados y no estructurados en su formato original. |
+| **Operational Hub** | Plataforma central que sincroniza información operacional entre distintos sistemas para mantener consistencia y disponibilidad en tiempo real. |
+| **Business Process Management (BPM)** | Disciplina que modela, automatiza, supervisa y optimiza los procesos de negocio dentro de una organización. |
+
 
 # Capítulo III: Requirements Specification
 
@@ -1342,16 +1338,21 @@ Cuando el ciudadano hace un tramite, dicho tramite debe salir con su nombre, dni
 Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4 
 Model.
 
-<img width="868" height="790" alt="image" src="https://github.com/user-attachments/assets/2bad93f1-9255-4b00-b00f-e6ed61586310" />
+<img width="704" height="684" alt="image" src="https://github.com/user-attachments/assets/084449fb-0662-47be-811a-cfcc85e6c13b" />
 
 ### 4.3.2. Software Architecture Context Level Diagrams
 Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4 
 Model.
-<img width="974" height="860" alt="image" src="https://github.com/user-attachments/assets/1430540a-009c-4ee1-ba9a-0c5c4ad2b1d7" />
+<img width="841" height="720" alt="image" src="https://github.com/user-attachments/assets/326ba4f7-b91c-47c4-b546-3ece1e80d320" />
+
 
 ### 4.3.3. Software Architecture Container Level Diagrams
 
-<img width="1112" height="766" alt="image" src="https://github.com/user-attachments/assets/63ba969a-e8ce-4df6-9a34-f9108037c7cc" />
+<img width="688" height="571" alt="image" src="https://github.com/user-attachments/assets/c9d84384-5dc1-4e3f-897e-5b7b4ffe3589" />
+<img width="1213" height="605" alt="image" src="https://github.com/user-attachments/assets/641152ff-fe6c-444c-b1fb-c7a99b22f66c" />
+<img width="1052" height="295" alt="image" src="https://github.com/user-attachments/assets/c6b8f1e7-57ec-4220-84b2-ead70bc22856" />
+<img width="695" height="356" alt="image" src="https://github.com/user-attachments/assets/20439928-02b9-4d92-b86a-50ffd28205b9" />
+<img width="1166" height="482" alt="image" src="https://github.com/user-attachments/assets/c96d1481-b213-4a30-99f8-b1ba422addad" />
 
 ### 4.3.4. Software Architecture Deployment Diagrams
 
@@ -2481,7 +2482,9 @@ A continuación se muestran las colaboraciones individuales por cada artefacto t
 **Landing Page**
 <img width="786" height="397" alt="image" src="https://github.com/user-attachments/assets/a51da2b8-d1b0-4a46-80a5-2fc550d0a4dc" />
 
-#### 7.2.2. Sprint Planning 2
+### 7.2.2. Sprint 2
+
+### 7.2.2.1 Sprint Planning 2
 
 | **Sprint #** | Sprint 2 |
 |--------------|----------|
@@ -2496,10 +2499,37 @@ A continuación se muestran las colaboraciones individuales por cada artefacto t
 | **Sprint 1 Velocity** | |
 | **Sum of Story Points** | XXXXXXXXXXXXXXXX story points |
 
+### 7.2.2.2 Sprint  2
+
+| **User Story Id** | **User Story Title**          | **Task Id** | **Task Title**                      | **Description**                                                   | **Estimation (Hours)** | **Assigned To**         | **Status** |
+|-------------------|-------------------------------|-------------|--------------------------------------|-------------------------------------------------------------------|--------------------------|---------------------------|------------|
+| HU28              | Ingreso como funcionario      | HU2802      | Configurar autenticación JWT         | Emisión y validación de tokens.                                  | 3                        | Janiel Escalante          | Done       |
+| HU08              | Compartir documento           | HU0802      | Añadir botón de descarga             | UI para descarga directa desde vista del documento.              | 2                        | Janiel Escalante          | Done       |
+| HU09              | Renovación de DNI             | HU0901      | Crear flujo de renovación            | Formulario con validación RENIEC + generación PDF.               | 6                        | Mathias Kunimoto          | Done       |
+| HU09              | Renovación de DNI             | HU0902      | Integrar API RENIEC                  | Conectar endpoint para validar DNI existente.                    | 4                        | Giacomo Zoppi             | Done       |
+| HU17              | Acceso según rol              | HU1702      | Validar acceso por endpoint          | Middleware de autorización por token y rol.                      | 3                        | Valentino Cervantes        | Done       |
+| HU18              | Visualizar métricas clave     | HU1802      | Conectar backend con panel           | Endpoint de métricas agregadas.                                  | 4                        | Mathias Kunimoto          | Done       |
+| HU06              | Generar código QR             | HU0602      | Mostrar QR dinámico                  | Visualizar QR en pantalla con opción de descarga.                | 2                        | Janiel Escalante          | Done       |
+| HU08              | Compartir documento           | HU0801      | Generar archivo PDF descargable      | Crear servicio para exportar documento con firma digital.        | 3                        | Valentino Cervantes        | Done       |
+| HU10              | Cambio de domicilio           | HU1002      | Implementar comprobante PDF          | Generar constancia tras cambio de domicilio.                     | 3                        | Janiel Escalante          | Done       |
+| HU11              | Inscripción de nacimiento     | HU1102      | Generar partida digital              | Crear documento PDF con firma certificada.                       | 3                        | Mathias Kunimoto          | Done       |
+| HU24              | Cambiar estado de trámite     | HU2402      | Generar constancia digital           | PDF firmado tras cambio de estado.                               | 4                        | Giacomo Zoppi             | Done       |
+| HU25              | Notificación de cambio de estado | HU2501   | Crear servicio de notificaciones     | Sistema en tiempo real (WebSockets o Firebase).                  | 5                        | Mathias Kunimoto          | Done       |
+| HU26              | Historial de notificaciones   | HU2602      | Crear endpoint de notificaciones     | Devolver eventos por usuario.                                    | 3                        | Valentino Cervantes        | Done       |
+| HU26              | Historial de notificaciones   | HU2601      | Implementar historial                | Lista de notificaciones con fecha/hora.                          | 4                        | Giacomo Zoppi             | Done       |
+| HU27              | Ingreso como ciudadano        | HU2702      | Integrar API de autenticación        | Validar DNI y token vía backend.                                 | 3                        | Giacomo Zoppi             | Done       |
+| HU06              | Generar código QR             | HU0601      | Crear módulo generador QR            | Generar QR desde datos del documento y firmar digitalmente.      | 4                        | Valentino Cervantes        | Done       |
+| HU17              | Acceso según rol              | HU1701      | Configurar roles y permisos          | Roles: ciudadano, funcionario, admin.                            | 5                        | Giacomo Zoppi             | Done       |
+| HU18              | Visualizar métricas clave     | HU1801      | Diseñar tarjetas de métricas         | KPIs: DNIs, partidas, verificaciones, solicitudes.               | 5                        | Janiel Escalante          | Done       |
+| HU19              | Filtrar métricas por tiempo/region | HU1901 | Añadir filtros dinámicos             | Selector de rango de fechas y región.                            | 3                        | Giacomo Zoppi             | Done       |
+| HU19              | Filtrar métricas por tiempo/region | HU1902 | Calcular estadísticas filtradas       | Consultas SQL o agregaciones MongoDB.                            | 4                        | Valentino Cervantes        | Done       |
+| HU20              | Generar reportes y auditorías | HU2001      | Implementar generador de reportes    | Exportación de logs a PDF.                                       | 5                        | Janiel Escalante          | Done       |
+| HU20              | Generar reportes y auditorías | HU2002      | Diseñar interfaz de descarga         | Vista para seleccionar tipo de reporte.                          | 2                        | Mathias Kunimoto          | Done       |
+| HU30              | Visualización del perfil      | HU3002      | Conectar datos desde backend         | Obtener información de usuario autenticado.                      | 3                        | Janiel Escalante          | Done       |
+| HU29              | Actualización de datos        | HU2902      | Crear API de actualización           | Guardar cambios en base de datos.                                | 3                        | Giacomo Zoppi             | Done       |
 
 
-
-#### 7.2.1.3 (poner el numero correcto) Development Evidence for Sprint Review.
+#### 7.2.2.3 Development Evidence for Sprint Review.
 
 | Repository        | Branch       | Commit ID | Commit Message                                                                 | Committed On      |
 |-------------------|--------------|-----------|----------------------------------------------------------------------------------|-------------------|
@@ -2517,20 +2547,11 @@ A continuación se muestran las colaboraciones individuales por cada artefacto t
 | web-application   | giacomo      | f88494a  | Merge branch 'main' into giacomo                                                 | 2025-11-13        |
 | web-application   | giacomo      | 6443692  | fix: Fixed details                                                               | 2025-11-13        |
 
+#### 7.2.2.4 Testing Suite Evidence for Sprint Review.
 
 
 
-
-
-
-
-
-
-
-
-
-
-#### 7.2.1.5.(Poner punto exacto) Execution Evidence for Sprint Review
+#### 7.2.1.5. Execution Evidence for Sprint Review
 
 - El link de la landing page es el siguiente: https://landing-page-emergentes.vercel.app/
 
@@ -2583,15 +2604,6 @@ A continuación se muestran las colaboraciones individuales por cada artefacto t
 **Imagen 8:** Vista de Analiticas y Reporte
 ![web-analytics](https://github.com/user-attachments/assets/7ff200a5-4d6e-4934-977d-f2be0c30d7e5)
 </br>
-
-**Imagen 9:** Vista de Notificaciones
-
-</br>
-
-**Imagen 10:** Vista de Perfil
-
-</br>
-
 
 
 
