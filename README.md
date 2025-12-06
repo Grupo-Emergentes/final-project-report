@@ -2430,6 +2430,22 @@ A continuación se muestran las colaboraciones individuales por cada artefacto t
 <img width="786" height="397" alt="image" src="https://github.com/user-attachments/assets/a51da2b8-d1b0-4a46-80a5-2fc550d0a4dc" />
 
 
+
+
+
+#### 7.2.1.8. (Poner punto correcto) Team Collaboration Insights during Sprint.
+En este Sprint 2, todos hemos colaborado en conjunto para el desarrollo de los artefactos: Landing Page y Web Application.
+
+A continuación se muestran las colaboraciones individuales por cada artefacto terminado durante este sprint.
+
+**Web Application**
+![web-app](https://github.com/user-attachments/assets/4fc8cb62-25b7-489e-a19f-70004bce683f)
+
+
+**Landing Page**
+<img width="786" height="397" alt="image" src="https://github.com/user-attachments/assets/a51da2b8-d1b0-4a46-80a5-2fc550d0a4dc" />
+
+
 ## 7.3. Validation Interviews
 ### 7.3.1. Diseño de Entrevistas
 #### Preguntas de Validación – Segmento 1: Huéspedes
