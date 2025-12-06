@@ -301,7 +301,6 @@ En el siguiente cuadro se describen las acciones realizadas por cada integrante 
   </tr>
   </table>
 
----
 
 # Capítulo I: Introducción
 
