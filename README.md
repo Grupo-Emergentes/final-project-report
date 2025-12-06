@@ -2569,6 +2569,30 @@ Imagen 3: Servicios en AWS en funcionamiento
 **Evidencias IAM**
 <img width="1883" height="689" alt="image" src="https://github.com/user-attachments/assets/523343d7-2f99-43fa-9588-c2b4af0add3c" />
 
+**Evidencias ECS (Contenedores)**
+<img width="938" height="360" alt="image" src="https://github.com/user-attachments/assets/243db8fd-9a96-4192-a31b-309e91224f09" />
+<img width="938" height="383" alt="image" src="https://github.com/user-attachments/assets/80800b97-902f-46e6-9733-10626507e661" />
+<img width="944" height="374" alt="image" src="https://github.com/user-attachments/assets/adb208ae-feac-40f3-97d7-2de5762b5f78" />
+
+
+**Evidencias ECR (Repositorio de Contenedores)**
+<img width="953" height="410" alt="image" src="https://github.com/user-attachments/assets/ee4caada-6019-44b6-af1b-aeb3b60acf50" />
+
+**Evidencias Cloudfront (Contenedores)**
+<img width="941" height="405" alt="image" src="https://github.com/user-attachments/assets/bd781834-614a-47cb-87af-142e9822f32b" />
+
+**Evidencias Load Balancer (Contenedores)**
+<img width="953" height="386" alt="image" src="https://github.com/user-attachments/assets/624949bb-249b-4d87-a6bb-c60c16549c31" />
+<img width="946" height="376" alt="image" src="https://github.com/user-attachments/assets/7d59c82e-4a4d-4c6f-b259-4fb68d63be1c" />
+
+
+**Evidencias RDS (Contenedores)**
+<img width="950" height="393" alt="image" src="https://github.com/user-attachments/assets/272b9b12-ac01-4168-af0a-f33ed56416ac" />
+
+**Evidencias Lambda (Contenedores)**
+<img width="948" height="388" alt="image" src="https://github.com/user-attachments/assets/eb787aea-6653-4c09-a892-c23c664d6a02" />
+<img width="948" height="404" alt="image" src="https://github.com/user-attachments/assets/78d42c0f-ab7e-40d8-9167-2de7af20290e" />
+<img width="947" height="406" alt="image" src="https://github.com/user-attachments/assets/3ccd3f0c-b4fe-4d4c-8d32-a1715f16a5d2" />
 
 #### 7.2.1.8. Team Collaboration Insights during Sprint.
 En este Sprint 2, todos hemos colaborado en conjunto para el desarrollo de los artefactos: Landing Page y Web Application.
