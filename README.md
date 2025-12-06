@@ -2554,6 +2554,29 @@ Imagen 3: Servicios en AWS en funcionamiento
 
 
 #### 7.2.1.6 Services Documentation for Sprint Review
+A continuación, se presenta la documentación Swagger correspondiente a uno de los servicios disponibles dentro del conjunto total de Web Services implementados.
+
+En la vista inicial del Web Service desplegado mediante Swagger Docs, se puede observar la información general de la API, así como la organización de los endpoints en grupos según sus respectivas controladoras.
+
+<img width="1280" height="694" alt="image" src="https://github.com/user-attachments/assets/d188720c-3d55-4bac-8a25-e25ce0d69323" />
+<img width="1280" height="685" alt="image" src="https://github.com/user-attachments/assets/cf91f59a-233f-4454-9920-fe20742d0862" />
+
+
+Posteriormente, se detallan algunos de los endpoints principales (Core) que conforman la lógica central del sistema. Cada endpoint está descrito con su ruta de acceso, el tipo de método HTTP correspondiente (GET, POST, PUT) y una explicación clara que facilita identificar cómo interactuar con él y qué operaciones permite realizar.
+
+<img width="1280" height="714" alt="image" src="https://github.com/user-attachments/assets/7c6e2417-e313-4dcb-9279-a9f4bd282918" />
+
+<img width="1280" height="483" alt="image" src="https://github.com/user-attachments/assets/b7962d74-25ad-4a67-9817-6adfb7f34d93" />
+
+
+
+Swagger también genera automáticamente el JSON Schema requerido en cada solicitud, indicando los campos obligatorios, sus tipos de datos y ejemplos válidos. Esto permite comprender con precisión qué información debe enviar el cliente para consumir correctamente el servicio.
+
+Respecto a las respuestas del servidor, una solicitud correctamente estructurada y procesada devuelve un código 200 OK, junto con el objeto generado o un mensaje de confirmación. Si la petición presenta errores de validación o información incompleta, el sistema responde con un 400 BAD REQUEST, acompañado de una descripción del error que facilita la identificación y corrección del problema: 
+<img width="1280" height="704" alt="image" src="https://github.com/user-attachments/assets/ae78dcf6-c861-4df1-8aae-aae8353db3af" />
+
+
+Este tipo de documentación resulta fundamental para asegurar un adecuado entendimiento de las funcionalidades expuestas y reducir posibles errores durante la integración con la API.
 
 #### 7.2.1.7 Deployment Evidence for Sprint Review
 **Evidencias Cognito**
