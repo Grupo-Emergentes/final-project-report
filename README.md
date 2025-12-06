@@ -148,6 +148,40 @@ Diciembre de 2025
       </td>
     </tr>
   </tbody>
+  <tbody>
+    <tr>
+      <td rowspan="4">TF1</td>
+      <td rowspan="4">05/12/2025</td>
+      <td>Mathias Tsuneo Kunimoto Watanabe</td>
+      <td>
+        Sprint 2 <br>
+        Frontend Web Applications <br>
+      </td>
+    </tr>
+    <tr>
+      <td>Giacomo Zoppi Rodriguez</td>
+      <td>
+        Sprint 2 <br>
+        Frontend Web Applications <br>
+      </td>
+    </tr>
+    <tr>
+      <td>Janiel Franz Escalante</td>
+      <td>
+       Sprint 2 <br>
+        Frontend Web Applications <br>
+        Web Services<br>
+      </td>
+    </tr>
+    <tr>
+      <td>Valentino Sebastian Cervantes Erequita</td>
+      <td>
+        print 2 <br>
+        Frontend Web Applications <br>
+        Web Services <br>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 # Project Report Collaboration Insights
@@ -175,6 +209,12 @@ Se redactaron y estructuraron los contenidos asignados a cada miembro utilizando
 
 <img width="1091" height="571" alt="image" src="https://github.com/user-attachments/assets/9aa74a30-6a85-4fb5-b90e-8321b2d2afd1" />
 
+TF1: 
+La entrega TF1 finalizó con éxito y están documentadas en el siguiente repositorio de Github perteneciente a la organización del equipo. Durante el desarrollo del informe se tuvieron en cuenta los siguientes aspectos:
+
+Se redactaron y estructuraron los contenidos asignados a cada miembro utilizando el formato Markdown. Se completaron los siguientes puntos: sprint 2, Video About the Team y Video de exposición  en colaboración del equipo. Así como el desarrollo de la la Web Application y Web Services. Se llevaron a cabo reuniones semanales para hacer una revisión de lo elaborado por el grupo.
+
+<img width="1118" height="591" alt="image" src="https://github.com/user-attachments/assets/b0991412-c137-4b64-8e99-258a1607449f" />
 
 
 # Student Outcome
@@ -213,11 +253,17 @@ En el siguiente cuadro se describen las acciones realizadas por cada integrante 
       <p><b>Giacomo Zoppi:</b> Contribuí eficazmente en el dialogo con mi equpo. En especial, en coordinar que cada Bounded Context pudiese integrarse entre si</p>
       <p><b>Mathias Kunimoto:</b> Contribuí y me comuniqué eficazmente con mi grupo durante todo el desarrollo del proyecto. </p>
       <p><b>Janiel Escalante:</b> Colaboré con el equipo oralmente, al compartir mis ideas y conocimientos. Logré aportar con mis conocimientos en frontend. </p>
+      <p><b>TF1:</b></p>
+      <p><b>Valentino Cervantes:</b> Participé de manera activa apoyando a mis compañeros en el desarrollo y en la coordinación de cada miembro del equipo</p>
+      <p><b>Giacomo Zoppi:</b> Contribuí eficazmente al trabajo en equipo, guiando en el completado del documento, traduciendo las ideas de negocio y necesidades del cliente para que el equipo comprendiera cada requisito.</p>
+      <p><b>Mathias Kunimoto:</b> Aporté ideas de manera constante y fui proactivo en el desarrollo de las secciones del informe que me correspondían, comunicando avances, dudas y opiniones a mis compañeros.</p>
+      <p><b>Janiel Escalante:</b> Promoví un ambiente de confianza en el equipo, promoviendo la comunicación y el apoyo mutuo, y ayudando a resolver dudas de algunos integrantes respecto a sus tareas.</p>
     </td>
     <td>
       <p><b>TB1:</b> En esta entrega logramos consolidar la comunicación oral como herramienta clave para la coordinación del equipo. La disposición para expresar ideas, aclarar dudas y apoyar a los compañeros permitió que cada integrante cumpliera con sus responsabilidades y que el informe avanzara de manera ordenada. El ambiente de confianza y las dinámicas grupales favorecieron la participación de todos y fortalecieron la colaboración en el proyecto.</p>
       <p><b>TP1:</b>En esta entrega, la comunicación grupal fue clave para definir puntos como la estructura, arquitectura, bounded contexts y tecnologías a utilizar en el proyecto. Permitió al grupo que todos estuviesemos en la misma página y favorecieron el desempeño y dinamica genera del equipo. </p>
       <p><b>TB2:</b>En esta entrega, la comunicación grupal resultó esencial para el desarrollo de unas soluciones coordinadas y que se integren correctamente. Fue importante que todos estuviesemos en la misma página y mantuviesemos una comunicación constante y clara.</p>
+       <p><b>TF1:</b>En esta entrega, la comunicación grupal fue sumamente importante pues determinó el exito del trabajo, la conexión entre los servicios y que el producto final cumpliese con los requisitos del sistema.</p>
     </td>
   </tr>
   <tr>
@@ -240,14 +286,20 @@ En el siguiente cuadro se describen las acciones realizadas por cada integrante 
       <p><b>Giacomo Zoppi:</b>Colaboré en la redacción del documento, así transmití ideas correctamente y pudimos concretar decisiones de mejor forma. </p>
       <p><b>Mathias Kunimoto:</b> De forma escrita colaboré en la definición de tareas en el spring backlog.</p>
       <p><b>Janiel Escalante:</b>Aporté transmitiendo mis opiniones y mis objetivos a la hora de elaborar y diseñar la arquitectura efectivaente. Logré comunicarme claramente y llegar a consensos con el equipo.</p>
+      <p><b>TF1:</b></p>
+      <p><b>Valentino Cervantes:</b> Me enfoqué en comunicar de forma clara y objetiva las ideas del equipo, en especial en concretar la arquitectura e implementar mejoras </p>
+      <p><b>Giacomo Zoppi:</b> Aporté transmitiendo por escrito las tareas y objetivos en el tablero Kanban, lo que permitió al grupo tener un seguimiento ordenado y transparente de los avances.</p>
+      <p><b>Mathias Kunimoto:</b>Redacté y documenté el sprint, hice seguimiento de las tareas, su avance, los story points y los entregables</p>
+      <p><b>Janiel Escalante:</b> Me encargué de plasmar por escrito ela documentación de las APIs, descripción de los servicios y parte del sprint</p>
     </td>
     <td>
       <p><b>TB1:</b> En esta entrega reforzamos nuestra capacidad de comunicar ideas y resultados de manera escrita con claridad y objetividad, adaptándonos a diferentes públicos del ámbito de la ingeniería. La documentación generada (User Stories, escenarios, diagramas, etc.) permitió dejar evidencia del trabajo realizado y asegurar que todos los integrantes compartieran una misma visión del proyecto. Asimismo, el uso del tablero Kanban fue clave para estructurar la información, dar seguimiento a las tareas y mantener la transparencia en cada fase del entregable.</p>
       <p><b>TP1:</b> En esta entrega pudimos comunicar nuestras ideas de forma escrita con efectividad. Pudimos documentar la definición de los Bounded Context en cada una de sus capas, ademas de añadir capturas de los wireframes y wireflows elaborados en figma que permiten tener un prototipado del diseño. </p>
       <p><b>TB2:</b> En esta entrega, era esencial pudimos comunicar nuestras ideas de forma escrita con efectividad. Pudimos documentar toda la información necesaria para empezar el desarrollo lo mas coordinado y perfecto posible.  </p>
+      <p><b>TF1:</b> En esta entrega pudimos concretar el informe escrito, logramos cerrar el proyecto habiendo comunicado nuestras ideas con efectividad. Pudimos documentar cada parte del proceso de tal modo, que se compagina con el desarrollo. </p>
     </td>
   </tr>
-</table>
+  </table>
 
 ---
 
