@@ -2481,6 +2481,20 @@ A continuación se muestran las colaboraciones individuales por cada artefacto t
 **Landing Page**
 <img width="786" height="397" alt="image" src="https://github.com/user-attachments/assets/a51da2b8-d1b0-4a46-80a5-2fc550d0a4dc" />
 
+#### 7.2.2. Sprint Planning 2
+
+| **Sprint #** | Sprint 2 |
+|--------------|----------|
+| **Sprint Planning Background** | |
+| **Date** | 2025-11-15 |
+| **Time** | 09:00 PM |
+| **Location** | Virtual, mediante una llamada de Discord |
+| **Prepared By** | Zoppi Rodriguez, Giacomo |
+| **Attendees (to planning meeting)** | Cervantes, Valentino - Kunimoto, Mathias - Escalante, Janiel |
+| **Sprint Goal & User Stories** | |
+| **Sprint n Goal** | Nuestro enfoque en el Sprint 2 es mejorar la revisión de trámites y la validación de documentos para lograr un proceso más claro, eficiente y trazable. 
+| **Sprint 1 Velocity** | |
+| **Sum of Story Points** | XXXXXXXXXXXXXXXX story points |
 
 ## 7.3. Validation Interviews
 ### 7.3.1. Diseño de Entrevistas
