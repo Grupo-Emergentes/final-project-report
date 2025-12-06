@@ -1,4 +1,4 @@
-<img width="841" height="720" alt="image" src="https://github.com/user-attachments/assets/9c83b6c4-0cec-4dee-a35b-a6316692c85e" /><p align="center">
+<p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png" width="180"/>
 </p>
 
@@ -2357,26 +2357,6 @@ Test de verificacion del status actual de un procedure y su oficialId:
 
 ![Imagen de WhatsApp 2025-11-16 a las 12 45 19_03305b9a](https://github.com/user-attachments/assets/4f0fdff4-4328-497b-9310-b6b0bc765794)
 
-
-## Wallet Bounded Context
-
-Esta seccion hace refrencia a un servicio con features de blockchain para subir y verificar dacoumentos en lugar d eusar una base de datos
-
-
-Test de creacion de dniTransactrion:
-
-![Imagen de WhatsApp 2025-11-16 a las 14 25 29_dd62ffae](https://github.com/user-attachments/assets/96afc642-be59-4438-95f8-f83281fd6e7b)
-
-Test del happy path de  eliminacion de dniTransactrion:
-
-![Imagen de WhatsApp 2025-11-16 a las 14 25 41_ba2c6200](https://github.com/user-attachments/assets/72b236d8-b1be-4ba4-a695-755531f2e96e)
-
-
-Test del unhappy path de  eliminacion de dniTransactrion:
-
-![Imagen de WhatsApp 2025-11-16 a las 14 25 53_6624b1ca](https://github.com/user-attachments/assets/548c56bf-228b-4b5e-8199-93c1a8f2436c)
-
-
 #### 7.2.1.5. Execution Evidence for Sprint Review.
 
 - El link de la landing page es el siguiente: https://landing-page-emergentes.vercel.app/
@@ -2451,17 +2431,6 @@ En este sprint, se completó el desarrollo de la landing page y el Web Applicati
 - GitHub: Empleado como plataforma colaborativa para almacenar las versiones del proyceto y facilitar el desarrollo conjunto del equipo.
 - Vercel: Creación de experiencias web rápidas y personalizadas, automatizando el proceso de despliegue y manejo de la escalabilidad.
 - AWS: Despliegue de servicios web y servicios en la nube.
-**Evidencias Cognito**
-<img width="919" height="319" alt="img1" src="https://github.com/user-attachments/assets/c0d4c0ab-2a58-49fb-91aa-90e10a025fff" />
-<img width="919" height="319" alt="img2" src="https://github.com/user-attachments/assets/183955ab-f392-4276-8eca-08b1d8cef5bb" />
-<img width="941" height="317" alt="img3" src="https://github.com/user-attachments/assets/d1ae42d4-854b-498c-9ff4-a2e4b7eacdd7" />
-
-**Evidencias API GATEWAY**
-<img width="920" height="316" alt="img4" src="https://github.com/user-attachments/assets/12dcaaa3-2d3c-4666-96fa-c53cf148c5c1" />
-<img width="920" height="316" alt="img5" src="https://github.com/user-attachments/assets/29ebe4e2-e108-4948-a15b-ee5cc5b8837f" />
-
-**Evidencias IAM**
-<img width="1883" height="689" alt="image" src="https://github.com/user-attachments/assets/523343d7-2f99-43fa-9588-c2b4af0add3c" />
 
 **Evidencias Landing Page**
 ![vercel](https://github.com/user-attachments/assets/b7338d81-c653-48b2-87c1-ba3f9b81a25a)
@@ -2549,65 +2518,59 @@ A continuación se muestran las colaboraciones individuales por cada artefacto t
 
 #### 7.2.2.4 Testing Suite Evidence for Sprint Review.
 
+| Repository | Branch | Commit ID | Commit Message | Committed On |
+|------------|--------|-----------|----------------|--------------|
+| wallet-service | test    | c02a2f5 | chore: initial commit    | 2025-11-15 |
 
+## Wallet Bounded Context
+
+Esta seccion hace refrencia a un servicio con features de blockchain para subir y verificar dacoumentos en lugar d eusar una base de datos
+
+
+Test de creacion de dniTransactrion:
+
+![Imagen de WhatsApp 2025-11-16 a las 14 25 29_dd62ffae](https://github.com/user-attachments/assets/96afc642-be59-4438-95f8-f83281fd6e7b)
+
+Test del happy path de  eliminacion de dniTransactrion:
+
+![Imagen de WhatsApp 2025-11-16 a las 14 25 41_ba2c6200](https://github.com/user-attachments/assets/72b236d8-b1be-4ba4-a695-755531f2e96e)
+
+
+Test del unhappy path de  eliminacion de dniTransactrion:
+
+![Imagen de WhatsApp 2025-11-16 a las 14 25 53_6624b1ca](https://github.com/user-attachments/assets/548c56bf-228b-4b5e-8199-93c1a8f2436c)
 
 #### 7.2.1.5. Execution Evidence for Sprint Review
 
-- El link de la landing page es el siguiente: https://landing-page-emergentes.vercel.app/
+Imagen 1 : Web Application 
+<img width="1069" height="610" alt="image" src="https://github.com/user-attachments/assets/2f50159f-7697-45de-a366-612d928a3b43" />
 
-![1](https://github.com/user-attachments/assets/2b60e4e5-812f-4432-be95-5ab9d350551f)
+Imagen 2: Chatbot en funcionamiento dentro de la Web Application 
+<img width="1065" height="597" alt="image" src="https://github.com/user-attachments/assets/9c3fca59-2bb1-44ff-9a98-d89f9bfd2418" />
 
-</br>
-
-**Imagen 2:** 
-
-![2](https://github.com/user-attachments/assets/c2515e19-ab67-4235-a1d0-1abc46425b3b)
-
-</br>
-
-**Imagen 3:** 
-
-![3](https://github.com/user-attachments/assets/cf45db3f-d514-42f8-959c-d19f04530201)
-
-</br></br>
-
-- El link de la Web application: https://web-application-tan.vercel.app/
-
-**Imagen 1:** Vista de Login
-![web-login](https://github.com/user-attachments/assets/cfbb246a-3912-44f1-a650-f80e44414ed8)
-</br>
-
-**Imagen 2:** Vista Home Page
-![web-home-page](https://github.com/user-attachments/assets/a930b66c-7291-4b31-bf16-3ed1676d741f)
-</br>
-
-**Imagen 3:** Vista de chatbot
-![web-chatbot](https://github.com/user-attachments/assets/52d4106c-02bf-4a86-827a-18f2776a4337)
-</br>
-
-**Imagen 4:** Vista de Billetera
-![web-billetera](https://github.com/user-attachments/assets/bfaf6c13-bd57-40fb-acf0-9739af32cffd)
-</br>
-
-**Imagen 5:** Vista de documento individual
-![web-documento](https://github.com/user-attachments/assets/a7e2dd8d-885b-4012-82b7-d7bfd4c34907)
-</br>
-
-**Imagen 6:** Vista de formulario de tramite
-![web-tramite](https://github.com/user-attachments/assets/929a90a5-6601-443f-9777-e610c25aa4d6)
-</br>
-
-**Imagen 7:** Vista principal del administrador
-![web-admin](https://github.com/user-attachments/assets/7f6d0456-64b1-46d0-90ce-d702b784ee98)
-</br>
-
-**Imagen 8:** Vista de Analiticas y Reporte
-![web-analytics](https://github.com/user-attachments/assets/7ff200a5-4d6e-4934-977d-f2be0c30d7e5)
-</br>
+Imagen 3: Servicios en AWS en funcionamiento 
+<img width="1067" height="408" alt="image" src="https://github.com/user-attachments/assets/a96b40a0-d421-43a5-b378-7abecf4cb8e2" />
+<img width="1067" height="408" alt="image" src="https://github.com/user-attachments/assets/ba498242-9a25-41db-9d5a-3c1406fd7e8c" />
 
 
 
-#### 7.2.1.8. (Poner punto correcto) Team Collaboration Insights during Sprint.
+#### 7.2.1.6 Services Documentation for Sprint Review
+
+#### 7.2.1.7 Deployment Evidence for Sprint Review
+**Evidencias Cognito**
+<img width="919" height="319" alt="img1" src="https://github.com/user-attachments/assets/c0d4c0ab-2a58-49fb-91aa-90e10a025fff" />
+<img width="919" height="319" alt="img2" src="https://github.com/user-attachments/assets/183955ab-f392-4276-8eca-08b1d8cef5bb" />
+<img width="941" height="317" alt="img3" src="https://github.com/user-attachments/assets/d1ae42d4-854b-498c-9ff4-a2e4b7eacdd7" />
+
+**Evidencias API GATEWAY**
+<img width="920" height="316" alt="img4" src="https://github.com/user-attachments/assets/12dcaaa3-2d3c-4666-96fa-c53cf148c5c1" />
+<img width="920" height="316" alt="img5" src="https://github.com/user-attachments/assets/29ebe4e2-e108-4948-a15b-ee5cc5b8837f" />
+
+**Evidencias IAM**
+<img width="1883" height="689" alt="image" src="https://github.com/user-attachments/assets/523343d7-2f99-43fa-9588-c2b4af0add3c" />
+
+
+#### 7.2.1.8. Team Collaboration Insights during Sprint.
 En este Sprint 2, todos hemos colaborado en conjunto para el desarrollo de los artefactos: Landing Page y Web Application.
 
 A continuación se muestran las colaboraciones individuales por cada artefacto terminado durante este sprint.
